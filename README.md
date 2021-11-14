@@ -10,6 +10,11 @@ yay -S sway
 
 ### Utilities
 ```
+// flameshot - screenshot utiltiy
+yay -S flameshot
+
+https://github.com/flameshot-org/flameshot/blob/master/docs/Sway%20and%20wlroots%20support.md
+
 // kitty - terminal
 yay -S kitty
 
