@@ -14,8 +14,8 @@ window#waybar {
 #workspaces button {
     color: #bebebe;
     background: transparent;
-    padding: 0 5 0 0;
-    margin: 0 1 0 35;
+    padding: 0 5px 0 0;
+    margin: 0 1px 0 35px;
 }
 #workspaces button.focused {
     color: white;
@@ -28,8 +28,8 @@ window#waybar {
 }
 
 #clock, #battery, #backlight, #network, #pulseaudio, #tray, #mode {
-    padding: 0 5 0 5;
-    margin: 0 10 0 10;
+    padding: 0 5px 0 5px;
+    margin: 0 10px 0 10px;
 }
 
 #battery {
