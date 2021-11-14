@@ -5,17 +5,25 @@
 yay -S sway
 ```
 
-### dunst - notification manager
+### Utilities
 ```
-yay -S dunst
-```
+// dunst for notification
+yay -S dunst 
 
-### Waybar
-```
+// waybar as bar
 yay -S waybar
-```
 
-### rofi
-```
+// rofi - application launcher
 yay -S rofi-lbonn-wayland
-```
+
+// wlsunset - night light
+yay -S wlsunset
+
+// brightnessctl - backlight controler
+yay -S brightnessctl
+
+// amixer - volume control
+yay -S amixer
+
+// clipmenu - clipboard manager
+yay -S clipmenu

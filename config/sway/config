@@ -222,8 +222,6 @@ include /etc/sway/config.d/*
  bindsym XF86MonBrightnessDown exec brightnessctl set 2%- 
 
  # Screenshot
- bindsym Print exec flameshot full -c -p ~/Pictures/Screenshot/
- bindsym control+Print exec flameshot gui -p /home/missu/Pictures/Screenshot/
 
  # wifi toggle
  bindsym control+mod1+w exec wifi toggle
@@ -250,8 +248,4 @@ include /etc/sway/config.d/*
    # wlsunset - nightlight
    exec wlsunset -l 11.04 -L 75.24
    # power related stuff
-   exec  sudo powerkit
-   exec  sudo ip link set enp1s0f1 down
-   exec  sudo powertop --auto-tune
 
-exec "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
