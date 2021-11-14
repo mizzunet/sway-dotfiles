@@ -1,4 +1,4 @@
-# My wayland configuration
+# My Wayland configuration
 
 ### Sway 
 ```
