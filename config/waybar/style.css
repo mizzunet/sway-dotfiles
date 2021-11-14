@@ -1,0 +1,77 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "IBM Plex Mono";
+    font-size: 15px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #bebebe;
+}
+
+#workspaces button {
+    color: #bebebe;
+    background: transparent;
+    padding: 0 5 0 0;
+    margin: 0 1 0 35;
+}
+#workspaces button.focused {
+    color: white;
+ }
+#workspaces button.urgent{
+     color: red;
+}
+#mode {
+    background: #64727D;
+}
+
+#clock, #battery, #backlight, #network, #pulseaudio, #tray, #mode {
+    padding: 0 5 0 5;
+    margin: 0 10 0 10;
+}
+
+#battery {
+}
+
+#battery.icon {
+    color: blue;
+}
+
+#battery.charging {
+}
+
+@keyframes blink {
+    to {
+        background-color: red;
+        color: black;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#network {
+}
+
+#network.disconnected {
+}
+
+#clock {
+}
+ 
+#pulseaudio {
+}
+
+#pulseaudio.muted {
+}
+
+#tray {
+}

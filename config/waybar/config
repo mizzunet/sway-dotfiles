@@ -1,0 +1,64 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar at the bottom of your screen
+    "height": 35, // Waybar height
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio","backlight", "network", "battery", "tray"],
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+        "format": "<span size='large' rise='-1600'>{icon}</span>",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "urgent": "",
+            "focused": "",
+        }
+    },
+    "sway/mode": {
+        "format": "<span style='italic'>{}</span>"
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%a %d %b %I:%M}",
+        "format-alt": "{:%Y}"
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "full-at":  "99",
+        "format": "<span size='large' rise='-1600'>{icon}</span>{capacity}%",
+        // "format-good": "", // An empty format will hide the module
+        "format-full": "Full",
+        "format-icons": [" "],
+        "format-charging": "<span size='large' rise='-1600'></span> {capacity}% "
+    },
+    "network": {
+        "format-wifi": "<span size='large' rise='-1600'></span> {essid}",
+        "format-disconnected": "<span size='large' rise='-1600'></span> "
+    },
+    "pulseaudio": {
+        //"scroll-step": 1,
+        "format": "<span size='large' rise='-1600'>{icon}</span> {volume}%",
+        "format-muted": "<span size='large' rise='-1600'></span> Muted",
+        "format-icons": {
+            //"headphones": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "amixer set Master toggle"
+    },
+    "backlight": {
+    "device": "intel_backlight",
+    "format": "<span size='large' rise='-1600'>{icon}</span> {percent}%",
+    "format-icons": ["", ""],
+    "on-click": "pkill -USR1 '^redshift$'"
+}
+}

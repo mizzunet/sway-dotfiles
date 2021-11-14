@@ -1,0 +1,257 @@
+
+### Variables
+set $mod Mod4
+
+set $left h
+set $down j
+set $up k
+set $right l
+
+set $term kitty
+set $menu /home/missu/.config/rofi/launcher/launcher.sh
+
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# Set colors
+set $bg #f7b107
+set $fg #eff1f5
+set $br #121212
+set $ia #232425
+
+
+### Window configs
+gaps inner 5
+gaps outer 4
+
+
+default_border pixel 2
+smart_borders on
+#smart_gaps on
+
+# class                 border  backgr. text    indicator child_border
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.background       #ffffff
+client.focused          #121212 #28f677 #ffffff #f7b107 #22211f
+exec $menu
+### Output configuration
+#
+output * bg /home/missu/Pictures/Wallpaper/wall15.png fill
+font pango:IBM Plex Mono 10.5
+set $opacity 0.9
+# Example configuration:
+#
+#   output HDMI-A-1 resolution 1920x1080 position 1920,0
+#
+# You can get the names of your outputs by running: swaymsg -t get_outputs
+
+### Idle configuration
+#
+# Example configuration:
+#
+# exec swayidle -w \
+#          timeout 300 'swaylock -f -c 000000' \
+#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+#          before-sleep 'swaylock -f -c 000000'
+#
+# This will lock your screen after 300 seconds of inactivity, then turn off
+# your displays after another 300 seconds, and turn your screens back on when
+# resumed. It will also lock your screen before your computer goes to sleep.
+
+### Input configuration
+   input  type:touchpad {
+       dwt enabled
+       tap enabled
+       middle_emulation enabled
+   }
+input type:keyboard {
+     xkb_numlock enable
+}
+
+### Key bindings
+# Basics:
+    # Start a terminal
+    bindsym $mod+Return exec $term
+
+    # Kill focused window
+    bindsym $mod+Shift+q kill
+
+    # Start your launcher
+    bindsym $mod+d exec $menu
+
+    # mouse button for dragging.
+    floating_modifier $mod normal
+
+    # Reload the configuration file
+    bindsym $mod+Shift+c reload
+
+    # Exit sway (logs you out of your Wayland session)
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+#
+# Moving around:
+
+    # Move your focus around
+    bindsym $mod+$left focus left
+    bindsym $mod+$down focus down
+    bindsym $mod+$up focus up
+    bindsym $mod+$right focus right
+    # Or use $mod+[up|down|left|right]
+    bindsym $mod+Left focus left
+    bindsym $mod+Down focus down
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
+
+    # Move the focused window with the same, but add Shift
+    bindsym $mod+Shift+$left move left
+    bindsym $mod+Shift+$down move down
+    bindsym $mod+Shift+$up move up
+    bindsym $mod+Shift+$right move right
+    # Ditto, with arrow keys
+    bindsym $mod+Shift+Left move left
+    bindsym $mod+Shift+Down move down
+    bindsym $mod+Shift+Up move up
+    bindsym $mod+Shift+Right move right
+
+# Workspaces:
+
+    # Switch to workspace
+    bindsym $mod+1 workspace number $ws1
+    bindsym $mod+2 workspace number $ws2
+    bindsym $mod+3 workspace number $ws3
+    bindsym $mod+4 workspace number $ws4
+    bindsym $mod+5 workspace number $ws5
+    bindsym $mod+6 workspace number $ws6
+    bindsym $mod+7 workspace number $ws7
+    bindsym $mod+8 workspace number $ws8
+    bindsym $mod+9 workspace number $ws9
+    bindsym $mod+0 workspace number $ws10
+    # Move focused container to workspace
+    bindsym $mod+Shift+1 move container to workspace number $ws1
+    bindsym $mod+Shift+2 move container to workspace number $ws2
+    bindsym $mod+Shift+3 move container to workspace number $ws3
+    bindsym $mod+Shift+4 move container to workspace number $ws4
+    bindsym $mod+Shift+5 move container to workspace number $ws5
+    bindsym $mod+Shift+6 move container to workspace number $ws6
+    bindsym $mod+Shift+7 move container to workspace number $ws7
+    bindsym $mod+Shift+8 move container to workspace number $ws8
+    bindsym $mod+Shift+9 move container to workspace number $ws9
+    bindsym $mod+Shift+0 move container to workspace number $ws10
+
+# Layout stuff:
+
+    # Split
+    #bindsym $mod+b splith
+    #bindsym $mod+v splitv
+    bindsym $mod+v splitt
+
+    # Switch the current container between different layout styles
+    bindsym $mod+s layout stacking
+    bindsym $mod+w layout tabbed
+    bindsym $mod+e layout toggle split
+
+    # Make the current focus fullscreen
+    bindsym $mod+f fullscreen
+
+    # Toggle the current focus between tiling and floating mode
+    bindsym $mod+Shift+space floating toggle
+
+    # Swap focus between the tiling area and the floating area
+    bindsym $mod+space focus mode_toggle
+
+    # Move focus to the parent container
+    bindsym $mod+a focus parent
+
+# Scratchpad:
+
+
+    # Move the currently focused window to the scratchpad
+    bindsym $mod+Shift+minus move scratchpad
+
+    bindsym $mod+minus scratchpad show
+
+# Resizing containers:
+
+mode "resize" {
+    bindsym $left resize shrink width 10px
+    bindsym $down resize grow height 10px
+    bindsym $up resize shrink height 10px
+    bindsym $right resize grow width 10px
+
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+assign [title="ProtonMail"] $ws2
+assign [title="Signal"] $ws2
+for_window [class="Spotify"] move window to workspace $ws3
+
+# Status Bar:
+bar {
+    swaybar_command waybar
+}
+
+include /etc/sway/config.d/*
+
+ # clipmenu
+ bindsym $mod+c exec /home/missu/.config/sway/clipmenu
+
+ # Use amixer to adjust volume
+ bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
+ bindsym XF86AudioLowerVolume exec amixer set Master 5%-
+ bindsym XF86AudioMute        exec amixer set Master toggle
+
+ # Sreen brightness controls
+ bindsym XF86MonBrightnessUp   exec brightnessctl set 5%+ 
+ bindsym XF86MonBrightnessDown exec brightnessctl set 2%- 
+
+ # Screenshot
+ bindsym Print exec flameshot full -c -p ~/Pictures/Screenshot/
+ bindsym control+Print exec flameshot gui -p /home/missu/Pictures/Screenshot/
+
+ # wifi toggle
+ bindsym control+mod1+w exec wifi toggle
+
+ # ctrl+alt+delete to reboot
+ bindsym control+mod1+Delete exec sudo kexec-reboot 1
+ bindsym control+Shift+Delete exec systemctl reboot
+
+ # emoji typing
+ bindsym control+mod1+e exec emote
+
+ # screen rotation
+ bindsym control+mod1+Left exec xrandr -o left
+ bindsym control+mod1+Right exec xrandr -o right
+ bindsym control+mod1+Up exec xrandr -o normal
+ # Startup Services
+   # Rofi
+   exec  .config/rofi/launcher/launcher.sh
+   # Screenshot utility
+   # Clipboard manager
+   exec  clipmenud
+   # Notification utility
+   exec  dunst
+   # wlsunset - nightlight
+   exec wlsunset -l 11.04 -L 75.24
+   # power related stuff
+   exec  sudo powerkit
+   exec  sudo ip link set enp1s0f1 down
+   exec  sudo powertop --auto-tune
+
+exec "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
