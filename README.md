@@ -7,6 +7,9 @@ yay -S sway
 
 ### Utilities
 ```
+// kitty - terminal
+yay -S kitty
+
 // dunst for notification
 yay -S dunst 
 
