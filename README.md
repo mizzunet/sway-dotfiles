@@ -1,5 +1,8 @@
 # My Wayland configuration
 
+```
+git clone https://github.com/mizzunet/sway-dotfiles
+```
 ### Sway 
 ```
 yay -S sway
