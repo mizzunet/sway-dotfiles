@@ -1,7 +1,15 @@
 # My Wayland configuration
-
+## Apply
 ```
 git clone https://github.com/mizzunet/sway-dotfiles
+set USER missu
+ln -s /home/$USER/.sway-dotfiles/config/dunst/ /home/$USER/.config/dunst
+ln -s /home/$USER/.sway-dotfiles/config/rofi /home/$USER/.config/rofi
+ln -s /home/$USER/.sway-dotfiles/config/waybar /home/$USER/.config/waybar
+ln -s /home/$USER/.sway-dotfiles/config/mpv /home/$USER/.config/mpv
+ln -s /home/$USER/.sway-dotfiles/config/kitty/ /home/$USER/.config/kitty/
+ln -s /home/$USER/.sway-dotfiles/config/flameshot/ /home/$USER/.config/flameshot
+ln -s /home/$USER/.sway-dotfiles/config/fish /home/$USER/.config/fish
 ```
 ### Sway 
 ```

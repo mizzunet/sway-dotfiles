@@ -1,8 +1,8 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar at the bottom of your screen
-    "height": 35, // Waybar height
-    "modules-left": ["sway/workspaces", "sway/mode"],
+    "height": 38, // Waybar height
+    "modules-left": ["sway/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio","backlight", "network", "battery", "tray"],
     "sway/workspaces": {
@@ -14,14 +14,13 @@
             "2": "",
             "3": "",
             "urgent": "",
-            "focused": "",
         }
     },
     "sway/mode": {
         "format": "<span style='italic'>{}</span>"
     },
     "tray": {
-        // "icon-size": 21,
+        "icon-size": 18,
         "spacing": 10
     },
     "clock": {
@@ -35,30 +34,42 @@
             "critical": 15
         },
         "full-at":  "99",
-        "format": "<span size='large' rise='-1600'>{icon}</span>{capacity}%",
-        // "format-good": "", // An empty format will hide the module
-        "format-full": "Full",
-        "format-icons": [" "],
+        "format": " {capacity}%",
+        "format-good": "", // An empty format will hide the module
+        "format-full": "<span size='large' rise='-1600'></span> Full",
         "format-charging": "<span size='large' rise='-1600'></span> {capacity}% "
     },
     "network": {
-        "format-wifi": "<span size='large' rise='-1600'></span> {essid}",
-        "format-disconnected": "<span size='large' rise='-1600'></span> "
+        "format-wifi": "<span size='large' rise='-1000'></span> {essid}",
+        "format-disconnected": "None",
+        "on-click": "/home/missu/.config/sway/modules/wifi.sh toggle"
     },
+     "custom/grimshot": { 
+         "format": "", 
+         "tooltip": false,
+         "on-click": "grimshot --notify save output - | swappy -f -",
+         "on-click-middle": "grimshot --notify save window - | swappy -f -",
+         "on-click-right": "grimshot --notify save area - | swappy -f -"
+        },
     "pulseaudio": {
         //"scroll-step": 1,
-        "format": "<span size='large' rise='-1600'>{icon}</span> {volume}%",
-        "format-muted": "<span size='large' rise='-1600'></span> Muted",
-        "format-icons": {
+       "on-scroll-up": "amixer set Master 1%+",
+       "on-scroll-down": "amixer set Master 1%-",
+       "format": "",
+       "format-source": "<span size='large' rise='-1600'>{icon}</span> {volume}%",
+       "format-muted": "<span size='large' rise='-1600'></span> Muted",
+       "format-icons": {
             //"headphones": "",
             "default": ["", "", ""]
         },
-        "on-click": "amixer set Master toggle"
     },
     "backlight": {
     "device": "intel_backlight",
-    "format": "<span size='large' rise='-1600'>{icon}</span> {percent}%",
+    "format": "",
+    // "format": "<span size='large' rise='-1600'>{icon}</span> {percent}%",
     "format-icons": ["", ""],
+    "on-scroll-up": "brightnessctl set 1%+",
+    "on-scroll-down": "brightnessctl set 1%-",
     "on-click": "pkill -USR1 '^redshift$'"
 }
 }

@@ -1,8 +1,8 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "IBM Plex Mono";
-    font-size: 15px;
+    font-family: "IBM Plex Mono",Manjari;
+    font-size: 14px;
     min-height: 0;
 }
 
@@ -14,30 +14,28 @@ window#waybar {
 #workspaces button {
     color: #bebebe;
     background: transparent;
-    padding: 0 5px 0 0;
-    margin: 0 1px 0 35px;
+    padding: 0 12px 0 5px;
+    margin: 0 1px 0 20px;
 }
 #workspaces button.focused {
     color: white;
  }
 #workspaces button.urgent{
-     color: red;
-}
+     color: #ffffff;
+     background: #a52a2a;
+     }
 #mode {
     background: #64727D;
 }
 
-#clock, #battery, #backlight, #network, #pulseaudio, #tray, #mode {
+#clock, #battery, #backlight, #network, #pulseaudio, #mode {
     padding: 0 5px 0 5px;
-    margin: 0 10px 0 10px;
+    margin: 0 0px 0 15px;
 }
 
 #battery {
 }
 
-#battery.icon {
-    color: blue;
-}
 
 #battery.charging {
 }
@@ -45,7 +43,7 @@ window#waybar {
 @keyframes blink {
     to {
         background-color: red;
-        color: black;
+        color: white;
     }
 }
 
@@ -74,4 +72,5 @@ window#waybar {
 }
 
 #tray {
+    margin: 0 15 0 18;
 }

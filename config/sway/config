@@ -1,4 +1,3 @@
-
 ### Variables
 set $mod Mod4
 
@@ -27,29 +26,39 @@ set $fg #eff1f5
 set $br #121212
 set $ia #232425
 
-
+set $image ~/.config/sway/border-images/shadows.png
 ### Window configs
 gaps inner 5
-gaps outer 4
-
+gaps outer 8
 
 default_border pixel 2
 smart_borders on
 #smart_gaps on
+border_images.focused $image
+border_images.focused_inactive $image
+border_images.unfocused $image
+border_images.urgent $image
 
 # class                 border  backgr. text    indicator child_border
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-client.background       #ffffff
-client.focused          #121212 #28f677 #ffffff #f7b107 #22211f
+client.focused          #121212 #28f677 #ffffff #ffffff   #00000000
+
+
 exec $menu
 ### Output configuration
 #
 output * bg /home/missu/Pictures/Wallpaper/wall15.png fill
 font pango:IBM Plex Mono 10.5
 set $opacity 0.9
+
+# GTK
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
+    gsettings set $gnome-schema icon-theme 'elementary-icon-theme'
+    gsettings set $gnome-schema font-name 'IBM Mono 11' 
+}
 # Example configuration:
 #
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
@@ -94,7 +103,7 @@ input type:keyboard {
     floating_modifier $mod normal
 
     # Reload the configuration file
-    bindsym $mod+Shift+c reload
+    bindsym $mod+Shift+r reload
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
@@ -210,21 +219,24 @@ bar {
 include /etc/sway/config.d/*
 
  # clipmenu
- bindsym $mod+c exec /home/missu/.config/sway/clipmenu
+ bindsym $mod+c exec /home/missu/.config/sway/modules/clipmenu
 
  # Use amixer to adjust volume
- bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
- bindsym XF86AudioLowerVolume exec amixer set Master 5%-
- bindsym XF86AudioMute        exec amixer set Master toggle
+ bindsym XF86AudioRaiseVolume exec /home/missu/.config/sway/modules/vol_notify.sh 5%+
+ bindsym XF86AudioLowerVolume exec /home/missu/.config/sway/modules/vol_notify.sh 5%-
+ bindsym XF86AudioMute        exec /home/missu/.config/sway/modules/vol_notify.sh toggle
 
  # Sreen brightness controls
- bindsym XF86MonBrightnessUp   exec brightnessctl set 5%+ 
- bindsym XF86MonBrightnessDown exec brightnessctl set 2%- 
+ bindsym XF86MonBrightnessUp   exec /home/missu/.config/sway/modules/br_notify.sh 5%+ 
+ bindsym XF86MonBrightnessDown exec /home/missu/.config/sway/modules/br_notify.sh 2%- 
 
  # Screenshot
+ bindsym Print exec flameshot full -c -p ~/Pictures/Screenshot/
+ bindsym control+Print exec flameshot gui -p /home/missu/Pictures/Screenshot/
+
 
  # wifi toggle
- bindsym control+mod1+w exec wifi toggle
+ bindsym $mod+Shift+w exec /home/missu/.config/sway/modules/wifi.sh toggle
 
  # ctrl+alt+delete to reboot
  bindsym control+mod1+Delete exec sudo kexec-reboot 1
@@ -238,9 +250,14 @@ include /etc/sway/config.d/*
  bindsym control+mod1+Right exec xrandr -o right
  bindsym control+mod1+Up exec xrandr -o normal
  # Startup Services
+   # Inactive window transparency
+   exec_always .config/sway/modules/inactive-windows-transparency.py 
    # Rofi
    exec  .config/rofi/launcher/launcher.sh
+   # Power
+   exec sudo ip link set  enp1s0f1 down
    # Screenshot utility
+   exec flameshot
    # Clipboard manager
    exec  clipmenud
    # Notification utility
@@ -248,4 +265,13 @@ include /etc/sway/config.d/*
    # wlsunset - nightlight
    exec wlsunset -l 11.04 -L 75.24
    # power related stuff
+   # Play startup music
+   exec paplay ~/.startup.wav
+   exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
+# Autostart programs 
+   exec anki
+   exec signal-desktop-beta
+   exec ~/.local/ProtonMail-linux-x64/ProtonMail
