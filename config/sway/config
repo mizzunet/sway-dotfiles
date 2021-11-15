@@ -239,8 +239,7 @@ include /etc/sway/config.d/*
  bindsym $mod+Shift+w exec /home/missu/.config/sway/modules/wifi.sh toggle
 
  # ctrl+alt+delete to reboot
- bindsym control+mod1+Delete exec sudo kexec-reboot 1
- bindsym control+Shift+Delete exec systemctl reboot
+ bindsym control+mod1+Delete exec systemctl reboot
 
  # emoji typing
  bindsym control+mod1+e exec emote
@@ -256,6 +255,7 @@ include /etc/sway/config.d/*
    exec  .config/rofi/launcher/launcher.sh
    # Power
    exec sudo ip link set  enp1s0f1 down
+   exec sodo powertop --auto-tune
    # Screenshot utility
    exec flameshot
    # Clipboard manager

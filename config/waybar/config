@@ -21,13 +21,15 @@
     },
     "tray": {
         "icon-size": 18,
-        "spacing": 10
+        "spacing": 8
     },
     "clock": {
         "format": "{:%a %d %b %I:%M}",
         "format-alt": "{:%Y}"
     },
     "battery": {
+     "on-scroll-up": " ~/.config/sway/modules/br_notify.sh 1%+",
+     "on-scroll-down": " ~/.config/sway/modules/br_notify.sh 1%-",
         "states": {
             // "good": 95,
             "warning": 30,
@@ -41,7 +43,7 @@
     },
     "network": {
         "format-wifi": "<span size='large' rise='-1000'></span> {essid}",
-        "format-disconnected": "None",
+        "format-disconnected": "",
         "on-click": "/home/missu/.config/sway/modules/wifi.sh toggle"
     },
      "custom/grimshot": { 
