@@ -3,7 +3,7 @@
  markup = yes
  plain_text = no
 
-  format = "<b>%s</b>%b\n%p"
+  format = "<b>%s</b>\n%b%p"
  indicate_hidden = yes
   alignment = center
 
@@ -23,7 +23,6 @@
 
  shrink = no
 
-  transparency = 8
 
    idle_threshold = 0
 
@@ -52,7 +51,7 @@ separator_color = "#101010"
 
 [base16_low]
     msg_urgency = low
-    background = "#E0E0E0"
+    background = "#00E0E0E0"
     foreground = "#B0B0B0"
 
 [base16_normal]

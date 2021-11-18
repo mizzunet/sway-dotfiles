@@ -53,11 +53,12 @@ font pango:IBM Plex Mono 10.5
 set $opacity 0.9
 
 # GTK
-set $gnome-schema org.gnome.desktop.interface
+set $gnome-schema "gsettings set org.gnome.desktop.interface"
 exec_always {
-    gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
-    gsettings set $gnome-schema icon-theme 'elementary-icon-theme'
-    gsettings set $gnome-schema font-name 'IBM Mono 11' 
+    $gnome-schema gtk-theme 'Adwaita-dark'
+    $gnome-schema icon-theme 'elementary-icon-theme'
+    $gnome-schema cursor-theme 'elementary'
+    $gnome-schema font-name 'IBM Mono 11' 
 }
 # Example configuration:
 #
@@ -69,9 +70,9 @@ exec_always {
 #
 # Example configuration:
 #
-# exec swayidle -w \
+ exec swayidle -w \
 #          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+          timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'
 #          before-sleep 'swaylock -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
@@ -103,10 +104,10 @@ input type:keyboard {
     floating_modifier $mod normal
 
     # Reload the configuration file
-    bindsym $mod+Shift+r reload
+    bindsym $mod+Shift+Escape reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+End exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 
@@ -192,15 +193,15 @@ input type:keyboard {
 # Resizing containers:
 
 mode "resize" {
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
+    bindsym $left resize shrink width 40px
+    bindsym $down resize grow height 40px
+    bindsym $up resize shrink height 40px
+    bindsym $right resize grow width 40px
 
-    bindsym Left resize shrink width 10px
-    bindsym Down resize grow height 10px
-    bindsym Up resize shrink height 10px
-    bindsym Right resize grow width 10px
+    bindsym Left resize shrink width 30px
+    bindsym Down resize grow height 30px
+    bindsym Up resize shrink height 30px
+    bindsym Right resize grow width 30px
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -231,9 +232,7 @@ include /etc/sway/config.d/*
  bindsym XF86MonBrightnessDown exec /home/missu/.config/sway/modules/br_notify.sh 2%- 
 
  # Screenshot
- bindsym Print exec flameshot full -c -p ~/Pictures/Screenshot/
- bindsym control+Print exec flameshot gui -p /home/missu/Pictures/Screenshot/
-
+ bindsym Print exec grim -g "$(slurp)" - | swappy -f -
 
  # wifi toggle
  bindsym $mod+Shift+w exec /home/missu/.config/sway/modules/wifi.sh toggle
@@ -248,30 +247,31 @@ include /etc/sway/config.d/*
  bindsym control+mod1+Left exec xrandr -o left
  bindsym control+mod1+Right exec xrandr -o right
  bindsym control+mod1+Up exec xrandr -o normal
+
  # Startup Services
-   # Inactive window transparency
-   exec_always .config/sway/modules/inactive-windows-transparency.py 
-   # Rofi
-   exec  .config/rofi/launcher/launcher.sh
    # Power
-   exec sudo ip link set  enp1s0f1 down
-   exec sodo powertop --auto-tune
+   #exec powerkit
+   exec batsignal -b -w 0 -c 15 -d 10 -m 30 -d "systemctl hibernate"
    # Screenshot utility
-   exec flameshot
+   exec /sbin/flameshot
    # Clipboard manager
    exec  clipmenud
    # Notification utility
    exec  dunst
    # wlsunset - nightlight
    exec wlsunset -l 11.04 -L 75.24
-   # power related stuff
    # Play startup music
    exec paplay ~/.startup.wav
+
    exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
 # Autostart programs 
-   exec anki
-   exec signal-desktop-beta
-   exec ~/.local/ProtonMail-linux-x64/ProtonMail
+   exec /usr/bin/signal-desktop-beta
+   exec /home/missu/.local/ProtonMail-linux-x64/ProtonMail
+   exec /usr/local/bin/anki
+   #exec /usr/bin/python3.9 /home/missu/.config/sway/modules/inactive-windows-transparency.py
+
+   exec  /home/missu/.config/rofi/launcher/launcher.sh
+

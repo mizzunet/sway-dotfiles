@@ -16,6 +16,6 @@ if [[ $volume == 0 || "$mute" == "off" ]]; then
 else
     # Show the volume notification
     dunstify -a "changeVolume" -u low -i audio-volume-high -r "$msgId" \
-    -h int:value:"$volume" "Volume"
+    -h int:value:"$volume" "Volume" -t 1000
 fi
 

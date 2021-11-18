@@ -11,6 +11,6 @@ msgId="891049"
 brightness="$(brightnessctl | grep Current | awk '{print $4}' |  sed 's/[^0-9]*//g')"
    # Show the brightness notification
     dunstify -a "brightnessChange" -u low -r "$msgId" \
-    -h int:value:"$brightness" "Brightness"
+    -h int:value:"$brightness" "Brightness" -t 1000
 
 

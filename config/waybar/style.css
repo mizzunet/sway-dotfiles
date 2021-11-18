@@ -29,8 +29,8 @@ window#waybar {
     background: #64727D;
 }
 
-#clock, #battery, #backlight, #network, #pulseaudio {
-    padding: 0 5px 0 5px;
+#clock, #battery, #backlight, #network, #pulseaudio, #mode {
+    padding: 0 8px 0 8px;
     margin: 0 0px 0 10px;
 }
 

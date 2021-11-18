@@ -2,7 +2,7 @@
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar at the bottom of your screen
     "height": 38, // Waybar height
-    "modules-left": ["sway/workspaces"],
+    "modules-left": ["sway/workspaces","sway/mode"],
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio","backlight", "network", "battery", "tray"],
     "sway/workspaces": {
@@ -25,9 +25,12 @@
     },
     "clock": {
         "format": "{:%a %d %b %I:%M}",
+        "on-scroll-up": "/home/missu/.config/sway/modules/vol_notify.sh 1%+",
+        "on-scroll-down": "/home/missu/.config/sway/modules/vol_notify.sh 1%-",
         "format-alt": "{:%Y}"
     },
     "battery": {
+        "interval": 30,
      "on-scroll-up": " ~/.config/sway/modules/br_notify.sh 1%+",
      "on-scroll-down": " ~/.config/sway/modules/br_notify.sh 1%-",
         "states": {
@@ -55,8 +58,8 @@
         },
     "pulseaudio": {
         //"scroll-step": 1,
-       "on-scroll-up": "amixer set Master 1%+",
-       "on-scroll-down": "amixer set Master 1%-",
+       "on-scroll-up": "amixer set Master 3%+",
+       "on-scroll-down": "amixer set Master 3%-",
        "format": "",
        "format-source": "<span size='large' rise='-1600'>{icon}</span> {volume}%",
        "format-muted": "<span size='large' rise='-1600'></span> Muted",
