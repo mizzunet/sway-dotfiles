@@ -211,6 +211,7 @@ bindsym $mod+r mode "resize"
 assign [title="ProtonMail"] $ws2
 assign [title="Signal"] $ws2
 for_window [class="Spotify"] move window to workspace $ws3
+assign [title="gPodder"] $ws3
 
 # Status Bar:
 bar {
@@ -244,14 +245,14 @@ include /etc/sway/config.d/*
  bindsym control+mod1+e exec emote
 
  # screen rotation
- bindsym control+mod1+Left exec xrandr -o left
- bindsym control+mod1+Right exec xrandr -o right
- bindsym control+mod1+Up exec xrandr -o normal
+ bindsym control+mod1+Left exec swaymsg 'output * transform 270' 
+ bindsym control+mod1+Right exec swaymsg 'output * transform 90'
+ bindsym control+mod1+Up exec swaymsg 'output * transform 0'
 
  # Startup Services
+   exec /home/missu/.config/sway/modules/inactive-windows-transparency.py 
    # Power
-   #exec powerkit
-   exec batsignal -b -w 0 -c 15 -d 10 -m 30 -d "systemctl hibernate"
+   exec batsignal -b -w 20 -c 15 -d 10 -m 30 -d "systemctl hibernate"
    # Screenshot utility
    exec /sbin/flameshot
    # Clipboard manager
@@ -263,15 +264,11 @@ include /etc/sway/config.d/*
    # Play startup music
    exec paplay ~/.startup.wav
 
-   exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
-exec hash dbus-update-activation-environment 2>/dev/null && \
-     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
-
 # Autostart programs 
    exec /usr/bin/signal-desktop-beta
    exec /home/missu/.local/ProtonMail-linux-x64/ProtonMail
    exec /usr/local/bin/anki
-   #exec /usr/bin/python3.9 /home/missu/.config/sway/modules/inactive-windows-transparency.py
+   exec /usr/bin/python3.9 /home/missu/.config/sway/modules/inactive-windows-transparency.py
 
    exec  /home/missu/.config/rofi/launcher/launcher.sh
 

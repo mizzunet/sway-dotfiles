@@ -64,6 +64,9 @@ window#waybar {
 }
 
 #clock {
+    margin:0 0 0 0;
+         font-family: Manjari;
+          font-size: 15px;
 }
  
 #pulseaudio {

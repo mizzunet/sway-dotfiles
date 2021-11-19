@@ -24,7 +24,7 @@
         "spacing": 8
     },
     "clock": {
-        "format": "{:%a %d %b %I:%M}",
+        "format": "{:%I:%M %A %b-%d}",
         "on-scroll-up": "/home/missu/.config/sway/modules/vol_notify.sh 1%+",
         "on-scroll-down": "/home/missu/.config/sway/modules/vol_notify.sh 1%-",
         "format-alt": "{:%Y}"
