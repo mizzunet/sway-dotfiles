@@ -42,13 +42,13 @@ border_images.urgent $image
 # class                 border  backgr. text    indicator child_border
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.focused          #121212 #28f677 #ffffff #ffffff   #00000000
+client.focused          #121212 #28f677 #ffffff #ffffff   #000000
 
 
 exec $menu
 ### Output configuration
 #
-output * bg /home/missu/Pictures/Wallpaper/wall15.png fill
+output * bg /home/missu/Pictures/Wallpaper/wall25.jpg fill
 font pango:IBM Plex Mono 10.5
 set $opacity 0.9
 
@@ -211,7 +211,7 @@ bindsym $mod+r mode "resize"
 assign [title="ProtonMail"] $ws2
 assign [title="Signal"] $ws2
 for_window [class="Spotify"] move window to workspace $ws3
-assign [title="gPodder"] $ws3
+assign [title="CPod"] $ws3
 
 # Status Bar:
 bar {
@@ -250,7 +250,7 @@ include /etc/sway/config.d/*
  bindsym control+mod1+Up exec swaymsg 'output * transform 0'
 
  # Startup Services
-   exec /home/missu/.config/sway/modules/inactive-windows-transparency.py 
+   exec_always  /home/missu/.config/sway/modules/inactive-windows-transparency.py 
    # Power
    exec batsignal -b -w 20 -c 15 -d 10 -m 30 -d "systemctl hibernate"
    # Screenshot utility
@@ -268,7 +268,7 @@ include /etc/sway/config.d/*
    exec /usr/bin/signal-desktop-beta
    exec /home/missu/.local/ProtonMail-linux-x64/ProtonMail
    exec /usr/local/bin/anki
-   exec /usr/bin/python3.9 /home/missu/.config/sway/modules/inactive-windows-transparency.py
+   exec /usr/bin/python3.9 /home/missu/.config/sway/modules/inactive-windows-transparency.py 1
 
    exec  /home/missu/.config/rofi/launcher/launcher.sh
 
