@@ -1,4 +1,6 @@
 # My Wayland configuration
+![image](https://user-images.githubusercontent.com/10193999/142589798-83001a1e-ea32-4de5-8fcf-1568f3a2735a.png)
+
 ## Apply
 ```
 git clone https://github.com/mizzunet/sway-dotfiles
