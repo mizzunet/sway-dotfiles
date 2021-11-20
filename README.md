@@ -1,5 +1,5 @@
 # My Wayland configuration
-![image](https://user-images.githubusercontent.com/10193999/142589798-83001a1e-ea32-4de5-8fcf-1568f3a2735a.png)
+![image](https://user-images.githubusercontent.com/10193999/142669095-0007e539-bec0-4eaf-87e5-99586f5486d6.png)
 
 ## Apply
 ```
