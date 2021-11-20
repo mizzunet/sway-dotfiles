@@ -1,57 +1,16 @@
- [global]
- font = IBM Plex Mono 11
- markup = yes
- plain_text = no
+  font = IBM Plex Mono 11
+  markup = yes
+  plain_text = no
 
-  format = "<b>%s</b>\n%b%p"
- indicate_hidden = yes
-  alignment = center
-
-   bounce_freq = 0
-
-    show_age_threshold = -1
-
- word_wrap = yes
-
-  ignore_newline = no
-
- # Hide duplicate's count and stack them
- stack_duplicates = yes
- hide_duplicate_count = yes
-
-  geometry = "300x50-15+49"
-
- shrink = no
-
-
-   idle_threshold = 0
-
-    follow = none
-
-     sticky_history = yes
-
-  history_length = 15
-
-   show_indicators = no
-    line_height = 3
-
-     separator_height = 2
-
- padding = 6
-  horizontal_padding = 6
-
-  startup_notification = false
-   # Align icons left/right/off
- icon_position = left
- max_icon_size = 75
-
- frame_width = 2
+   format = "<b>%s</b>\n%b%p"
+  indicate_hidden = yes
+   alignment = center
 frame_color = "#101010"
 separator_color = "#101010"
 
 [base16_low]
     msg_urgency = low
-    background = "#00E0E0E0"
+    background = "#E0E0E0"
     foreground = "#B0B0B0"
 
 [base16_normal]

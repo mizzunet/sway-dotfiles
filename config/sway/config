@@ -231,8 +231,9 @@ include /etc/sway/config.d/*
  bindsym control+mod1+Up exec swaymsg 'output * transform 0'
 
  # Startup Services
-   exec_always  /home/missu/.config/sway/modules/inactive-windows-transparency.py 
+   exec_always   ~/.config/sway/modules/inactive-windows-transparency.py --opacity 0.6
    # Power
+   exec sudo ip link set enp1s0f1 down
    exec batsignal -b -w 20 -c 15 -d 10 -m 30 -d "systemctl hibernate"
    # Screenshot utility
    exec /sbin/flameshot
@@ -248,7 +249,7 @@ include /etc/sway/config.d/*
 # Autostart programs 
    exec /usr/bin/signal-desktop-beta
    exec /home/missu/.local/ProtonMail-linux-x64/ProtonMail
-   exec /usr/local/bin/anki
+   #exec /usr/local/bin/anki
    exec /usr/bin/python3.9 /home/missu/.config/sway/modules/inactive-windows-transparency.py 1
 
    exec  /home/missu/.config/rofi/launcher/launcher.sh
