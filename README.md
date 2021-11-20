@@ -48,3 +48,7 @@ yay -S amixer
 
 // clipmenu - clipboard manager
 yay -S clipmenu
+
+// IBM Plex font
+
+yay -S ttf-ibm-plex
