@@ -40,9 +40,9 @@ border_images.unfocused $image
 border_images.urgent $image
 
 # class                 border  backgr. text    indicator child_border
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.unfocused        #333333 #222222 #888888 #292d2e   #000000
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.focused          #121212 #28f677 #ffffff #ffffff   #000000
+client.focused          #121212 #28f677 #ffffff #ffffff   #222222
 
 
 exec $menu
@@ -50,7 +50,6 @@ exec $menu
 #
 output * bg /home/missu/Pictures/Wallpaper/wall25.jpg fill
 font pango:IBM Plex Mono 10.5
-set $opacity 0.9
 
 # GTK
 set $gnome-schema "gsettings set org.gnome.desktop.interface"
@@ -60,24 +59,6 @@ exec_always {
     $gnome-schema cursor-theme 'elementary'
     $gnome-schema font-name 'IBM Mono 11' 
 }
-# Example configuration:
-#
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
-#
-# You can get the names of your outputs by running: swaymsg -t get_outputs
-
-### Idle configuration
-#
-# Example configuration:
-#
- exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-          timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'
-#          before-sleep 'swaylock -f -c 000000'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
 
 ### Input configuration
    input  type:touchpad {

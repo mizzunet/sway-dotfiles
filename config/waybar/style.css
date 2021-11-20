@@ -34,13 +34,6 @@ window#waybar {
     margin: 0 0px 0 10px;
 }
 
-#battery {
-}
-
-
-#battery.charging {
-}
-
 @keyframes blink {
     to {
         background-color: red;
@@ -57,16 +50,10 @@ window#waybar {
     animation-direction: alternate;
 }
 
-#network {
-}
-
-#network.disconnected {
-}
-
 #clock {
-    margin:0 0 0 9;
-         font-family: Manjari;
-          font-size: 16px;
+    margin:7px 0 0 9px;
+    font-family: Manjari;
+    font-size: 16px;
 }
  
 #pulseaudio {
@@ -76,5 +63,5 @@ window#waybar {
 }
 
 #tray {
-    margin: 0 15 0 12;
+    margin: 0 15px 0 2px;
 }
