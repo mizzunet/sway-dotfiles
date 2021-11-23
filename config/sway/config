@@ -7,7 +7,7 @@ set $up k
 set $right l
 
 set $term kitty
-set $menu /home/missu/.config/rofi/launcher/launcher.sh
+set $menu wofi
 
 set $ws1 "1"
 set $ws2 "2"
@@ -32,12 +32,13 @@ gaps inner 5
 gaps outer 8
 
 default_border pixel 2
+default_floating_border pixel 2
 smart_borders on
 #smart_gaps on
-#border_images.focused $image
-#border_images.focused_inactive $image
-#border_images.unfocused $image
-#border_images.urgent $image
+border_images.focused $image
+border_images.focused_inactive $image
+border_images.unfocused $image
+border_images.urgent $image
 
 # class                 border  backgr. text    indicator child_border
 client.unfocused        #333333 #222222 #888888 #292d2e   #000000
@@ -66,6 +67,7 @@ exec_always {
        tap enabled
        middle_emulation enabled
    }
+input * xkb_numlock enable
 
 ### Key bindings
 # Basics:
@@ -231,13 +233,13 @@ include /etc/sway/config.d/*
    exec_always   ~/.config/sway/modules/inactive-windows-transparency.py 
    # Power
    exec sudo ip link set enp1s0f1 down
-   exec batsignal -b -w 20 -c 15 -d 10 -m 30 -d "systemctl hibernate"
+   exec batsignal -b -w 20 -c 15 -d 10 -m 30 -d "systemctl suspend"
    # Clipboard manager
    exec wl-paste -t text --watch clipman store
    # Notification utility
    exec  dunst
    # wlsunset - nightlight
-   exec_always wlsunset -l 11.04 -L 75.24
+   exec wlsunset -l 11.04 -L 75.24
    # Play startup music
    exec paplay ~/.startup.wav
 
@@ -247,5 +249,5 @@ include /etc/sway/config.d/*
    #exec /usr/local/bin/anki
    exec /usr/bin/python3.9 /home/missu/.config/sway/modules/inactive-windows-transparency.py
 
-   exec  /home/missu/.config/rofi/launcher/launcher.sh
+   exec wofi
 
