@@ -5,7 +5,7 @@
 msgId="991049"
 
 # Change the volume using alsa(might differ if you use pulseaudio)
-pamixer "$@" > /dev/null
+pamixer -i 5 > /dev/null
 
 # Query amixer for the current volume and whether or not the speaker is muted
 volume="$(pamixer --get-volume)"

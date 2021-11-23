@@ -24,9 +24,8 @@
     },
     "clock": {
         "format": "{:<span rise='-1000'> </span> %I:%M    <span rise='-700'></span><span rise='1200'> %A %B</span> %d}",
-        "on-scroll-up": "/home/missu/.config/sway/modules/vol_notify.sh 1%+",
-        "on-scroll-down": "/home/missu/.config/sway/modules/vol_notify.sh 1%-",
-        "format-alt": "{:%Y}"
+        "on-scroll-up": "/home/missu/.config/sway/modules/vol_notify.sh 5%+",
+        "on-scroll-down": "/home/missu/.config/sway/modules/vol_notify.sh 5%-",
     },
     "battery": {
         "interval": 30,
@@ -48,13 +47,6 @@
         "format-disconnected": "",
         "on-click": "/home/missu/.config/sway/modules/wifi.sh toggle"
     },
-     "custom/grimshot": { 
-         "format": "", 
-         "tooltip": false,
-         "on-click": "grimshot --notify save output - | swappy -f -",
-         "on-click-middle": "grimshot --notify save window - | swappy -f -",
-         "on-click-right": "grimshot --notify save area - | swappy -f -"
-        },
     "pulseaudio": {
         //"scroll-step": 1,
        "on-scroll-up": "amixer set Master 3%+",

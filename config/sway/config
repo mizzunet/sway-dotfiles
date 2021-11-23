@@ -34,10 +34,10 @@ gaps outer 8
 default_border pixel 2
 smart_borders on
 #smart_gaps on
-border_images.focused $image
-border_images.focused_inactive $image
-border_images.unfocused $image
-border_images.urgent $image
+#border_images.focused $image
+#border_images.focused_inactive $image
+#border_images.unfocused $image
+#border_images.urgent $image
 
 # class                 border  backgr. text    indicator child_border
 client.unfocused        #333333 #222222 #888888 #292d2e   #000000
@@ -57,7 +57,7 @@ exec_always {
     $gnome-schema gtk-theme 'Adwaita-dark'
     $gnome-schema icon-theme 'elementary-icon-theme'
     $gnome-schema cursor-theme 'elementary'
-    $gnome-schema font-name 'IBM Mono 11' 
+    $gnome-schema font-name 'IBM Plex Mono 11' 
 }
 
 ### Input configuration
@@ -66,9 +66,6 @@ exec_always {
        tap enabled
        middle_emulation enabled
    }
-input type:keyboard {
-     xkb_numlock enable
-}
 
 ### Key bindings
 # Basics:
@@ -205,8 +202,8 @@ include /etc/sway/config.d/*
  bindsym $mod+c exec /home/missu/.config/sway/modules/clipmenu
 
  # Use amixer to adjust volume
- bindsym XF86AudioRaiseVolume exec /home/missu/.config/sway/modules/vol_notify.sh 5%+
- bindsym XF86AudioLowerVolume exec /home/missu/.config/sway/modules/vol_notify.sh 5%-
+ bindsym XF86AudioRaiseVolume exec /home/missu/.config/sway/modules/vol_up.sh
+ bindsym XF86AudioLowerVolume exec /home/missu/.config/sway/modules/vol_down.sh
  bindsym XF86AudioMute        exec /home/missu/.config/sway/modules/vol_notify.sh toggle
 
  # Sreen brightness controls
@@ -231,18 +228,16 @@ include /etc/sway/config.d/*
  bindsym control+mod1+Up exec swaymsg 'output * transform 0'
 
  # Startup Services
-   exec_always   ~/.config/sway/modules/inactive-windows-transparency.py --opacity 0.6
+   exec_always   ~/.config/sway/modules/inactive-windows-transparency.py 
    # Power
    exec sudo ip link set enp1s0f1 down
    exec batsignal -b -w 20 -c 15 -d 10 -m 30 -d "systemctl hibernate"
-   # Screenshot utility
-   exec /sbin/flameshot
    # Clipboard manager
-   exec  clipmenud
+   exec wl-paste -t text --watch clipman store
    # Notification utility
    exec  dunst
    # wlsunset - nightlight
-   exec wlsunset -l 11.04 -L 75.24
+   exec_always wlsunset -l 11.04 -L 75.24
    # Play startup music
    exec paplay ~/.startup.wav
 
@@ -250,7 +245,7 @@ include /etc/sway/config.d/*
    exec /usr/bin/signal-desktop-beta
    exec /home/missu/.local/ProtonMail-linux-x64/ProtonMail
    #exec /usr/local/bin/anki
-   exec /usr/bin/python3.9 /home/missu/.config/sway/modules/inactive-windows-transparency.py 1
+   exec /usr/bin/python3.9 /home/missu/.config/sway/modules/inactive-windows-transparency.py
 
    exec  /home/missu/.config/rofi/launcher/launcher.sh
 

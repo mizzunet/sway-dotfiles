@@ -1,0 +1,11 @@
+spotify-adblock
+bravebin spotify anki kitty sway-border adwaita ibm cpod swappy grim tlp clipman dunst wlsunset mpv signal-beta rofi-lb waybar brightnessclt amixer  pipewire clipman eog gtg bleachbit timeshift lxappearannce qt5ct calibre htop linux-zen grub-customizeraria2 gucharmap otf-manjari udisks udiskie batsignal powertop tlpui pomatez thermald pamixer nnn
+
+
+waydroid
+
+
+python -m ensurepip --upgrade
+pip3 install i3ipc
+
+vim /etc/mkinitcpio numlock
