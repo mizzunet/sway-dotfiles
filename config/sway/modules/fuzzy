@@ -1,0 +1,1 @@
+fuzzel -w 50 -b 343534ff -t ffffffff -S ffffffff -s 15529fff  -f "IBM Plex Mono Light" -r 8 --line-height=25 -x 10 -y 15 -p 10 -m ffffffff -B 0 -P "Search " -i hicolor

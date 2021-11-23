@@ -7,7 +7,7 @@ set $up k
 set $right l
 
 set $term kitty
-set $menu wofi
+set $menu sirula
 
 set $ws1 "1"
 set $ws2 "2"
@@ -237,7 +237,7 @@ include /etc/sway/config.d/*
    # Clipboard manager
    exec wl-paste -t text --watch clipman store
    # Notification utility
-   exec  dunst
+    exec mako
    # wlsunset - nightlight
    exec wlsunset -l 11.04 -L 75.24
    # Play startup music
