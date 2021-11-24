@@ -6,15 +6,15 @@ progress-color=#0077c2
 
 
 [urgency=normal]
-background-color=#e8d734cc
+background-color=#e8d734
 text-color=#292822
 
 [urgency=critical]
-background-color=#f05545cc
+background-color=#f05545
 text-color=#7f0000
 
 [urgency=low]
-background-color=#92cafacc
+background-color=#92cafa
 text-color=#0c1b2b
 
 [summary=Volume]
