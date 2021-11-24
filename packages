@@ -1,11 +1,15 @@
+cd /opt
+$ sudo git clone https://aur.archlinux.org/yay-git.git
+sudo chown -R $USER:$USER /opt/yay-git/
+cd yay-git  makepkg -si
+
 spotify-adblock
-bravebin spotify anki kitty sway-border adwaita ibm cpod swappy grim tlp clipman dunst wlsunset mpv signal-beta rofi-lb waybar brightnessclt amixer  pipewire clipman eog gtg bleachbit timeshift lxappearannce qt5ct calibre htop linux-zen grub-customizeraria2 gucharmap otf-manjari udisks udiskie batsignal powertop tlpui pomatez thermald pamixer nnn emote ethtool smartmontools wofi man peek
+bravebin spotify anki kitty sway-border adwaita ibm cpod swappy grim tlp clipman wlsunset mpv signal-beta rofi-lb waybar brightnessclt amixer  pipewire clipman eog gtg bleachbit timeshift lxappearannce qt5ct calibre htop linux-zen grub-customizer aria2 gucharmap otf-manjari udisks2 udiskie batsignal powertop tlpui pomatez thermald pamixer nnn emote ethtool smartmontools wofi man peek pfetch gnome-themes-extra  slurp mako gcompris sirula pcmanfm elementary-icon-theme pipewire-pulse qt5-wayland adwaita-qt
 
-
+tlp.service fstrim.timer thermald.service
 waydroid
 
 
 python -m ensurepip --upgrade
 pip3 install i3ipc
 
-vim /etc/mkinitcpio numlock

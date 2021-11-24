@@ -10,5 +10,5 @@ pamixer -i 5 > /dev/null
 # Query amixer for the current volume and whether or not the speaker is muted
 volume="$(pamixer --get-volume)"
     # Show the volume notification
-    dunstify -a "changeVolume" -u low -i audio-volume-high -r "$msgId" \
+    notify-send -u low \
     -h int:value:"$volume" "Volume" -t 1000

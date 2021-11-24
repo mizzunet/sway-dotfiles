@@ -44,7 +44,8 @@
         "format-charging": "<span size='large' rise='-1600'></span> {capacity}% "
     },
     "network": {
-        "format-wifi": "<span size='large' rise='-1000'></span> {essid} ",
+	"interval": 5,
+        "format-wifi": "<span size='large' rise='-1000'></span> {essid} {bandwidthDownBits}",
         "format-disconnected": "",
         "on-click": "/home/missu/.config/sway/modules/wifi.sh toggle",
 	"tooltip-format-wifi": "{essid}:{signalStrength}\nSpeed:{bandwidthDownBits} \n{ipaddr}"

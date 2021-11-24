@@ -8,6 +8,7 @@ set $right l
 
 set $term kitty
 set $menu sirula
+set $files pcmanfm
 
 set $ws1 "1"
 set $ws2 "2"
@@ -55,6 +56,7 @@ font pango:IBM Plex Mono 10.5
 # GTK
 set $gnome-schema "gsettings set org.gnome.desktop.interface"
 exec_always {
+    gsettings set org.gtk.Settings.FileChooser window-size '(300,500)'
     $gnome-schema gtk-theme 'Adwaita-dark'
     $gnome-schema icon-theme 'elementary-icon-theme'
     $gnome-schema cursor-theme 'elementary'
@@ -79,6 +81,9 @@ input * xkb_numlock enable
 
     # Start your launcher
     bindsym $mod+d exec $menu
+
+    # Start Files
+    bindsym $mod+m exec $files
 
     # mouse button for dragging.
     floating_modifier $mod normal
@@ -232,7 +237,7 @@ include /etc/sway/config.d/*
  # Startup Services
    exec_always   ~/.config/sway/modules/inactive-windows-transparency.py 
    # Power
-   exec sudo ip link set enp1s0f1 down
+   #exec sudo ip link set enp1s0f1 down
    exec batsignal -b -w 20 -c 15 -d 10 -m 30 -d "systemctl suspend"
    # Clipboard manager
    exec wl-paste -t text --watch clipman store
@@ -247,7 +252,5 @@ include /etc/sway/config.d/*
    exec /usr/bin/signal-desktop-beta
    exec /home/missu/.local/ProtonMail-linux-x64/ProtonMail
    #exec /usr/local/bin/anki
-   exec /usr/bin/python3.9 /home/missu/.config/sway/modules/inactive-windows-transparency.py
-
-   exec wofi
+   exec /home/missu/.config/sway/modules/inactive-windows-transparency.py
 
