@@ -4,7 +4,7 @@ sudo chown -R $USER:$USER /opt/yay-git/
 cd yay-git  makepkg -si
 
 spotify-adblock
-bravebin spotify anki kitty sway-border adwaita ibm cpod swappy grim tlp clipman wlsunset mpv signal-beta rofi-lb waybar brightnessclt amixer  pipewire clipman eog gtg bleachbit timeshift lxappearannce qt5ct calibre htop linux-zen grub-customizer aria2 gucharmap otf-manjari udisks2 udiskie batsignal powertop tlpui pomatez thermald pamixer nnn emote ethtool smartmontools wofi man peek pfetch gnome-themes-extra  slurp mako gcompris sirula pcmanfm elementary-icon-theme pipewire-pulse qt5-wayland adwaita-qt
+bravebin spotify anki kitty sway-border adwaita ibm cpod swappy grim tlp clipman wlsunset mpv signal-beta rofi-lb waybar brightnessclt amixer  pipewire clipman eog gtg bleachbit timeshift lxappearannce qt5ct calibre htop linux-zen grub-customizer aria2 gucharmap otf-manjari udisks2 udiskie batsignal powertop tlpui pomatez thermald pamixer nnn emote ethtool smartmontools wofi man peek pfetch gnome-themes-extra  slurp mako gcompris sirula pcmanfm elementary-icon-theme pipewire-pulse qt5-wayland adwaita-qt wget
 
 tlp.service fstrim.timer thermald.service
 waydroid

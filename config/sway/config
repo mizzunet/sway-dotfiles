@@ -237,7 +237,7 @@ include /etc/sway/config.d/*
  # Startup Services
    exec_always   ~/.config/sway/modules/inactive-windows-transparency.py 
    # Power
-   #exec sudo ip link set enp1s0f1 down
+   exec sudo ip link set enp1s0f1 down
    exec batsignal -b -w 20 -c 15 -d 10 -m 30 -d "systemctl suspend"
    # Clipboard manager
    exec wl-paste -t text --watch clipman store
@@ -252,5 +252,5 @@ include /etc/sway/config.d/*
    exec /usr/bin/signal-desktop-beta
    exec /home/missu/.local/ProtonMail-linux-x64/ProtonMail
    #exec /usr/local/bin/anki
-   exec /home/missu/.config/sway/modules/inactive-windows-transparency.py
+   #exec /usr/bin/python /home/missu/.config/sway/modules/inactive-windows-transparency.py
 
