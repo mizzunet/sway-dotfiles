@@ -226,6 +226,7 @@ bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
  # waydroid
  exec waydroid session start
 bindsym control+mod1+a exec /home/missu/.config/sway/modules/waydroid 
+exec /usr/lib/kdeconnectd
  # waydroid: antennaPod controls
 bindsym control+mod1+j exec /home/missu/.config/sway/modules/antennapod play
 bindsym control+mod1+k exec /home/missu/.config/sway/modules/antennapod pause

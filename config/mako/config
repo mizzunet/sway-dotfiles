@@ -1,10 +1,11 @@
-border-size=1
+border-size=2
 text-alignment=center
 progress-color=#333332
 width=280
 padding=9
 format=%s\n%b
 layer=overlay
+border-radius=4
 
 [urgency=normal]
 background-color=#00feb3
