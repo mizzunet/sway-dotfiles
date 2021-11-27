@@ -1,0 +1,16 @@
+action="$@"
+
+case $action in
+	play)
+	 sudo lxc-attach -P /var/lib/waydroid/lxc/ -n waydroid --clear-env  sh /sdcard/antenna play
+	notify-send Waydroid "AntennaPod: Played" -t 800;
+	;;
+	pause)
+	sudo lxc-attach -P /var/lib/waydroid/lxc/ -n waydroid --clear-env  sh /sdcard/antenna pause
+        notify-send Waydroid "AntennaPod: Paused" -t 800;
+	;;
+	rewind)
+	sudo lxc-attach -P /var/lib/waydroid/lxc/ -n waydroid --clear-env  sh /sdcard/antenna rewind
+        notify-send Waydroid "AntennaPod: Rewinded" -t 800;
+	;;
+esac

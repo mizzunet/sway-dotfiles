@@ -1,30 +1,44 @@
-font=IBM Plex Mono 11
-border-size=0
+border-size=1
 text-alignment=center
-default-timeout=10000
-progress-color=#0077c2
-
+progress-color=#333332
+width=280
+padding=9
+format=%s\n%b
+layer=overlay
 
 [urgency=normal]
-background-color=#e8d734
-text-color=#292822
+background-color=#00feb3
+text-color=#236353
+border-color=#232525
+default-timeout=10000
 
 [urgency=critical]
-background-color=#f05545
-text-color=#7f0000
+background-color=#fe81ab
+text-color=#fb1444
+border-color=#fb1444
+default-timeout=0
+format=<b>%s</b>\n%b
 
 [urgency=low]
-background-color=#92cafa
-text-color=#0c1b2b
+background-color=#222322
+text-color=#b4b5b6
+border-color=#181919
+default-timeout=5000
 
 [summary=Volume]
-format=<b>%s</b>
+format=%s
 group-by=summary
 
 [summary=Brightness]
-format=<b>%s</b>
+format=%s
 group-by=summary
 
 [summary=WiFi]
-format=<b>%s</b>\n%b
+format=%s\n%b
 group-by=summary
+
+
+[summary=Waydroid]
+format=%s\n%b
+group-by=summary
+default-timeout=700

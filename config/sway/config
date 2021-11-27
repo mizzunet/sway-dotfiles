@@ -151,6 +151,7 @@ input * xkb_numlock enable
     bindsym $mod+v splitt
 
     # Switch the current container between different layout styles
+    exec autotiling
     bindsym $mod+s layout stacking
     bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
@@ -197,6 +198,7 @@ assign [title="ProtonMail"] $ws2
 assign [title="Signal"] $ws2
 for_window [class="Spotify"] move window to workspace $ws3
 assign [title="CPod"] $ws3
+assign [title="AntennaPod"] $ws3
 
 # Status Bar:
 bar {
@@ -209,16 +211,25 @@ include /etc/sway/config.d/*
  bindsym $mod+c exec /home/missu/.config/sway/modules/clipmenu
 
  # Use amixer to adjust volume
- bindsym XF86AudioRaiseVolume exec /home/missu/.config/sway/modules/vol_up.sh
- bindsym XF86AudioLowerVolume exec /home/missu/.config/sway/modules/vol_down.sh
- bindsym XF86AudioMute        exec /home/missu/.config/sway/modules/vol_notify.sh toggle
+ bindsym XF86AudioRaiseVolume exec /home/missu/.config/sway/modules/volume up
+ bindsym XF86AudioLowerVolume exec /home/missu/.config/sway/modules/volume down
+ #bindsym XF86AudioMute        exec /home/missu/.config/sway/modules/vol_notify.sh toggle
 
  # Sreen brightness controls
- bindsym XF86MonBrightnessUp   exec /home/missu/.config/sway/modules/br_notify.sh 5%+ 
- bindsym XF86MonBrightnessDown exec /home/missu/.config/sway/modules/br_notify.sh 2%- 
+ bindsym XF86MonBrightnessUp   exec /home/missu/.config/sway/modules/brightness 5%+ 
+ bindsym XF86MonBrightnessDown exec /home/missu/.config/sway/modules/brightness 2%- 
 
  # Screenshot
- bindsym Print exec grim -g "$(slurp)" - | swappy -f -
+ bindsym Print exec  grim -g "$(slurp)" - | wl-copy && notify-send "Screenshot Copied to Clipboard"
+bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
+
+ # waydroid
+ exec waydroid session start
+bindsym control+mod1+a exec /home/missu/.config/sway/modules/waydroid 
+ # waydroid: antennaPod controls
+bindsym control+mod1+j exec /home/missu/.config/sway/modules/antennapod play
+bindsym control+mod1+k exec /home/missu/.config/sway/modules/antennapod pause
+bindsym control+mod1+h exec /home/missu/.config/sway/modules/antennapod rewind
 
  # wifi toggle
  bindsym $mod+Shift+w exec /home/missu/.config/sway/modules/wifi.sh toggle
@@ -252,5 +263,4 @@ include /etc/sway/config.d/*
    exec /usr/bin/signal-desktop-beta
    exec /home/missu/.local/ProtonMail-linux-x64/ProtonMail
    #exec /usr/local/bin/anki
-   #exec /usr/bin/python /home/missu/.config/sway/modules/inactive-windows-transparency.py
 
