@@ -44,7 +44,7 @@ border_images.urgent $image
 # class                 border  backgr. text    indicator child_border
 client.unfocused        #333333 #222222 #888888 #292d2e   #000000
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.focused          #121212 #28f677 #ffffff #ffffff   #222222
+client.focused          #121212 #28f677 #ffffff #222322 #222222
 
 
 exec $menu
