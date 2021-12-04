@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+if pidof wlsunset; then
+   notify-send wlsunset Disabled -i /usr/share/icons/elementary/status/48/night-light-disabled-symbolic.svg -t 1000
+   killall -9 wlsunset
+else
+	notify-send wlsunset Enabled -i /usr/share/icons/elementary/status/48/night-light-symbolic.svg -t 1000
+   wlsunset #location here
+fi
+
