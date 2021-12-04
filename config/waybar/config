@@ -6,7 +6,6 @@
     "modules-center": ["sway/workspaces"],
     "modules-right": ["pulseaudio","backlight", "network", "battery", "tray"],
     "sway/workspaces": {
-	"on-click": "wlsunset",
         "disable-scroll": true,
         "all-outputs": false,
         "format": "<span size='large'>{icon}</span>",
@@ -25,13 +24,12 @@
     },
     "clock": {
         "format": "{:<span rise='-1000'> </span> %I:%M    <span rise='-700'></span><span rise='1200'> %A %B</span> %d}",
-        "on-scroll-up": "/home/missu/.config/sway/modules/vol_notify.sh 5%+",
-        "on-scroll-down": "/home/missu/.config/sway/modules/vol_notify.sh 5%-",
     },
     "battery": {
         "interval": 30,
      "on-scroll-up": " ~/.config/sway/modules/br_notify.sh 1%+",
      "on-scroll-down": " ~/.config/sway/modules/br_notify.sh 1%-",
+	"on-click": "/home/missu/.config/sway/modules/brightness 0%",
         "states": {
             // "good": 95,
             "warning": 30,

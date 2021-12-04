@@ -8,7 +8,8 @@ set $right l
 
 set $term kitty
 set $menu sirula
-set $files pcmanfm
+set $files thunar
+set $browser chromium
 
 set $ws1 "1"
 set $ws2 "2"
@@ -53,6 +54,9 @@ exec $menu
 output * bg /home/missu/Pictures/Wallpaper/wall25.jpg fill
 font pango:IBM Plex Mono 10.5
 
+ exec swayidle -w \
+          timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'
+
 # GTK
 set $gnome-schema "gsettings set org.gnome.desktop.interface"
 exec_always {
@@ -84,6 +88,9 @@ input * xkb_numlock enable
 
     # Start Files
     bindsym $mod+m exec $files
+
+    # Open Broweser
+    bindsym $mod+b exec $browser
 
     # mouse button for dragging.
     floating_modifier $mod normal
@@ -194,11 +201,11 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-assign [title="ProtonMail"] $ws2
+assign [title="Ferdi"] $ws2
 assign [title="Signal"] $ws2
 for_window [class="Spotify"] move window to workspace $ws3
 assign [title="CPod"] $ws3
-assign [title="AntennaPod"] $ws3
+#assign [title="AntennaPod"] $ws3
 
 # Status Bar:
 bar {
@@ -216,8 +223,15 @@ include /etc/sway/config.d/*
  #bindsym XF86AudioMute        exec /home/missu/.config/sway/modules/vol_notify.sh toggle
 
  # Sreen brightness controls
- bindsym XF86MonBrightnessUp   exec /home/missu/.config/sway/modules/brightness 5%+ 
- bindsym XF86MonBrightnessDown exec /home/missu/.config/sway/modules/brightness 2%- 
+ bindsym XF86MonBrightnessUp   exec /home/missu/.config/sway/modules/brightness up
+ bindsym XF86MonBrightnessDown exec /home/missu/.config/sway/modules/brightness down
+
+ # Audio controls
+ bindsym XF86AudioPlay exec playerctl play
+ bindsym XF86AudioPause exec playerctl pause
+#bindsym XF86AudioPlay exec playctl play-pause  # To toggle with a single key
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
  # Screenshot
  bindsym Print exec  grim -g "$(slurp)" - | wl-copy && notify-send "Screenshot Copied to Clipboard"
@@ -228,12 +242,15 @@ bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
 bindsym control+mod1+a exec /home/missu/.config/sway/modules/waydroid 
 exec /usr/lib/kdeconnectd
  # waydroid: antennaPod controls
-bindsym control+mod1+j exec /home/missu/.config/sway/modules/antennapod play
-bindsym control+mod1+k exec /home/missu/.config/sway/modules/antennapod pause
+bindsym control+mod1+j exec /home/missu/.config/sway/modules/antennapod toggle
 bindsym control+mod1+h exec /home/missu/.config/sway/modules/antennapod rewind
+bindsym control+mod1+l exec /home/missu/.config/sway/modules/antennapod forward
 
  # wifi toggle
  bindsym $mod+Shift+w exec /home/missu/.config/sway/modules/wifi.sh toggle
+
+ # wlsunset toggle
+ bindsym $mod+Shift+n exec wlsunset
 
  # ctrl+alt+delete to reboot
  bindsym control+mod1+Delete exec systemctl reboot
@@ -247,21 +264,22 @@ bindsym control+mod1+h exec /home/missu/.config/sway/modules/antennapod rewind
  bindsym control+mod1+Up exec swaymsg 'output * transform 0'
 
  # Startup Services
-   exec_always   ~/.config/sway/modules/inactive-windows-transparency.py 
+   exec   ~/.config/sway/modules/inactive-windows-transparency.py 
    # Power
-   exec sudo ip link set enp1s0f1 down
-   exec batsignal -b -w 20 -c 15 -d 10 -m 30 -d "systemctl suspend"
+   #exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl hibernate" -I /usr/share/icons/elementary/status/48/battery-caution.svg
+
    # Clipboard manager
    exec wl-paste -t text --watch clipman store
    # Notification utility
     exec mako
    # wlsunset - nightlight
-   exec wlsunset -l 11.04 -L 75.24
+   exec wlsunset
    # Play startup music
    exec paplay ~/.startup.wav
 
 # Autostart programs 
-   exec /usr/bin/signal-desktop-beta
-   exec /home/missu/.local/ProtonMail-linux-x64/ProtonMail
+   exec sleep 20&&/usr/bin/signal-desktop-beta
+#   exec sleep 20&&/home/missu/.local/ProtonMail-linux-x64/ProtonMail
    #exec /usr/local/bin/anki
+   exec /home/missu/.local/AppImages/Ferdi-5.6.4-nightly.25_2e2b14c2e85ef376a42421263e4af5bb.AppImage
 

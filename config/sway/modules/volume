@@ -6,16 +6,15 @@ volume="$(pamixer --get-volume)"
 case $action in
 	down)
 	pamixer -d 5 > /dev/null;
-	notify-send -u low \
-    	-h int:value:"$volume" "Volume" -t 1000;
 	;;
 
 	up)
 	pamixer -i 5 > /dev/null;
-	notify-send -u low \
-    	-h int:value:"$volume" "Volume" -t 1000;
 	;;
 
 	mute)
 	;;
 esac
+
+   notify-send -u low \
+  -h int:value:"$volume" "Volume" -t 1000 -i /usr/share/icons/elementary/status/48/notification-audio-volume-high.svg

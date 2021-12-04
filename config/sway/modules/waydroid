@@ -1,5 +1,5 @@
 sudo systemctl restart waydroid-container.service
 
 waydroid session start & 
-notify-send Waydroid "Session restarted" -u low -t 1000
+notify-send Waydroid "Session restarted" -u normal -t 1000 -i /usr/share/icons/elementary/actions/32/system-reboot.svg
 

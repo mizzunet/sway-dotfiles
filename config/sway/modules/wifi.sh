@@ -5,5 +5,5 @@
  sudo wifi "$@" > /dev/null
  state=$(wifi | awk '{print $3}')
      notify-send -u low  \
-     "WiFi" "$state" -t 1000
+     "WiFi" "$state" -t 1000 -i /usr/share/icons/elementary/status/48/notification-network-wireless.svg
 
