@@ -9,6 +9,8 @@ sudo rm /etc/systemd/journald.conf
 sudo ln -s /home/missu/.dotfiles/etc/systemd/system/getty@tty1.service.d /etc/systemd/system/
 sudo ln -s /home/missu/.dotfiles/etc/modprobe.d /etc
 sudo ln -s /home/missu/.dotfiles/etc/pacman.conf /etc/
+sudo ln -s /home/missu/.dotfiles/etc/systemd/system/hdparm.service /etc/systemd/system/
+sudo ln -s /home/missu/.dotfiles/etc/systemd/system/apm.service /etc/systemd/system/
 
 ln -s ~/.dotfiles/local/fonts ~/.local/
 ln -s ~/.dotfiles/config/wofi/ ~/.config/
@@ -34,6 +36,8 @@ sudo systemctl enable paccache.timersudo systemctl enable fstrim.timer
 sudo systemctl enable thermald.service 
 sudo systemctl enable auto-cpufreq
 sudo systemctl enable tlp
+sudo systemctl enable hdparm
+sudo systemctl enable apm
 
 
 cd /opt
