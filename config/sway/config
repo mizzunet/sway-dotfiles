@@ -37,10 +37,10 @@ default_border pixel 2
 default_floating_border pixel 2
 smart_borders on
 #smart_gaps on
-border_images.focused $image
-border_images.focused_inactive $image
-border_images.unfocused $image
-border_images.urgent $image
+#border_images.focused $image
+#border_images.focused_inactive $image
+#border_images.unfocused $image
+#border_images.urgent $image
 
 # class                 border  backgr. text    indicator child_border
 client.unfocused        #333333 #222222 #888888 #292d2e   #000000

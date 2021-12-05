@@ -1,4 +1,6 @@
  sudo waydroid init -f -i /usr/share/waydroid-extra/images
+ sudo systemctl enable waydroid-container.service
+psi=1
 
 qemu.hw.mainkeys=1
 debug.sf.nobootanimation=1
@@ -17,35 +19,36 @@ settings put global animator_duration_scale 0
 
 wm density 140  
 
-com.android.onetimeinitializer
-com.android.phone
+pm disable com.android.onetimeinitializer
+pm disable com.android.phone
 
-com.android.keychain
-com.android.localtransport
-com.android.smspush
-com.stevesoltys.seedvault
-com.android.traceur
-com.android.printspooler
-org.lineageos.updater
-com.android.email
-org.lineageos.lineageparts
-com.android.deskclock
-com.android.inputmethod.latin
-com.android.launcher3
-org.lineageos.eleven
-com.android.contacts
-com.android.gallery3d
-org.lineageos.recorder
-org.lineageos.etar
-com.android.calculator2
-cu.axel.smartdock
-com.example.android.notepad
-me.jfenn.alarmio
-com.example.android.rssreader
-com.googlecode.eyesfree.setorientation
-com.etesync.syncadapter
-com.google.android.gms
-com.simplemobiletools.gallery.pro
-com.android.camera2
-com.android.development
+pm disable com.android.keychain
+pm disable com.android.localtransport
+pm disable com.android.smspush
+pm disable com.stevesoltys.seedvault
+pm disable com.android.traceur
+pm disable com.android.printspooler
+pm disable org.lineageos.updater
+pm disable com.android.email
+pm disable org.lineageos.lineageparts
+pm disable com.android.deskclock
+pm disable com.android.inputmethod.latin
+pm disable com.android.launcher3
+pm disable org.lineageos.eleven
+pm disable com.android.contacts
+pm disable com.android.gallery3d
+pm disable org.lineageos.recorder
+pm disable org.lineageos.etar
+pm disable com.android.calculator2
+pm disable cu.axel.smartdock
+pm disable com.example.android.notepad
+pm disable me.jfenn.alarmio
+pm disable com.example.android.rssreader
+pm disable com.googlecode.eyesfree.setorientation
+pm disable com.etesync.syncadapter
+pm disable com.google.android.gms
+pm disable com.simplemobiletools.gallery.pro
+pm disable com.android.camera2
+pm disable com.android.development
+rm .local/share/applications/waydroid.*
 
