@@ -266,6 +266,7 @@ bindsym control+mod1+l exec /home/missu/.config/sway/modules/antennapod forward
  # Startup Services
    exec   ~/.config/sway/modules/inactive-windows-transparency.py 
    # Power
+   sudo powertop --auto-tune
    #exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl hibernate" -I /usr/share/icons/elementary/status/48/battery-caution.svg
 
    # Clipboard manager
