@@ -1,10 +1,11 @@
 [Unit]
 Description=Local system resume actions
-After=suspend.target hybrid-sleep.target hibernate.target
+After=multi-user.target suspend.target hybrid-sleep.target hibernate.target
 
 [Service]
 Type=simple
 ExecStart=/usr/bin/hdparm -B 16 /dev/sda
 
 [Install]
+WantedBy=multi-user.target
 WantedBy=sleep.target

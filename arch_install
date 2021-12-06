@@ -1,0 +1,105 @@
+Step 5: Set time
+timedatectl set-ntp true
+
+Step 6: Partitioning your drive
+fdisk /dev/sdb
+# create partitions
+
+g
+n
+1
++512
+
+n
+2
+<enter>
+
+# change file system
+t
+1
+1
+w
+
+#verify changes
+fdisk -l
+
+# creating file systems
+mkfs.fat -F32 /dev/sdb1
+mkfs.btrfs /dev/sdb2
+
+#mount partitions
+mount /dev/sdb2 /mnt
+
+# create subvolumes
+btrfs su cr /mnt/@
+btrfs su cr /mnt/@home
+btrfs su cr /mnt/@var
+btrfs su cr /mnt/@opt
+btrfs su cr /mnt/@tmp
+btrfs su cr /mnt/@swap
+btrfs su cr /mnt/@.snapshots
+umount /mnt
+
+#mount subvolumes
+mount -o noatime,commit=120,compress=zstd,space_cache,subvol=@ /dev/sda3 /mnt
+# You need to manually create folder to mount the other subvolumes at
+mkdir /mnt/{boot,home,var,opt,tmp,.snapshots}
+
+mount -o noatime,commit=120,compress=zstd,space_cache,subvol=@home /dev/sda3 /mnt/home
+
+mount -o noatime,commit=120,compress=zstd,space_cache,subvol=@opt /dev/sda3 /mnt/opt
+
+mount -o noatime,commit=120,compress=zstd,space_cache,subvol=@tmp /dev/sda3 /mnt/tmp
+
+mount -o noatime,commit=120,compress=zstd,space_cache,subvol=@.snapshots /dev/sda3 /mnt/.snapshots
+
+mount -o subvol=@var /dev/sda3 /mnt/var
+# Mounting the boot partition at /boot folder
+mount /dev/sda1 /mnt/boot
+
+# Install base system
+pacstrap /mnt base linux linux-firmware vim intel-ucode btrfs-progs
+
+#generate fstab
+genfstab -U /mnt >> /mnt/etc/fstab
+
+
+#Chroot
+arch-chroot /mnt
+
+#Set timezone
+ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+hwclock --systohc
+
+#locale
+vim /etc/locale.gen
+echo LANG=en_GB.UTF-8 >> /etc/locale.conf
+
+#hostname
+echo archie >> /etc/hostname
+
+#set passwd
+passwd
+chsh
+
+#Installing remaining essential packages
+pacman -S grub grub-btrfs efibootmgr base-devel linux-headers networkmanager os-prober git sway chromium fish
+
+#Add btrfs module
+vim /etc/mkinitcpio.conf
+MODULE=(btrfs)
+mkinitcpio -p linux
+
+#Installing GRUB
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+grub-mkconfig -o /boot/grub/grub.cfg
+
+#Creating a User
+useradd -mG wheel missu
+passwd missu
+visudo
+%wheel ALL=(ALL) ALL
+chsh missu
+
+systemctl enable NetworkManager
+

@@ -37,10 +37,10 @@ default_border pixel 2
 default_floating_border pixel 2
 smart_borders on
 #smart_gaps on
-#border_images.focused $image
-#border_images.focused_inactive $image
-#border_images.unfocused $image
-#border_images.urgent $image
+border_images.focused $image
+border_images.focused_inactive $image
+border_images.unfocused $image
+border_images.urgent $image
 
 # class                 border  backgr. text    indicator child_border
 client.unfocused        #333333 #222222 #888888 #292d2e   #000000
@@ -266,7 +266,7 @@ bindsym control+mod1+l exec /home/missu/.config/sway/modules/antennapod forward
  # Startup Services
    exec   ~/.config/sway/modules/inactive-windows-transparency.py 
    # Power
-   sudo powertop --auto-tune
+   exec sudo powertop --auto-tune
    #exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl hibernate" -I /usr/share/icons/elementary/status/48/battery-caution.svg
 
    # Clipboard manager
@@ -277,10 +277,12 @@ bindsym control+mod1+l exec /home/missu/.config/sway/modules/antennapod forward
    exec wlsunset
    # Play startup music
    exec paplay ~/.startup.wav
+   exec udiskie -N
 
 # Autostart programs 
-   exec sleep 20&&/usr/bin/signal-desktop-beta
+   exec sleep 20&& /usr/bin/signal-desktop-beta
 #   exec sleep 20&&/home/missu/.local/ProtonMail-linux-x64/ProtonMail
    #exec /usr/local/bin/anki
-   exec /home/missu/.local/AppImages/Ferdi-5.6.4-nightly.25_2e2b14c2e85ef376a42421263e4af5bb.AppImage
-
+   exec sleep 20&& /home/missu/.local/AppImages/Ferdi-5.6.4-nightly.25_2e2b14c2e85ef376a42421263e4af5bb.AppImage
+   # Enables inhibit_idle when playing audio
+exec sway-audio-idle-inhibit

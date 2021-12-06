@@ -1,5 +1,6 @@
 [Unit]
 Description=hdparm sleep
+After=multi-user.target
 
 [Service]
 Type=oneshot
@@ -9,4 +10,3 @@ ExecStart=/usr/bin/hdparm -q -S 120 -y /dev/sda
 WantedBy=multi-user.target
 WantedBy=suspend.target
 WantedBy=hibernate.target
-WantedBy=hybrid-sleep.target
