@@ -1,9 +1,0 @@
-[Unit]
-Description=Disable USB Wakeup
-
-[Service]
-Type=oneshot
-ExecStart=echo EHC1 > /proc/acpi/wakeup
-
-[Install]
-WantedBy=multi-user.target
