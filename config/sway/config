@@ -22,50 +22,31 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-# Set colors
-set $bg #f7b107
-set $fg #eff1f5
-set $br #121212
-set $ia #232425
-
 set $image ~/.config/sway/border-images/shadows.png
+
 ### Window configs
 gaps inner 5
 gaps outer 8
 
-default_border pixel 2
-default_floating_border pixel 2
+default_border pixel 1
+default_floating_border pixel 1
 smart_borders on
-#
+
 #smart_gaps on
+
 border_images.focused $image
 border_images.focused_inactive $image
 border_images.unfocused $image
 border_images.urgent $image
 
+### Colors
 # class                 border  backgr. text    indicator child_border
 client.unfocused        #333333 #222222 #888888 #292d2e   #000000
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.focused          #121212 #28f677 #ffffff #222322 #222222
+client.focused          #121212 #27578f #ffffff #222322 #222222
 
-
-exec $menu
 ### Output configuration
-#
 output * bg /home/missu/Pictures/Wallpaper/wall25.jpg fill
-
- exec swayidle -w \
-          timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'
-
-# GTK
-set $gnome-schema "gsettings set org.gnome.desktop.interface"
-exec_always {
-    gsettings set org.gtk.Settings.FileChooser window-size '(300,500)'
-    $gnome-schema gtk-theme 'Adwaita-dark'
-    $gnome-schema icon-theme 'elementary-icon-theme'
-    $gnome-schema cursor-theme 'elementary'
-    $gnome-schema font-name 'IBM Plex Mono 11' 
-}
 
 ### Input configuration
    input  type:touchpad {
@@ -84,7 +65,7 @@ input * xkb_numlock enable
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+s exec $menu
 
     # Start Files
     bindsym $mod+m exec $files
@@ -108,7 +89,7 @@ input * xkb_numlock enable
     bindsym $mod+$down focus down
     bindsym $mod+$up focus up
     bindsym $mod+$right focus right
-    # Or use $mod+[up|down|left|right]
+
     bindsym $mod+Left focus left
     bindsym $mod+Down focus down
     bindsym $mod+Up focus up
@@ -119,6 +100,7 @@ input * xkb_numlock enable
     bindsym $mod+Shift+$down move down
     bindsym $mod+Shift+$up move up
     bindsym $mod+Shift+$right move right
+    
     # Ditto, with arrow keys
     bindsym $mod+Shift+Left move left
     bindsym $mod+Shift+Down move down
@@ -152,14 +134,7 @@ input * xkb_numlock enable
 
 # Layout stuff:
 
-    # Split
-    #bindsym $mod+b splith
-    #bindsym $mod+v splitv
-    bindsym $mod+v splitt
-
     # Switch the current container between different layout styles
-    exec autotiling
-    bindsym $mod+s layout stacking
     bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
 
@@ -176,7 +151,6 @@ input * xkb_numlock enable
     bindsym $mod+a focus parent
 
 # Scratchpad:
-
 
     # Move the currently focused window to the scratchpad
     bindsym $mod+Shift+minus move scratchpad
@@ -204,8 +178,6 @@ bindsym $mod+r mode "resize"
 assign [title="Ferdi"] $ws2
 assign [title="Signal"] $ws2
 for_window [class="Spotify"] move window to workspace $ws3
-assign [title="CPod"] $ws3
-#assign [title="AntennaPod"] $ws3
 
 # Status Bar:
 bar {
@@ -226,9 +198,7 @@ bar {
  bindsym XF86MonBrightnessDown exec /home/missu/.config/sway/modules/brightness down
 
  # Audio controls
- bindsym XF86AudioPlay exec playerctl play
- bindsym XF86AudioPause exec playerctl pause
-#bindsym XF86AudioPlay exec playctl play-pause  # To toggle with a single key
+bindsym XF86AudioPlay exec playctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
@@ -237,13 +207,12 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
 
  # waydroid
- exec waydroid session start
-bindsym control+mod1+a exec /home/missu/.config/sway/modules/waydroid 
-exec /usr/lib/kdeconnectd
+ bindsym control+mod1+a exec /home/missu/.config/sway/modules/waydroid 
+ 
  # waydroid: antennaPod controls
-bindsym control+mod1+j exec /home/missu/.config/sway/modules/antennapod toggle
-bindsym control+mod1+h exec /home/missu/.config/sway/modules/antennapod rewind
-bindsym control+mod1+l exec /home/missu/.config/sway/modules/antennapod forward
+ bindsym control+mod1+j exec /home/missu/.config/sway/modules/antennapod toggle
+ bindsym control+mod1+h exec /home/missu/.config/sway/modules/antennapod rewind
+ bindsym control+mod1+l exec /home/missu/.config/sway/modules/antennapod forward
 
  # wifi toggle
  bindsym $mod+Shift+w exec /home/missu/.config/sway/modules/wifi.sh toggle
@@ -255,33 +224,43 @@ bindsym control+mod1+l exec /home/missu/.config/sway/modules/antennapod forward
  bindsym control+mod1+Delete exec systemctl reboot
 
  # emoji typing
- bindsym control+mod1+e exec emote
+ #bindsym control+mod1+e exec emote
 
  # screen rotation
  bindsym control+mod1+Left exec swaymsg 'output * transform 270' 
  bindsym control+mod1+Right exec swaymsg 'output * transform 90'
  bindsym control+mod1+Up exec swaymsg 'output * transform 0'
 
- # Startup Services
-   exec   ~/.config/sway/modules/inactive-windows-transparency.py 
-   # Power
-   exec sudo powertop --auto-tune
-   exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl hibernate" -I /usr/share/icons/elementary/status/48/battery-caution.svg
+  # Power
+  exec sudo powertop --auto-tune
+  exec sudo /usr/bin/hdparm -q -S 120 -y /dev/sda
+  exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl sleep" -I /usr/share/icons/elementary/status/48/battery-caution.svg
 
-   # Clipboard manager
-   exec wl-paste -t text --watch clipman store
-   # Notification utility
-    exec mako
-   # wlsunset - nightlight
-   exec wlsunset
-   # Play startup music
-   exec paplay ~/.startup.wav
-   exec udiskie -N
+  # Autostarts
+  # GTK
+  set $gnome-schema "gsettings set org.gnome.desktop.interface"
+  exec {
+    gsettings set org.gtk.Settings.FileChooser window-size '(300,500)'
+    $gnome-schema gtk-theme 'Adwaita-dark'
+    $gnome-schema icon-theme 'elementary-icon-theme'
+    $gnome-schema cursor-theme 'elementary'
+    $gnome-schema font-name 'Roboto Mono Light'
+    }
+   exec swayidle -w \
+     timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'
 
-# Autostart programs 
-   exec sleep 20&& /usr/bin/signal-desktop-beta
-#   exec sleep 20&&/home/missu/.local/ProtonMail-linux-x64/ProtonMail
-   #exec /usr/local/bin/anki
-   exec sleep 20&& /home/missu/.local/AppImages/Ferdi-5.6.4-nightly.25_2e2b14c2e85ef376a42421263e4af5bb.AppImage
-   # Enables inhibit_idle when playing audio
-exec sway-audio-idle-inhibit
+
+  exec   ~/.config/sway/modules/inactive-windows-transparency.py # transparent unfocused
+  exec wl-paste -t text --watch clipman store # Clipboard manager
+  exec mako # Notification utility
+  exec wlsunset # nightlight
+  exec paplay ~/.startup.wav # Play music
+  exec udiskie -N # Automount USB
+  exec sway-audio-idle-inhibit # Don't turn display when video playing
+  exec waydroid session start # Start Waydroid session
+  exec $menu # Show menu
+  exec autotiling
+ 
+  exec sleep 20&& /usr/bin/signal-desktop-beta
+  exec sleep 20&& /home/missu/.local/AppImages/Ferdi-5.6.4-nightly.25_2e2b14c2e85ef376a42421263e4af5bb.AppImage
+
