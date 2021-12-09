@@ -242,13 +242,11 @@ bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
   exec {
     gsettings set org.gtk.Settings.FileChooser window-size '(300,500)'
     $gnome-schema gtk-theme 'Adwaita-dark'
-    $gnome-schema icon-theme 'elementary-icon-theme'
-    $gnome-schema cursor-theme 'elementary'
-    $gnome-schema font-name 'Roboto Mono Light'
     }
-   exec swayidle -w \
-     timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'
 
+ exec swayidle -w \
+   timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+   timeout 120 'systemctl suspend'
 
   exec   ~/.config/sway/modules/inactive-windows-transparency.py # transparent unfocused
   exec wl-paste -t text --watch clipman store # Clipboard manager
