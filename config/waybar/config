@@ -1,10 +1,10 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar at the bottom of your screen
-    "height": 38, // Waybar height
+    "height": 25, // Waybar height
     "modules-left": ["clock","sway/mode"],
     "modules-center": ["sway/workspaces"],
-    "modules-right": ["pulseaudio","backlight", "network", "battery", "tray"],
+    "modules-right": ["network", "battery", "tray"],
     "sway/workspaces": {
         "disable-scroll": true,
         "all-outputs": false,

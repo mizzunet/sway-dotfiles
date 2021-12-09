@@ -1,2 +1,2 @@
 #!/bin/bash
-clipman pick -t wofi
+clipman pick -t wofi --tool-args="--insensitive"

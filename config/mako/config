@@ -9,6 +9,8 @@ border-radius=4
 font=Roboto Mono 10
 default-timeout=10000
 icon-path=/usr/share/icons/Adwaita:/usr/share/icons/elementary
+anchor=bottom-right
+margin=0,40,30
 
 [urgency=normal]
 background-color=#00feb3

@@ -36,6 +36,7 @@ gaps outer 8
 default_border pixel 2
 default_floating_border pixel 2
 smart_borders on
+#
 #smart_gaps on
 border_images.focused $image
 border_images.focused_inactive $image
@@ -52,7 +53,6 @@ exec $menu
 ### Output configuration
 #
 output * bg /home/missu/Pictures/Wallpaper/wall25.jpg fill
-font pango:IBM Plex Mono 10.5
 
  exec swayidle -w \
           timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'
@@ -212,7 +212,6 @@ bar {
     swaybar_command waybar
 }
 
-include /etc/sway/config.d/*
 
  # clipmenu
  bindsym $mod+c exec /home/missu/.config/sway/modules/clipmenu
@@ -267,7 +266,7 @@ bindsym control+mod1+l exec /home/missu/.config/sway/modules/antennapod forward
    exec   ~/.config/sway/modules/inactive-windows-transparency.py 
    # Power
    exec sudo powertop --auto-tune
-   #exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl hibernate" -I /usr/share/icons/elementary/status/48/battery-caution.svg
+   exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl hibernate" -I /usr/share/icons/elementary/status/48/battery-caution.svg
 
    # Clipboard manager
    exec wl-paste -t text --watch clipman store

@@ -2,7 +2,7 @@
     border: none;
     border-radius: 0;
     font-family: "Roboto Mono",Manjari;
-    font-size: 14px;
+    font-size: 15px;
     min-height: 0;
 }
 
@@ -14,35 +14,58 @@ window#waybar {
 #workspaces button {
     color: #bebebe;
     background: transparent;
-    padding: 0 5px 0 5px;
-    margin: 0 1px 0 20px;
+    padding: 0px 5px 0 5px;
+    margin: 5px 10px 0 10px;
 }
 #workspaces button.focused {
     color: white;
+    margin: 5px 10px 0 10px;
  }
 #workspaces button.urgent{
-     color: #ffffff;
-     background: #a52a2a;
-     padding: 0 10px 0 10px;
+    margin: 5px 10px 0 10px;
+    padding: 1px 8px 1px 8px;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 7px;
      }
 #mode {
     background: #64727D;
 }
 
 #clock, #battery, #backlight, #network, #pulseaudio, #mode {
-    padding: 0 8px 0 8px;
-    margin: 0 5px 0 8px;
 }
 
-@keyframes blink {
+#battery{
+    margin:7px 4px 0 4px;
+    border-radius: 5px;
+    padding: 3px 8px 3px 8px;
+    }
+
+#network {
+    margin:7px 4px 0 4px;
+    border-radius: 6px;
+    padding: 3px 8px 3px 8px;
+}
+@keyframes critical {
     to {
-        color:red;
+    background: rgba(187,56,0, 1);
+    border-radius: 7px;
+    }
+}
+@keyframes urgent {
+    to {
+    background: rgba(212,140,0, 1);
+    color: black;
+    border-radius: 7px;
     }
 }
 
 #battery.critical:not(.charging) {
+    padding: 0px 6px 0px 6px;
     color: white;
-    animation-name: blink;
+    animation-name: critical;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -50,11 +73,20 @@ window#waybar {
 }
 
 #clock {
-    margin:7px 0 0 9px;
+    margin:7px 0 0 13px;
     font-family: Manjari;
-    font-size: 16px;
+    font-size: 16.5px;
+    border-radius: 6px;
+    padding: 4px 6px 0px 0px;
+}
+
+#clock:hover {
+	background: rgba(40,40,40, .95);
 }
  
 #tray {
-    margin: 0 15px 0 2px;
+    margin: 7px 15px 0 4px;
+    background: rgba(40,40,40, .65);
+    border-radius: 6px;
+    padding: 1px 5px 1px 5px;
 }
