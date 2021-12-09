@@ -1,5 +1,5 @@
 markup_highlight = 'foreground="#dc69ff" underline="double"'
-icon_size = 30  # icon size in pixels
+icon_size = 28  # icon size in pixels
 extra_field = []
 recent_first = true 
 command_prefix = ":"

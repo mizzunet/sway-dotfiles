@@ -8,7 +8,7 @@ To remove the global theme completely, use
 */
 
 * {
-    font-family: IBM Plex Mono;
+    font-family: Roboto Slab;
     font-size: 16px;
 }
 
@@ -44,19 +44,18 @@ To remove the global theme completely, use
     background-color: alpha(white, 0.05);
 }
 
-
 .app-row:hover.selected {
     background-color: alpha(white, 0.1);
 }
 
 .app-label {
     margin-left: 10px;
+    color: alpha(white, 0.8);
 }
 
 #app-list {
    padding: 0 5px;
 }
-
 
 #root-box {
     min-width: 300px;
@@ -74,6 +73,7 @@ scrollbar.vertical slider {
     margin: 10px 5px 10px 5px;
     font-size: 18px;
     padding: 2px 8px;
+    color: alpha(white, 0.8);
 }
 
 selection {
