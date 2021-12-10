@@ -9,7 +9,7 @@ set $right l
 set $term kitty
 set $menu sirula
 set $files thunar
-set $browser chromium
+set $browser chromium --enable-features=UseOzonePlatform --ozone-platform=wayland
 
 set $ws1 "1"
 set $ws2 "2"
@@ -34,10 +34,10 @@ smart_borders on
 
 #smart_gaps on
 
-border_images.focused $image
-border_images.focused_inactive $image
-border_images.unfocused $image
-border_images.urgent $image
+#border_images.focused $image
+#border_images.focused_inactive $image
+#border_images.unfocused $image
+#border_images.urgent $image
 
 ### Colors
 # class                 border  backgr. text    indicator child_border
@@ -238,10 +238,9 @@ bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
 
   # Autostarts
   # GTK
-  set $gnome-schema "gsettings set org.gnome.desktop.interface"
   exec {
     gsettings set org.gtk.Settings.FileChooser window-size '(300,500)'
-    $gnome-schema gtk-theme 'Adwaita-dark'
+    gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
     }
 
  exec swayidle -w \
@@ -262,3 +261,6 @@ bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
   exec sleep 20&& /usr/bin/signal-desktop-beta
   exec sleep 20&& /home/missu/.local/AppImages/Ferdi-5.6.4-nightly.25_2e2b14c2e85ef376a42421263e4af5bb.AppImage
 
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK

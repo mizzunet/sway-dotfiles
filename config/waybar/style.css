@@ -31,10 +31,11 @@ window#waybar {
     border-radius: 7px;
      }
 #mode {
-    background: #64727D;
-}
-
-#clock, #battery, #backlight, #network, #pulseaudio, #mode {
+    font-family: "Roboto Slab";
+    margin: 0px 15px 0px 15px;
+    padding: 0px 12px 0px 12px;
+    color: black;
+    background: white;
 }
 
 #battery{
