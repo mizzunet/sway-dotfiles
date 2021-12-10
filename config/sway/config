@@ -241,6 +241,9 @@ bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
   exec {
     gsettings set org.gtk.Settings.FileChooser window-size '(300,500)'
     gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+    gsettings set org.gnome.desktop.interface icon-theme 'elementary'
+    gsettings set org.gnome.desktop.interface cursor-theme 'elementary'
+    gsettings set org.gnome.desktop.interface font-name 'Roboto Slab 10'
     }
 
  exec swayidle -w \
