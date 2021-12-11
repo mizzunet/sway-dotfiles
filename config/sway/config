@@ -41,9 +41,9 @@ smart_borders on
 
 ### Colors
 # class                 border  backgr. text    indicator child_border
-client.unfocused        #333333 #222222 #888888 #292d2e   #000000
+client.unfocused        #333333 #222222 #888888 #222322   #000000
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.focused          #121212 #27578f #ffffff #222322 #222222
+client.focused          #121212 #27578f #ffffff #292d2e   #222222
 
 ### Output configuration
 output * bg /home/missu/Pictures/Wallpaper/wall25.jpg fill
@@ -233,13 +233,13 @@ bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
 
   # Power
   exec sudo powertop --auto-tune
-  exec sudo /usr/bin/hdparm -q -S 120 -y /dev/sda
+  exec sudo systemctl start hdparm
   exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl sleep" -I /usr/share/icons/elementary/status/48/battery-caution.svg
 
   # Autostarts
   # GTK
   exec {
-    gsettings set org.gtk.Settings.FileChooser window-size '(300,500)'
+    gsettings set org.gtk.Settings.FileChooser window-size '(1000, 500)'
     gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
     gsettings set org.gnome.desktop.interface icon-theme 'elementary'
     gsettings set org.gnome.desktop.interface cursor-theme 'elementary'
@@ -248,7 +248,7 @@ bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
 
  exec swayidle -w \
    timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-   timeout 120 'systemctl suspend'
+   timeout 120 'systemctl suspend' resume 'swaymsg "output * dpms on"'
 
   exec   ~/.config/sway/modules/inactive-windows-transparency.py # transparent unfocused
   exec wl-paste -t text --watch clipman store # Clipboard manager
