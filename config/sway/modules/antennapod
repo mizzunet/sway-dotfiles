@@ -3,11 +3,11 @@ action="$@"
 case $action in
 	toggle)
 	 sudo lxc-attach -P /var/lib/waydroid/lxc/ -n waydroid --clear-env  sh /sdcard/antenna toggle
-	notify-send Waydroid "AntennaPod: Toggled" -t 800 -i /usr/share/icons/elementary/actions/32/media-playback-start.svg;
+	#notify-send Waydroid "AntennaPod: Toggled" -t 800 -i /usr/share/icons/elementary/actions/32/media-playback-start.svg;
 	;;
 	pause)
 	sudo lxc-attach -P /var/lib/waydroid/lxc/ -n waydroid --clear-env  sh /sdcard/antenna pause
-        notify-send Waydroid "AntennaPod: Paused" -t 800 -i /usr/share/icons/elementary/actions/32/media-playback-pause.svg;
+        #notify-send Waydroid "AntennaPod: Paused" -t 800 -i /usr/share/icons/elementary/actions/32/media-playback-pause.svg;
 	;;
 	rewind)
 	sudo lxc-attach -P /var/lib/waydroid/lxc/ -n waydroid --clear-env  sh /sdcard/antenna rewind

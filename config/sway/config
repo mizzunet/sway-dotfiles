@@ -224,19 +224,19 @@ bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
  bindsym control+mod1+Delete exec systemctl reboot
 
  # emoji typing
- #bindsym control+mod1+e exec emote
+ bindsym control+mod1+e exec rofimoji
 
  # screen rotation
  bindsym control+mod1+Left exec swaymsg 'output * transform 270' 
  bindsym control+mod1+Right exec swaymsg 'output * transform 90'
  bindsym control+mod1+Up exec swaymsg 'output * transform 0'
 
-  # Power
-  exec sudo powertop --auto-tune
-  exec sudo systemctl start hdparm
-  exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl sleep" -I /usr/share/icons/elementary/status/48/battery-caution.svg
 
-  # Autostarts
+### Executions
+  exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
   # GTK
   exec {
     gsettings set org.gtk.Settings.FileChooser window-size '(1000, 500)'
@@ -250,6 +250,12 @@ bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
    timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
    timeout 120 'systemctl suspend' resume 'swaymsg "output * dpms on"'
 
+     
+  # Power
+  exec sudo powertop --auto-tune
+  exec sudo systemctl start hdparm
+  exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl sleep" -I /usr/share/icons/elementary/status/48/battery-caution.svg
+
   exec   ~/.config/sway/modules/inactive-windows-transparency.py # transparent unfocused
   exec wl-paste -t text --watch clipman store # Clipboard manager
   exec mako # Notification utility
@@ -258,12 +264,10 @@ bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
   exec udiskie -N # Automount USB
   exec sway-audio-idle-inhibit # Don't turn display when video playing
   exec waydroid session start # Start Waydroid session
+  exec mconnect -d # notifications from waydroid
   exec $menu # Show menu
   exec autotiling
  
   exec sleep 20&& /usr/bin/signal-desktop-beta
   exec sleep 20&& /home/missu/.local/AppImages/Ferdi-5.6.4-nightly.25_2e2b14c2e85ef376a42421263e4af5bb.AppImage
 
-exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
-exec hash dbus-update-activation-environment 2>/dev/null && \
-     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK

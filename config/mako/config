@@ -51,6 +51,7 @@ default-timeout=700
 [summary=AntennaPod]
 format=%s\n%b
 group-by=summary
+default-timeout=1000
 
 [summary=wlsunset]
 format=%s
