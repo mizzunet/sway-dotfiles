@@ -246,14 +246,10 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
     gsettings set org.gnome.desktop.interface font-name 'Roboto Slab 10'
     }
 
- exec swayidle -w \
-   timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-   timeout 120 'systemctl suspend' resume 'swaymsg "output * dpms on"'
-
+  exec swayidle -w timeout 30 'brightnessctl set 5%-' resume 'brightnessctl set 5%+' timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' timeout 180 'systemctl suspend'
      
   # Power
   exec sudo powertop --auto-tune
-  exec sudo systemctl start hdparm
   exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl sleep" -I /usr/share/icons/elementary/status/48/battery-caution.svg
 
   exec   ~/.config/sway/modules/inactive-windows-transparency.py # transparent unfocused
