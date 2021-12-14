@@ -178,6 +178,8 @@ bindsym $mod+r mode "resize"
 assign [title="Ferdi"] $ws2
 assign [title="Signal"] $ws2
 for_window [class="Spotify"] move window to workspace $ws3
+assign [title="Habits"] $ws4
+assign [title="Getting Things GNOME!"] $ws4
 
 # Status Bar:
 bar {
@@ -231,10 +233,12 @@ bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
  bindsym control+mod1+Right exec swaymsg 'output * transform 90'
  bindsym control+mod1+Up exec swaymsg 'output * transform 0'
 
+ # caffine mode
+ bindsym $mod+Shift+c /home/missu/.config/sway/modules/swayidle 
 
 ### Executions
   exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
-exec hash dbus-update-activation-environment 2>/dev/null && \
+  exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
   # GTK
@@ -246,11 +250,11 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
     gsettings set org.gnome.desktop.interface font-name 'Roboto Slab 10'
     }
 
-  exec swayidle -w timeout 30 'brightnessctl set 5%-' resume 'brightnessctl set 5%+' timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' timeout 180 'systemctl suspend'
-     
   # Power
   exec sudo powertop --auto-tune
   exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl sleep" -I /usr/share/icons/elementary/status/48/battery-caution.svg
+
+ exec swayidle -w timeout 30 'brightnessctl set 5%-' resume 'brightnessctl set 5%+' timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' timeout 180 'systemctl suspend'
 
   exec   ~/.config/sway/modules/inactive-windows-transparency.py # transparent unfocused
   exec wl-paste -t text --watch clipman store # Clipboard manager
@@ -265,5 +269,6 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
   exec autotiling
  
   exec sleep 20&& /usr/bin/signal-desktop-beta
-  exec sleep 20&& /home/missu/.local/AppImages/Ferdi-5.6.4-nightly.25_2e2b14c2e85ef376a42421263e4af5bb.AppImage
+  exec sleep 20&& ferdi
+  exec sleep 30&&gtg
 

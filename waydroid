@@ -21,7 +21,9 @@ wm density 140
 
 pm disable com.android.onetimeinitializer
 pm disable com.android.phone
-
+pm disable com.topjohnwu.magisk
+pm disable com.android.externalstorage
+pm disable com.android.externalstorage
 pm disable com.android.keychain
 pm disable com.android.localtransport
 pm disable com.android.smspush
