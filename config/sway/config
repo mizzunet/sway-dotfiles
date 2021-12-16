@@ -188,16 +188,16 @@ bar {
 
 
  # clipmenu
- bindsym $mod+c exec /home/missu/.config/sway/modules/clipmenu
+ bindsym $mod+c exec  ~/.scripts/clipmenu
 
  # Use amixer to adjust volume
- bindsym XF86AudioRaiseVolume exec /home/missu/.config/sway/modules/volume up
- bindsym XF86AudioLowerVolume exec /home/missu/.config/sway/modules/volume down
+ bindsym XF86AudioRaiseVolume exec  ~/.scripts/ChangeVolume up
+ bindsym XF86AudioLowerVolume exec ~/.scripts/ChangeVolume down
  #bindsym XF86AudioMute        exec /home/missu/.config/sway/modules/vol_notify.sh toggle
 
  # Sreen brightness controls
- bindsym XF86MonBrightnessUp   exec /home/missu/.config/sway/modules/brightness up
- bindsym XF86MonBrightnessDown exec /home/missu/.config/sway/modules/brightness down
+ bindsym XF86MonBrightnessUp   exec ~/.scripts/ChangeBrightness up
+ bindsym XF86MonBrightnessDown exec ~/.scripts/ChangeBrightness down
 
  # Audio controls
 bindsym XF86AudioPlay exec playctl play-pause
@@ -209,15 +209,15 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
 
  # waydroid
- bindsym control+mod1+a exec /home/missu/.config/sway/modules/waydroid 
+ bindsym control+mod1+a exec ~/.scripts/waydroid 
  
  # waydroid: antennaPod controls
- bindsym control+mod1+j exec /home/missu/.config/sway/modules/antennapod toggle
- bindsym control+mod1+h exec /home/missu/.config/sway/modules/antennapod rewind
- bindsym control+mod1+l exec /home/missu/.config/sway/modules/antennapod forward
+ bindsym control+mod1+j exec ~/.scripts/antennapod toggle
+ bindsym control+mod1+h exec ~/.scripts/antennapod rewind
+ bindsym control+mod1+l exec ~/.scripts/antennapod forward
 
  # wifi toggle
- bindsym $mod+Shift+w exec /home/missu/.config/sway/modules/wifi
+ bindsym $mod+Shift+w exec ~/.scripts/wifi
 
  # wlsunset toggle
  bindsym $mod+Shift+n exec wlsunset
@@ -234,7 +234,7 @@ bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
  bindsym control+mod1+Up exec swaymsg 'output * transform 0'
 
  # caffine mode
- bindsym $mod+Shift+c exec /home/missu/.config/sway/modules/swayidle 
+ bindsym $mod+Shift+c exec ~/.scripts/swayidle 
 
 ### Executions
   exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
@@ -254,8 +254,8 @@ bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
   exec sudo powertop --auto-tune
   exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl sleep" -I /usr/share/icons/elementary/status/48/battery-caution.svg
 
-  exec /home/missu/.config/sway/modules/swayidle
-  exec   ~/.config/sway/modules/inactive-windows-transparency.py # transparent unfocused
+  exec ~/.scripts/swayidle
+  exec ~/.scripts/transparent-unfocused # transparent unfocused
   exec wl-paste -t text --watch clipman store # Clipboard manager
   exec mako # Notification utility
   exec wlsunset # nightlight

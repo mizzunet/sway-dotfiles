@@ -28,9 +28,9 @@
     },
     "battery": {
         "interval": 30,
-     "on-scroll-up": " ~/.config/sway/modules/br_notify.sh 1%+",
-     "on-scroll-down": " ~/.config/sway/modules/br_notify.sh 1%-",
-	"on-click": "/home/missu/.config/sway/modules/brightness 0%",
+     "on-scroll-up": "~/.scripts/ChangeBrightness 1%+",
+     "on-scroll-down": "~/.scripts/ChangeBrightness 1%-",
+	"on-click": "~/.scripts/ChangeBrightness 0%",
         "states": {
             // "good": 95,
             "warning": 30,
@@ -46,7 +46,7 @@
 	"interval": 5,
         "format-wifi": "<span size='large' rise='-1000'></span> {essid}",
         "format-disconnected": "",
-        "on-click": "/home/missu/.config/sway/modules/wifi.sh toggle",
+        "on-click": "~/.scripts/wifi toggle",
 	"tooltip-format-wifi": "{essid}:{signalStrength}\nSpeed:{bandwidthDownBits} \n{ipaddr}"
 
     },
