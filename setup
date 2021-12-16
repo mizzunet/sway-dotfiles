@@ -26,18 +26,15 @@ ln -s ~/.dotfiles/config/kitty ~/.config/
 ln -s ~/.dotfiles/config/mako ~/.config/
 ln -s ~/.dotfiles/config/fish ~/.config/
 ln -s ~/.dotfiles/config/fontconfig/ ~/.local/
+ln -s ~/.dotfiles/.scripts ~/
 
-sudo mkinitcpio -P
 
-
-sudo systemctl enable undervolt.service
 sudo systemctl enable undervolt.timer
-sudo systemctl enable paccache.timersudo systemctl enable fstrim.timer 
+sudo systemctl enable paccache.timer
+sudo systemctl enable fstrim.timer 
+sudo systemctl enable iwd
 sudo systemctl enable thermald.service 
 sudo systemctl enable auto-cpufreq
-sudo systemctl enable tlp
-sudo systemctl enable hdparm
-sudo systemctl enable apm
 systemctl set-default multi-user.target
 
 cd /opt
@@ -45,18 +42,17 @@ $ sudo git clone https://aur.archlinux.org/yay-git.git
 sudo chown -R $USER:$USER /opt/yay-git/
 cd yay-git&&makepkg -si
 
-$ pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
+pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
 pacman-key --lsign-key FBA220DFC880C036
 pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 
-yay -S adwaita-icon-theme adwaita-qt aic94xx-firmware android-tools appimagelauncher  aria2 auto-cpufreq-git batify-git batsignal bleachbit brightnessctl-git  calibre calc cheese clipman elementary-icon-theme-git eog gcompris-qt gnome-themes-extra gpodder grim gst-plugins-bad gst-plugins-good gst-plugin-pipewire gstreamer-vaapi  gtg-git gucharmap hdparm hunspell  intel-gpu-tools intel-ucode libva-intel-driver lxappearance mako man-db  mpv p7zip-gui pipewire pipewire-pulse pomatez python-pyclip refind-btrfs signal-desktop-beta-bin  sirula-git slurp smartmontools spotify subdl swappy swayidle swaylock thunar tlp tlpui trash-cli unrar unzip waydroid-git wget wd719x-firmware  wlsunset-git wofi ttf-roboto-mono ttf-roboto-slab spotify-adblock thermald pamixer pfetch qt5ct modprobed-db playerctl ungoogled-chromium rmlint linux-xanmod-anbox   otf-manjari sway-border waybar python-pip autotiling ttf-ms-fonts spicetify-cli  anki-bin htop udisks2 udiskie profile-sync-daemon zoxide fd neovim   ttf-twemoji moconnet earlyoom ananicy dnsmasq intel-undervolt nohang prelockd qt5-wayland exa
+yay -S adwaita-icon-theme adwaita-qt aic94xx-firmware android-tools appimagelauncher  aria2 auto-cpufreq-git batify-git batsignal bleachbit brightnessctl-git  calibre calc cheese clipman elementary-icon-theme-git eog gcompris-qt gnome-themes-extra gpodder grim gst-plugins-bad gst-plugins-good gst-plugin-pipewire gstreamer-vaapi  gtg-git gucharmap hdparm hunspell  intel-gpu-tools intel-ucode libva-intel-driver lxappearance mako man-db  mpv p7zip-gui pipewire pipewire-pulse pomatez python-pyclip refind-btrfs signal-desktop-beta-bin  sirula-git slurp smartmontools spotify subdl swappy swayidle swaylock thunar trash-cli unrar unzip waydroid-git wget wd719x-firmware  wlsunset-git wofi ttf-roboto-mono ttf-roboto-slab spotify-adblock thermald pamixer pfetch qt5ct modprobed-db playerctl ungoogled-chromium rmlint linux-xanmod-anbox   otf-manjari sway-border waybar python-pip autotiling ttf-ms-fonts spicetify-cli  anki-bin htop udisks2 udiskie profile-sync-daemon zoxide fd neovim   ttf-twemoji moconnet earlyoom ananicy dnsmasq intel-undervolt nohang prelockd qt5-wayland exa networkmanager-iwd spotdl
 
+yay -R mkinitcpio 
 
 
 python -m ensurepip --upgrade
 pip3 install i3ipc
-
-pip install spotdl
 
 wget https://github.com/abba23/spotify-adblock/releases/download/v1.0.0/spotify-adblock.so
 wget https://raw.githubusercontent.com/abba23/spotify-adblock/main/config.toml

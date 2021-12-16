@@ -10,5 +10,6 @@ then
 else
 	$cmdOn
 fi
+ cmd=`nmcli radio wifi`
 	 notify-send -u low  \
      "WiFi" "$cmd" -t 1000 -i /usr/share/icons/elementary/status/48/notification-network-wireless.svg

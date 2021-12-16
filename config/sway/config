@@ -206,7 +206,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
  # Screenshot
  bindsym Print exec  grim -g "$(slurp)" - | wl-copy && notify-send "Screenshot Copied to Clipboard"
-bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
+ bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -
 
  # waydroid
  bindsym control+mod1+a exec ~/.scripts/waydroid 

@@ -1,3 +1,3 @@
 function bat
-	/home/missu/.config/waybar/power_watts
+~/.scripts/power_watts
 end
