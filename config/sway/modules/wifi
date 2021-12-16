@@ -1,0 +1,14 @@
+#!/bin/sh
+cmd=`nmcli radio wifi`
+cmdOn='nmcli radio wifi on'
+cmdOff='nmcli radio wifi off'
+
+if [ $cmd == "enabled" ]
+then
+	$cmdOff
+
+else
+	$cmdOn
+fi
+	 notify-send -u low  \
+     "WiFi" "$cmd" -t 1000 -i /usr/share/icons/elementary/status/48/notification-network-wireless.svg

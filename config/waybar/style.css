@@ -41,13 +41,13 @@ window#waybar {
 #battery{
     margin:7px 4px 0 4px;
     border-radius: 5px;
-    padding: 3px 8px 3px 8px;
+    padding: 3px 8px 0px 8px;
     }
 
 #network {
     margin:7px 4px 0 4px;
     border-radius: 6px;
-    padding: 3px 8px 3px 8px;
+    padding: 3px 8px 0px 8px;
 }
 @keyframes critical {
     to {
