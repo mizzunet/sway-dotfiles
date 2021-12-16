@@ -1,3 +1,3 @@
-function la --wraps='ls -a' --description 'alias la=ls -a'
-  ls -a $argv; 
+function la --wraps='ls -a' --wraps='exa --icons --group-directories-first -l' --description 'alias la=exa --icons --group-directories-first -l'
+  exa --icons --group-directories-first -l $argv; 
 end
