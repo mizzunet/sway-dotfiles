@@ -32,6 +32,7 @@ default_border pixel 1
 default_floating_border pixel 1
 smart_borders on
 
+font pango:Roboto Slab 11
 #smart_gaps on
 
 #border_images.focused $image
@@ -175,7 +176,7 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-assign [title="Ferdi"] $ws2
+assign [title="ProtonMail"] $ws2
 assign [title="Signal"] $ws2
 for_window [class="Spotify"] move window to workspace $ws3
 assign [title="Habits"] $ws4
@@ -236,6 +237,7 @@ bindsym XF86AudioPrev exec playerctl previous
  # caffine mode
  bindsym $mod+Shift+c exec ~/.scripts/swayidle 
 
+
 ### Executions
   exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
   exec hash dbus-update-activation-environment 2>/dev/null && \
@@ -259,15 +261,16 @@ bindsym XF86AudioPrev exec playerctl previous
   exec wl-paste -t text --watch clipman store # Clipboard manager
   exec mako # Notification utility
   exec wlsunset # nightlight
-  exec paplay ~/.startup.wav # Play music
+  exec paplay /home/missu/.startup.wav # Play music
   exec udiskie -N # Automount USB
   exec sway-audio-idle-inhibit # Don't turn display when video playing
   exec waydroid session start # Start Waydroid session
-  exec mconnect -d # notifications from waydroid
+#  exec mconnect -d # notifications from waydroid
   exec $menu # Show menu
   exec autotiling
- 
-  exec sleep 20&& /usr/bin/signal-desktop-beta
-  exec sleep 20&& ferdi
+
+  exec sleep 20&& /usr/bin/signal-desktop-beta --enable-features=UseOzonePlatform --ozone-platform=wayland
+  exec sleep 20&& $browser --profile-directory=Default --app-id=gakplicejlpogogkmhcohnidacakppdg
+
   exec sleep 30&&gtg
 
