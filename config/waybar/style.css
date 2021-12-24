@@ -53,6 +53,8 @@ window#waybar {
     to {
     background: rgba(187,56,0, 1);
     border-radius: 7px;
+    margin:7px 4px 0 4px;
+    padding: 3px 8px 0px 8px;
     }
 }
 @keyframes urgent {

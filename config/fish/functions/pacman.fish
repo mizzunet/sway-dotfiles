@@ -1,3 +1,3 @@
-function pacman --argument cmds
-	sudo pacman $cmds
+function pacman --wraps=powerpill --description 'alias pacman=powerpill'
+  powerpill $argv; 
 end

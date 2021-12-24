@@ -49,7 +49,7 @@ pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
 pacman-key --lsign-key FBA220DFC880C036
 pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 
-yay -S adwaita-icon-theme adwaita-qt aic94xx-firmware android-tools appimagelauncher  aria2 auto-cpufreq-git batify-git batsignal bleachbit brightnessctl-git  calibre calc cheese clipman elementary-icon-theme-git eog gcompris-qt gnome-themes-extra gpodder grim gst-plugins-bad gst-plugins-good gst-plugin-pipewire gstreamer-vaapi  gtg-git gucharmap hdparm hunspell  intel-gpu-tools intel-ucode libva-intel-driver lxappearance mako man-db  mpv p7zip-gui pipewire pipewire-pulse pomatez python-pyclip refind-btrfs signal-desktop-beta-bin  sirula-git slurp smartmontools spotify subdl swappy swayidle swaylock thunar trash-cli unrar unzip waydroid-git wget wd719x-firmware  wlsunset-git wofi ttf-roboto-mono ttf-roboto-slab spotify-adblock thermald pamixer pfetch qt5ct modprobed-db playerctl ungoogled-chromium rmlint linux-xanmod-anbox   otf-manjari sway-border waybar python-pip autotiling ttf-ms-fonts spicetify-cli  anki-bin htop udisks2 udiskie profile-sync-daemon zoxide fd neovim   ttf-twemoji moconnet earlyoom ananicy dnsmasq intel-undervolt nohang prelockd qt5-wayland exa networkmanager-iwd spotdl
+yay -S adwaita-icon-theme adwaita-qt aic94xx-firmware android-tools appimagelauncher  aria2 auto-cpufreq-git batify-git batsignal bleachbit brightnessctl-git  calibre calc cheese clipman elementary-icon-theme-git eog gcompris-qt gnome-themes-extra gpodder grim gst-plugins-bad gst-plugins-good gst-plugin-pipewire gstreamer-vaapi  gtg-git gucharmap hdparm hunspell  intel-gpu-tools intel-ucode libva-intel-driver lxappearance mako man-db  mpv p7zip-gui pipewire pipewire-pulse pomatez python-pyclip refind-btrfs signal-desktop-beta-bin  sirula-git slurp smartmontools spotify subdl swappy swayidle swaylock thunar trash-cli unrar unzip waydroid-git wget wd719x-firmware  wlsunset-git wofi ttf-roboto-mono ttf-roboto-slab spotify-adblock thermald pamixer pfetch qt5ct modprobed-db playerctl ungoogled-chromium rmlint linux-xanmod-anbox   otf-manjari sway-border waybar python-pip autotiling ttf-ms-fonts spicetify-cli  anki-bin htop udisks2 udiskie profile-sync-daemon zoxide fd neovim   ttf-twemoji moconnet earlyoom ananicy dnsmasq intel-undervolt nohang prelockd qt5-wayland exa networkmanager-iwd spotdlclear-linux-bin profile-cleaner  pacutils powerpill xorg-xhost polkit-gnome
 
 yay -R mkinitcpio 
 
@@ -67,3 +67,24 @@ env LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify
 sudo chmod a+wr /opt/spotify
 sudo chmod a+wr /opt/spotify/Apps -R
 spicetify apply
+
+
+SWAP
+cd /var
+sudo touch swapfile
+sudo chattr +C swapfile 
+sudo fallocate --length 1000MiB swapfile
+sudo chown root swapfile 
+sudo chmod 600 swapfile 
+sudo mkswap swapfile 
+Then I placed the new swap file in /etc/fstab, removing the old swap file
+
+/var/swapfile none            swap    sw              0       0
+Then I needed to update my initramfs resume config as it's a laptop
+
+sudo nano /etc/initramfs-tools/conf.d/resume
+
+RESUME=/var/swapfile
+Reload the configs
+
+sudo update-initramfs -u -k all

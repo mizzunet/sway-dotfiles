@@ -3,7 +3,7 @@ if pidof swayidle; then
    notify-send Caffine Enabled -t 0
    killall -9 swayidle
 else
-   swayidle -w timeout 30 'brightnessctl set 1%-' resume 'brightnessctl set 1%+' timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' timeout 180 'systemctl suspend' &
+   swayidle -w timeout 30 'brightnessctl set 1%-' resume 'brightnessctl set 1%+' timeout 60 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' timeout 180 'systemctl suspend' resume 'swaymsg "output * dpms on"'  &
    makoctl dismiss
 
 fi
