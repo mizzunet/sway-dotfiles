@@ -32,7 +32,7 @@ default_border pixel 1
 default_floating_border pixel 1
 smart_borders on
 
-font pango:Roboto Slab 11
+font pango:Roboto Mono 11
 #smart_gaps on
 
 #border_images.focused $image
@@ -56,6 +56,7 @@ output * bg /home/missu/Pictures/Wallpaper/wall25.jpg fill
        accel_profile adaptive
        middle_emulation enabled
    }
+
 input * xkb_numlock enable
 
 ### Key bindings
@@ -186,11 +187,10 @@ assign [title="Getting Things GNOME!"] $ws3
 for_window [app_id="[Ww]aydroid.*"] move right
 for_window [app_id="[Ww]aydroid.*"] resize set width 400px
 
-# Status Bar:
+### Status Bar:
 bar {
     swaybar_command waybar
 }
-
 
  # clipmenu
  bindsym $mod+c exec  ~/.scripts/clipmenu
@@ -205,9 +205,9 @@ bar {
  bindsym XF86MonBrightnessDown exec ~/.scripts/ChangeBrightness down
 
  # Audio controls
-bindsym XF86AudioPlay exec playctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+ bindsym XF86AudioPlay exec playctl play-pause
+ bindsym XF86AudioNext exec playerctl next
+ bindsym XF86AudioPrev exec playerctl previous
 
  # Screenshot
  bindsym Print exec  grim -g "$(slurp)" - | wl-copy && notify-send "Screenshot Copied to Clipboard"
@@ -223,6 +223,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
  # wifi toggle
  bindsym $mod+Shift+w exec ~/.scripts/wifi
+ bindsym XF86WLAN exec ~/.scripts/wifi
 
  # wlsunset toggle
  bindsym $mod+Shift+n exec wlsunset
@@ -275,8 +276,8 @@ bindsym XF86AudioPrev exec playerctl previous
   exec autotiling
   exec profile-cleaner c
 
-  exec sleep 20&& /usr/bin/signal-desktop-beta --enable-features=UseOzonePlatform --ozone-platform=wayland
+  exec sleep 20&& /usr/bin/signal-desktop-beta --enable-features=UseOzonePlatform  --no-sandbox
 #  exec sleep 20&& $browser --app-id=gakplicejlpogogkmhcohnidacakppdg
-  exec sleep 30&&ferdi --enable-features=UseOzonePlatform --ozone-platform=wayland --process-per-site
+  exec sleep 30&&ferdi --enable-features=UseOzonePlatform --ozone-platform=wayland --process-per-site 
   exec sleep 30&&gtg
 

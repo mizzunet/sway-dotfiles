@@ -6,13 +6,13 @@ padding=11
 format=%s\n%b
 layer=overlay
 border-radius=4
-font=Roboto Mono 11
+font=Roboto Mono 10
 default-timeout=10000
 icon-path=/usr/share/icons/Adwaita:/usr/share/icons/elementary
 anchor=bottom-right
 margin=0,40,30
 group-by=summary
-on-notify=exec mpv ~/.notification.mp3
+on-notify=exec mpv ~/.sounds/notify.wav
 
 [urgency=normal]
 background-color=#23C552

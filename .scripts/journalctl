@@ -1,0 +1,708 @@
+ec 26 00:38:38 archie systemd[1]: Reached target Sleep.
+Dec 26 00:38:38 archie systemd[1]: Starting System Suspend...
+Dec 26 00:38:38 archie systemd-sleep[17759]: Entering sleep state 'suspend'...
+Dec 26 00:38:38 archie kernel: PM: suspend entry (deep)
+Dec 26 01:07:43 archie kernel: Filesystems sync: 0.079 seconds
+Dec 26 01:07:43 archie kernel: Freezing user space processes ... (elapsed 0.002 seconds) done.
+Dec 26 01:07:43 archie kernel: OOM killer disabled.
+Dec 26 01:07:43 archie kernel: Freezing remaining freezable tasks ... (elapsed 0.001 seconds) done.
+Dec 26 01:07:43 archie kernel: printk: Suspending console(s) (use no_console_suspend to debug)
+Dec 26 01:07:43 archie kernel: input input18: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: card1
+Dec 26 01:07:43 archie kernel: input input18: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: sound pcmC1D0c: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card1
+Dec 26 01:07:43 archie kernel: sound pcmC1D0c: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 1 usecs
+Dec 26 01:07:43 archie kernel: sound pcmC1D0p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card1
+Dec 26 01:07:43 archie kernel: sound pcmC1D0p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: at24 9-0050: PM: calling pm_runtime_force_suspend+0x0/0x140 @ 17759, parent: i2c-9
+Dec 26 01:07:43 archie kernel: at24 9-0050: PM: pm_runtime_force_suspend+0x0/0x140 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input17: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: 1-1.7:1.0
+Dec 26 01:07:43 archie kernel: input input17: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: leds ath9k-phy0: PM: calling led_suspend+0x0/0x80 @ 17759, parent: 0000:02:00.0
+Dec 26 01:07:43 archie kernel: leds ath9k-phy0: PM: led_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: rfkill rfkill0: PM: calling rfkill_suspend+0x0/0x40 [rfkill] @ 17759, parent: phy0
+Dec 26 01:07:43 archie kernel: rfkill rfkill0: PM: rfkill_suspend+0x0/0x40 [rfkill] returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input16: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: input input16: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input15: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: input input15: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input14: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: input input14: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input13: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: input input13: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input12: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: input input12: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ieee80211 phy0: PM: calling wiphy_suspend+0x0/0x1c0 [cfg80211] @ 17086, parent: 0000:02:00.0
+Dec 26 01:07:43 archie kernel: sound pcmC0D10p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: sound pcmC0D10p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: sound pcmC0D9p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: sound pcmC0D9p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: sound pcmC0D8p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: input input12: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ieee80211 phy0: PM: calling wiphy_suspend+0x0/0x1c0 [cfg80211] @ 17086, parent: 0000:02:00.0
+Dec 26 01:07:43 archie kernel: sound pcmC0D10p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: sound pcmC0D10p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: sound pcmC0D9p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: sound pcmC0D9p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: sound pcmC0D8p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: sound pcmC0D8p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: sound pcmC0D7p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: ieee80211 phy0: PM: wiphy_suspend+0x0/0x1c0 [cfg80211] returned 0 after 3 usecs
+Dec 26 01:07:43 archie kernel: sound pcmC0D7p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: sound pcmC0D3p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: sound pcmC0D3p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform regulatory.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: platform regulatory.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:03.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17086, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: platform intel-spi: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform intel-spi: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform iTCO_wdt.1.auto: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform iTCO_wdt.1.auto: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input10: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: 0018:06CB:2970.0001
+Dec 26 01:07:43 archie kernel: input input10: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input9: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: 0018:06CB:2970.0001
+Dec 26 01:07:43 archie kernel: input input9: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input5: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: serio0
+Dec 26 01:07:43 archie kernel: input input5: PM: input_dev_suspend+0x0/0x40 returned 0 after 10 usecs
+Dec 26 01:07:43 archie kernel: atkbd serio0: PM: calling serio_suspend+0x0/0x80 @ 17759, parent: i8042
+Dec 26 01:07:43 archie kernel: atkbd serio0: PM: serio_suspend+0x0/0x80 returned 0 after 4033 usecs
+Dec 26 01:07:43 archie kernel: i8042 i8042: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: i8042 i8042: PM: platform_pm_suspend+0x0/0x80 returned 0 after 609 usecs
+Dec 26 01:07:43 archie kernel: usb 1-1.7: PM: calling usb_dev_suspend+0x0/0x40 @ 17101, parent: 1-1
+Dec 26 01:07:43 archie kernel: usb 1-1.7: PM: usb_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform microcode: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: platform microcode: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: usb 1-1.5: PM: calling usb_dev_suspend+0x0/0x40 @ 17101, parent: 1-1
+Dec 26 01:07:43 archie kernel: simple-framebuffer simple-framebuffer.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: pl>
+Dec 26 01:07:43 archie kernel: sd 1:0:0:0: PM: calling scsi_bus_suspend+0x0/0x80 @ 17088, parent: target1:0:0
+Dec 26 01:07:43 archie kernel: sd 0:0:0:0: PM: calling scsi_bus_suspend+0x0/0x80 @ 17112, parent: target0:0:0
+Dec 26 01:07:43 archie kernel: simple-framebuffer simple-framebuffer.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: usb 1-1.5: PM: usb_dev_suspend+0x0/0x40 returned 0 after 2 usecs
+Dec 26 01:07:43 archie kernel: coretemp coretemp.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: coretemp coretemp.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: alarmtimer alarmtimer.0.auto: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: rtc0
+Dec 26 01:07:43 archie kernel: usb 1-1: PM: calling usb_dev_suspend+0x0/0x40 @ 17085, parent: usb1
+Dec 26 01:07:43 archie kernel: alarmtimer alarmtimer.0.auto: PM: platform_pm_suspend+0x0/0x80 returned 0 after 150 usecs
+Dec 26 01:07:43 archie kernel: input input4: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: LNXVIDEO:00
+Dec 26 01:07:43 archie kernel: input input4: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: backlight intel_backlight: PM: calling backlight_suspend+0x0/0x80 @ 17759, parent: card0-eDP-1
+Dec 26 01:07:43 archie kernel: backlight intel_backlight: PM: backlight_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: scsi host3: PM: calling scsi_bus_suspend+0x0/0x80 @ 17096, parent: ata4
+Dec 26 01:07:43 archie kernel: scsi host2: PM: calling scsi_bus_suspend+0x0/0x80 @ 17099, parent: ata3
+Dec 26 01:07:43 archie kernel: scsi host3: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: scsi host2: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel:  ata3: PM: calling ata_port_pm_suspend+0x0/0x80 @ 17096, parent: 0000:00:1f.2
+Dec 26 01:07:43 archie kernel:  ata4: PM: calling ata_port_pm_suspend+0x0/0x80 @ 17105, parent: 0000:00:1f.2
+Dec 26 01:07:43 archie kernel: rtsx_pci_sdmmc rtsx_pci_sdmmc.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:01:00>
+Dec 26 01:07:43 archie kernel: rtsx_pci_sdmmc rtsx_pci_sdmmc.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel:  ata4: PM: ata_port_pm_suspend+0x0/0x80 returned 0 after 15 usecs
+Dec 26 01:07:43 archie kernel:  ata3: PM: ata_port_pm_suspend+0x0/0x80 returned 0 after 16 usecs
+Dec 26 01:07:43 archie kernel: serial8250 serial8250: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: serial8250 serial8250: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input3: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: LNXPWRBN:00
+Dec 26 01:07:43 archie kernel: input input3: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input2: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: PNP0C0E:00
+Dec 26 01:07:43 archie kernel: input input2: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input1: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: PNP0C0C:00
+Dec 26 01:07:43 archie kernel: input input1: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input0: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: PNP0C0D:00
+Dec 26 01:07:43 archie kernel: input input0: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: intel_rapl_msr intel_rapl_msr.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: intel_rapl_msr intel_rapl_msr.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: system 00:05: PM: calling pnp_bus_suspend+0x0/0x40 @ 17759, parent: pnp0
+Dec 26 01:07:43 archie kernel: system 00:05: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: system 00:04: PM: calling pnp_bus_suspend+0x0/0x40 @ 17759, parent: pnp0
+Dec 26 01:07:43 archie kernel: system 00:04: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i8042 kbd 00:03: PM: calling pnp_bus_suspend+0x0/0x40 @ 17759, parent: pnp0
+Dec 26 01:07:43 archie kernel: i8042 kbd 00:03: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: system 00:02: PM: calling pnp_bus_suspend+0x0/0x40 @ 17759, parent: pnp0
+Dec 26 01:07:43 archie kernel: system 00:02: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: rtc_cmos 00:01: PM: calling pnp_bus_suspend+0x0/0x40 @ 17759, parent: pnp0
+Dec 26 01:07:43 archie kernel: rtc_cmos 00:01: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 24 usecs
+Dec 26 01:07:43 archie kernel: system 00:00: PM: calling pnp_bus_suspend+0x0/0x40 @ 17759, parent: pnp0
+Dec 26 01:07:43 archie kernel: system 00:00: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform efivars.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: platform efivars.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform rtc-efi.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: platform rtc-efi.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_suspend+0x0/0x80 @ 17102, parent: i2c-0
+Dec 26 01:07:43 archie kernel: usb 1-1: PM: usb_dev_suspend+0x0/0x40 returned 0 after 1707 usecs
+Dec 26 01:07:43 archie kernel: usb usb1: PM: calling usb_dev_suspend+0x0/0x40 @ 8527, parent: 0000:00:1d.0
+Dec 26 01:07:43 archie kernel: usb usb1: PM: usb_dev_suspend+0x0/0x40 returned 0 after 622 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:03.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 13782 usecs
+Dec 26 01:07:43 archie kernel: sd 0:0:0:0: [sda] Synchronizing SCSI cache
+Dec 26 01:07:43 archie kernel: sd 1:0:0:0: [sdb] Synchronizing SCSI cache
+Dec 26 01:07:43 archie kernel: sd 1:0:0:0: [sdb] Stopping disk
+Dec 26 01:07:43 archie kernel: sd 0:0:0:0: [sda] Stopping disk
+Dec 26 01:07:43 archie kernel: sd 1:0:0:0: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 152622 usecs
+Dec 26 01:07:43 archie kernel: scsi target1:0:0: PM: calling scsi_bus_suspend+0x0/0x80 @ 17084, parent: host1
+Dec 26 01:07:43 archie kernel: scsi target1:0:0: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: scsi host1: PM: calling scsi_bus_suspend+0x0/0x80 @ 17097, parent: ata2
+Dec 26 01:07:43 archie kernel: scsi host1: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel:  ata2: PM: calling ata_port_pm_suspend+0x0/0x80 @ 17090, parent: 0000:00:1f.2
+Dec 26 01:07:43 archie kernel:  ata2: PM: ata_port_pm_suspend+0x0/0x80 returned 0 after 27131 usecs
+Dec 26 01:07:43 archie kernel: i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_suspend+0x0/0x80 returned 0 after 194920 usecs
+Dec 26 01:07:43 archie kernel: button LNXPWRBN:00: PM: calling acpi_button_suspend+0x0/0x40 @ 17759, parent: LNXSYSTM:00
+Dec 26 01:07:43 archie kernel: button LNXPWRBN:00: PM: acpi_button_suspend+0x0/0x40 returned 0 after 1 usecs
+Dec 26 01:07:43 archie kernel: platform ACPI000E:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: platform ACPI000E:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c_designware INT33C3:00: PM: calling acpi_subsys_suspend+0x0/0x80 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i2c_designware INT33C3:00: PM: acpi_subsys_suspend+0x0/0x80 returned 0 after 1 usecs
+Dec 26 01:07:43 archie kernel: clk-lpss-atom clk-lpss-atom: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: clk-lpss-atom clk-lpss-atom: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:01: PM: calling acpi_subsys_suspend+0x0/0x80 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:01: PM: acpi_subsys_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:00: PM: calling acpi_subsys_suspend+0x0/0x80 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:00: PM: acpi_subsys_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform PNP0C0E:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform PNP0C0E:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform PNP0C0C:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform PNP0C0C:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform PNP0C0D:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform PNP0C0D:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform ACPI0003:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform ACPI0003:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform PNP0C0A:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform PNP0C0A:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform PNP0C09:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform PNP0C09:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform PNP0103:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform PNP0103:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform INT0800:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform INT0800:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ath9k 0000:02:00.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17102, parent: 0000:00:1c.3
+Dec 26 01:07:43 archie kernel: pci 0000:01:00.1: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17090, parent: 0000:00:1c.0
+Dec 26 01:07:43 archie kernel: pci 0000:01:00.1: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: rtsx_pci 0000:01:00.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17097, parent: 0000:00:1c.0
+Dec 26 01:07:43 archie kernel: i801_smbus 0000:00:1f.3: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17090, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: rtsx_pci 0000:01:00.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 9 usecs
+Dec 26 01:07:43 archie kernel: lpc_ich 0000:00:1f.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17084, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i801_smbus 0000:00:1f.3: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 23 usecs
+Dec 26 01:07:43 archie kernel: lpc_ich 0000:00:1f.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ehci-pci 0000:00:1d.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17090, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17088, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 2 usecs
+Dec 26 01:07:43 archie kernel: ehci-pci 0000:00:1d.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 11 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17088, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: mei_me 0000:00:16.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17090, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i915 0000:00:02.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 8527, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: hsw_uncore 0000:00:00.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17086, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: hsw_uncore 0000:00:00.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: button PNP0C0E:00: PM: calling acpi_button_suspend+0x0/0x40 @ 17759, parent: device:01
+Dec 26 01:07:43 archie kernel: button PNP0C0E:00: PM: acpi_button_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: button PNP0C0C:00: PM: calling acpi_button_suspend+0x0/0x40 @ 17759, parent: device:01
+Dec 26 01:07:43 archie kernel: button PNP0C0C:00: PM: acpi_button_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: button PNP0C0D:00: PM: calling acpi_button_suspend+0x0/0x40 @ 17759, parent: device:01
+Dec 26 01:07:43 archie kernel: button PNP0C0D:00: PM: acpi_button_suspend+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ec PNP0C09:00: PM: calling acpi_ec_suspend+0x0/0x80 @ 17759, parent: device:01
+Dec 26 01:07:43 archie kernel: ec PNP0C09:00: PM: acpi_ec_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: regulator regulator.0: PM: calling regulator_suspend+0x0/0x100 @ 17759, parent: reg-dummy
+Dec 26 01:07:43 archie kernel: regulator regulator.0: PM: regulator_suspend+0x0/0x100 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: reg-dummy reg-dummy: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: reg-dummy reg-dummy: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ath9k 0000:02:00.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 4102 usecs
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.3: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17084, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.3: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 5 usecs
+Dec 26 01:07:43 archie kernel: mei_me 0000:00:16.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 4084 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:1b.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 15127 usecs
+Dec 26 01:07:43 archie kernel: i915 0000:00:02.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 287526 usecs
+Dec 26 01:07:43 archie kernel: sd 0:0:0:0: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 723560 usecs
+Dec 26 01:07:43 archie kernel: scsi target0:0:0: PM: calling scsi_bus_suspend+0x0/0x80 @ 17101, parent: host0
+Dec 26 01:07:43 archie kernel: scsi target0:0:0: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: scsi host0: PM: calling scsi_bus_suspend+0x0/0x80 @ 17099, parent: ata1
+Dec 26 01:07:43 archie kernel: scsi host0: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel:  ata1: PM: calling ata_port_pm_suspend+0x0/0x80 @ 17104, parent: 0000:00:1f.2
+Dec 26 01:07:43 archie kernel:  ata1: PM: ata_port_pm_suspend+0x0/0x80 returned 0 after 25 usecs
+Dec 26 01:07:43 archie kernel: ahci 0000:00:1f.2: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17097, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: ahci 0000:00:1f.2: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 1 usecs
+Dec 26 01:07:43 archie kernel: at24 9-0050: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: i2c-9
+Dec 26 01:07:43 archie kernel: at24 9-0050: PM: i2c_suspend_late+0x0/0x80 returned 0 after 8 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-9: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: 0000:00:1f.3
+Dec 26 01:07:43 archie kernel: i2c i2c-9: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:03.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17086, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:03.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-8: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: card0-DP-1
+Dec 26 01:07:43 archie kernel: i2c i2c-8: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+ec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:03.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17086, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:03.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-8: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: card0-DP-1
+Dec 26 01:07:43 archie kernel: i2c i2c-8: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-7: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: card0-eDP-1
+Dec 26 01:07:43 archie kernel: i2c i2c-7: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-6: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: 0000:00:02.0
+Dec 26 01:07:43 archie kernel: i2c i2c-6: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-5: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: 0000:00:02.0
+Dec 26 01:07:43 archie kernel: i2c i2c-5: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-4: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: 0000:00:02.0
+Dec 26 01:07:43 archie kernel: i2c i2c-4: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-3: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: 0000:00:02.0
+Dec 26 01:07:43 archie kernel: i2c i2c-3: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-2: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: 0000:00:02.0
+Dec 26 01:07:43 archie kernel: i2c i2c-2: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-1: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: 0000:00:02.0
+Dec 26 01:07:43 archie kernel: i2c i2c-1: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_suspend_late+0x0/0x80 @ 17104, parent: i2c-0
+Dec 26 01:07:43 archie kernel: i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_suspend_late+0x0/0x80 returned 0 after 188384 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-0: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: INT33C3:00
+Dec 26 01:07:43 archie kernel: i2c i2c-0: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c_designware INT33C3:00: PM: calling acpi_lpss_suspend_late+0x0/0x80 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i2c_designware INT33C3:00: PM: acpi_lpss_suspend_late+0x0/0x80 returned 0 after 189163 usecs
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:01: PM: calling acpi_subsys_suspend_late+0x0/0x80 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:01: PM: acpi_subsys_suspend_late+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:00: PM: calling acpi_subsys_suspend_late+0x0/0x80 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:00: PM: acpi_subsys_suspend_late+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ath9k 0000:02:00.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17104, parent: 0000:00:1c.3
+Dec 26 01:07:43 archie kernel: pci 0000:01:00.1: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17086, parent: 0000:00:1c.0
+Dec 26 01:07:43 archie kernel: ath9k 0000:02:00.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: pci 0000:01:00.1: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: rtsx_pci 0000:01:00.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17097, parent: 0000:00:1c.0
+Dec 26 01:07:43 archie kernel: i801_smbus 0000:00:1f.3: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17104, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: ahci 0000:00:1f.2: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17086, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: rtsx_pci 0000:01:00.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i801_smbus 0000:00:1f.3: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ahci 0000:00:1f.2: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ehci-pci 0000:00:1d.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17104, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: lpc_ich 0000:00:1f.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17097, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.3: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17086, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: ehci-pci 0000:00:1d.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: lpc_ich 0000:00:1f.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.3: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17097, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17104, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: mei_me 0000:00:16.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17086, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:1b.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: mei_me 0000:00:16.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: hsw_uncore 0000:00:00.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17097, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i915 0000:00:02.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17104, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: hsw_uncore 0000:00:00.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i915 0000:00:02.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 12062 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:03.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17086, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_suspend_noirq+0x0/0x80 @ 17101, parent: i2c-0
+Dec 26 01:07:43 archie kernel: i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_suspend_noirq+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c_designware INT33C3:00: PM: calling acpi_lpss_suspend_noirq+0x0/0x80 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i2c_designware INT33C3:00: PM: acpi_lpss_suspend_noirq+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:01: PM: calling acpi_subsys_suspend_noirq+0x0/0x80 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:01: PM: acpi_subsys_suspend_noirq+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:00: PM: calling acpi_subsys_suspend_noirq+0x0/0x80 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:00: PM: acpi_subsys_suspend_noirq+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ath9k 0000:02:00.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17101, parent: 0000:00:1c.3
+Dec 26 01:07:43 archie kernel: pci 0000:01:00.1: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17099, parent: 0000:00:1c.0
+Dec 26 01:07:43 archie kernel: rtsx_pci 0000:01:00.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17104, parent: 0000:00:1c.0
+Dec 26 01:07:43 archie kernel: ec PNP0C09:00: PM: calling acpi_ec_suspend_noirq+0x0/0xc0 @ 17759, parent: device:01
+Dec 26 01:07:43 archie kernel: ACPI: EC: interrupt blocked
+Dec 26 01:07:43 archie kernel: ec PNP0C09:00: PM: acpi_ec_suspend_noirq+0x0/0xc0 returned 0 after 1 usecs
+Dec 26 01:07:43 archie kernel: pci 0000:01:00.1: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 217 usecs
+Dec 26 01:07:43 archie kernel: i801_smbus 0000:00:1f.3: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17099, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i801_smbus 0000:00:1f.3: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 12 usecs
+Dec 26 01:07:43 archie kernel: ahci 0000:00:1f.2: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17099, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: lpc_ich 0000:00:1f.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17097, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: ehci-pci 0000:00:1d.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17112, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17090, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: mei_me 0000:00:16.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17102, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: lpc_ich 0000:00:1f.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 55 usecs
+Dec 26 01:07:43 archie kernel: hsw_uncore 0000:00:00.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17084, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: hsw_uncore 0000:00:00.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 6 usecs
+Dec 26 01:07:43 archie kernel: rtsx_pci 0000:01:00.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11690 usecs
+Dec 26 01:07:43 archie kernel: ahci 0000:00:1f.2: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11438 usecs
+Dec 26 01:07:43 archie kernel: ehci-pci 0000:00:1d.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11411 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:1b.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11401 usecs
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17088, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: ath9k 0000:02:00.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11717 usecs
+Dec 26 01:07:43 archie kernel: mei_me 0000:00:16.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11417 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:03.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11884 usecs
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.3: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 8527, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i915 0000:00:02.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17097, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i915 0000:00:02.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.3: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11956 usecs
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11979 usecs
+Dec 26 01:07:43 archie kernel: ACPI: PM: Preparing to enter system sleep state S3
+Dec 26 01:07:43 archie kernel: ACPI: EC: event blocked
+Dec 26 01:07:43 archie kernel: ACPI: EC: EC stopped
+Dec 26 01:07:43 archie kernel: ACPI: PM: Saving platform NVS memory
+Dec 26 01:07:43 archie kernel: Disabling non-boot CPUs ...
+Dec 26 01:07:43 archie kernel: smpboot: CPU 1 is now offline
+Dec 26 01:07:43 archie kernel: smpboot: CPU 2 is now offline
+Dec 26 01:07:43 archie kernel: smpboot: CPU 3 is now offline
+Dec 26 01:07:43 archie kernel: ACPI: PM: Low-level resume complete
+Dec 26 01:07:43 archie kernel: ACPI: EC: EC started
+Dec 26 01:07:43 archie kernel: ACPI: PM: Restoring platform NVS memory
+Dec 26 01:07:43 archie kernel: Enabling non-boot CPUs ...
+Dec 26 01:07:43 archie kernel: x86: Booting SMP configuration:
+Dec 26 01:07:43 archie kernel: smpboot: Booting Node 0 Processor 1 APIC 0x1
+Dec 26 01:07:43 archie kernel: CPU1 is up
+Dec 26 01:07:43 archie kernel: smpboot: Booting Node 0 Processor 2 APIC 0x2
+Dec 26 01:07:43 archie kernel: CPU2 is up
+Dec 26 01:07:43 archie kernel: smpboot: Booting Node 0 Processor 3 APIC 0x3
+Dec 26 01:07:43 archie kernel: CPU3 is up
+Dec 26 01:07:43 archie kernel: ACPI: PM: Waking up from system sleep state S3
+Dec 26 01:07:43 archie kernel: mei_me 0000:00:16.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17088, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i915 0000:00:02.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17097, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: ec PNP0C09:00: PM: calling acpi_ec_resume_noirq+0x0/0xc0 @ 17759, parent: device:01
+Dec 26 01:07:43 archie kernel: ACPI: EC: interrupt unblocked
+Dec 26 01:07:43 archie kernel: ec PNP0C09:00: PM: acpi_ec_resume_noirq+0x0/0xc0 returned 0 after 1 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17086, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17104, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.3: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17101, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: hsw_uncore 0000:00:00.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 8527, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: lpc_ich 0000:00:1f.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17112, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: ehci-pci 0000:00:1d.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17102, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: hsw_uncore 0000:00:00.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 23 usecs
+Dec 26 01:07:43 archie kernel: ahci 0000:00:1f.2: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 8527, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i801_smbus 0000:00:1f.3: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17090, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: lpc_ich 0000:00:1f.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 38 usecs
+Dec 26 01:07:43 archie kernel: i801_smbus 0000:00:1f.3: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 15 usecs
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:00: PM: calling acpi_subsys_resume_noirq+0x0/0x40 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:00: PM: acpi_subsys_resume_noirq+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:01: PM: calling acpi_subsys_resume_noirq+0x0/0x40 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:01: PM: acpi_subsys_resume_noirq+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c_designware INT33C3:00: PM: calling acpi_lpss_resume_noirq+0x0/0x80 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i2c_designware INT33C3:00: PM: acpi_lpss_resume_noirq+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_resume_noirq+0x0/0x40 @ 17112, parent: i2c-0
+Dec 26 01:07:43 archie kernel: i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_resume_noirq+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ehci-pci 0000:00:1d.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11946 usecs
+Dec 26 01:07:43 archie kernel: mei_me 0000:00:16.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 12017 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:1b.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 12009 usecs
+Dec 26 01:07:43 archie kernel: ahci 0000:00:1f.2: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11954 usecs
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 12092 usecs
+Dec 26 01:07:43 archie kernel: i915 0000:00:02.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 12120 usecs
+Dec 26 01:07:43 archie kernel: rtsx_pci 0000:01:00.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17099, parent: 0000:00:1c.0
+Dec 26 01:07:43 archie kernel: pci 0000:01:00.1: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17084, parent: 0000:00:1c.0
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.3: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 12099 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:03.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17094, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: ath9k 0000:02:00.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17096, parent: 0000:00:1c.3
+Dec 26 01:07:43 archie kernel: pci 0000:01:00.1: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 80 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:03.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11825 usecs
+Dec 26 01:07:43 archie kernel: ath9k 0000:02:00.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11881 usecs
+Dec 26 01:07:43 archie kernel: rtsx_pci 0000:01:00.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11968 usecs
+Dec 26 01:07:43 archie kernel: i8042 i8042: PM: calling i8042_pm_resume_noirq+0x0/0x40 [i8042] @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: i8042 i8042: PM: i8042_pm_resume_noirq+0x0/0x40 [i8042] returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i915 0000:00:02.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17099, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: hsw_uncore 0000:00:00.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 60863, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: mei_me 0000:00:16.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17093, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: hsw_uncore 0000:00:00.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: mei_me 0000:00:16.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17096, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 60863, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:1b.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.3: PM: calling pci_pm_resume_early+0x0/0x40 @ 17093, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.3: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ehci-pci 0000:00:1d.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17096, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: lpc_ich 0000:00:1f.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 60863, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: ehci-pci 0000:00:1d.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ahci 0000:00:1f.2: PM: calling pci_pm_resume_early+0x0/0x40 @ 17093, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: lpc_ich 0000:00:1f.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i801_smbus 0000:00:1f.3: PM: calling pci_pm_resume_early+0x0/0x40 @ 17096, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: ahci 0000:00:1f.2: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: rtsx_pci 0000:01:00.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 60863, parent: 0000:00:1c.0
+Dec 26 01:07:43 archie kernel: i801_smbus 0000:00:1f.3: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: pci 0000:01:00.1: PM: calling pci_pm_resume_early+0x0/0x40 @ 17093, parent: 0000:00:1c.0
+Dec 26 01:07:43 archie kernel: rtsx_pci 0000:01:00.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ath9k 0000:02:00.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17096, parent: 0000:00:1c.3
+Dec 26 01:07:43 archie kernel: pci 0000:01:00.1: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i915 0000:00:02.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 44 usecs
+Dec 26 01:07:43 archie kernel: ath9k 0000:02:00.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:03.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17093, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:03.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:00: PM: calling acpi_subsys_resume_early+0x0/0xc0 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:00: PM: acpi_subsys_resume_early+0x0/0xc0 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:01: PM: acpi_subsys_resume_early+0x0/0xc0 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c_designware INT33C3:00: PM: calling acpi_lpss_resume_early+0x0/0x80 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i2c_designware INT33C3:00: PM: acpi_lpss_resume_early+0x0/0x80 returned 0 after 217581 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-0: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: INT33C3:00
+Dec 26 01:07:43 archie kernel: i2c i2c-0: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_resume_early+0x0/0xc0 @ 60863, parent: i2c-0
+Dec 26 01:07:43 archie kernel: i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_resume_early+0x0/0xc0 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-1: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: 0000:00:02.0
+Dec 26 01:07:43 archie kernel: i2c i2c-1: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-2: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: 0000:00:02.0
+Dec 26 01:07:43 archie kernel: i2c i2c-2: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-3: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: 0000:00:02.0
+Dec 26 01:07:43 archie kernel: i2c i2c-3: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-4: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: 0000:00:02.0
+Dec 26 01:07:43 archie kernel: i2c i2c-4: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-5: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: 0000:00:02.0
+Dec 26 01:07:43 archie kernel: i2c i2c-5: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-6: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: 0000:00:02.0
+Dec 26 01:07:43 archie kernel: i2c i2c-6: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-7: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: card0-eDP-1
+Dec 26 01:07:43 archie kernel: i2c i2c-7: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-8: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: card0-DP-1
+Dec 26 01:07:43 archie kernel: i2c i2c-8: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c i2c-9: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: 0000:00:1f.3
+Dec 26 01:07:43 archie kernel: i2c i2c-9: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: at24 9-0050: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: i2c-9
+Dec 26 01:07:43 archie kernel: at24 9-0050: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: mei_me 0000:00:16.0: PM: calling pci_pm_resume+0x0/0x100 @ 17084, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i915 0000:00:02.0: PM: calling pci_pm_resume+0x0/0x100 @ 60863, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: hsw_uncore 0000:00:00.0: PM: calling pci_pm_resume+0x0/0x100 @ 17101, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: reg-dummy reg-dummy: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: hsw_uncore 0000:00:00.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: reg-dummy reg-dummy: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_resume+0x0/0x100 @ 17101, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: regulator regulator.0: PM: calling regulator_resume+0x0/0x180 @ 17759, parent: reg-dummy
+Dec 26 01:07:43 archie kernel: regulator regulator.0: PM: regulator_resume+0x0/0x180 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ec PNP0C09:00: PM: calling acpi_ec_resume+0x0/0x40 @ 17759, parent: device:01
+Dec 26 01:07:43 archie kernel: ACPI: EC: event unblocked
+Dec 26 01:07:43 archie kernel: ec PNP0C09:00: PM: acpi_ec_resume+0x0/0x40 returned 0 after 7 usecs
+Dec 26 01:07:43 archie kernel: battery PNP0C0A:00: PM: calling acpi_battery_resume+0x0/0x40 [battery] @ 17759, parent: device:01
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.0: PM: calling pci_pm_resume+0x0/0x100 @ 17093, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.3: PM: calling pci_pm_resume+0x0/0x100 @ 17096, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.3: PM: pci_pm_resume+0x0/0x100 returned 0 after 5 usecs
+Dec 26 01:07:43 archie kernel: lpc_ich 0000:00:1f.0: PM: calling pci_pm_resume+0x0/0x100 @ 17096, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: ehci-pci 0000:00:1d.0: PM: calling pci_pm_resume+0x0/0x100 @ 17094, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: lpc_ich 0000:00:1f.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ahci 0000:00:1f.2: PM: calling pci_pm_resume+0x0/0x100 @ 17096, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: ehci-pci 0000:00:1d.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 20 usecs
+Dec 26 01:07:43 archie kernel: i801_smbus 0000:00:1f.3: PM: calling pci_pm_resume+0x0/0x100 @ 17104, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: i801_smbus 0000:00:1f.3: PM: pci_pm_resume+0x0/0x100 returned 0 after 8 usecs
+Dec 26 01:07:43 archie kernel: ath9k 0000:02:00.0: PM: calling pci_pm_resume+0x0/0x100 @ 17099, parent: 0000:00:1c.3
+Dec 26 01:07:43 archie kernel: pcieport 0000:00:1c.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 85 usecs
+Dec 26 01:07:43 archie kernel: ath: phy0: ASPM enabled: 0x42
+Dec 26 01:07:43 archie kernel: ath9k 0000:02:00.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 9 usecs
+Dec 26 01:07:43 archie kernel: pci 0000:01:00.1: PM: calling pci_pm_resume+0x0/0x100 @ 17109, parent: 0000:00:1c.0
+Dec 26 01:07:43 archie kernel: pci 0000:01:00.1: PM: pci_pm_resume+0x0/0x100 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: rtsx_pci 0000:01:00.0: PM: calling pci_pm_resume+0x0/0x100 @ 17094, parent: 0000:00:1c.0
+Dec 26 01:07:43 archie kernel: usb usb1: PM: calling usb_dev_resume+0x0/0x40 @ 17090, parent: 0000:00:1d.0
+Dec 26 01:07:43 archie kernel: mei_me 0000:00:16.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 751 usecs
+Dec 26 01:07:43 archie kernel: battery PNP0C0A:00: PM: acpi_battery_resume+0x0/0x40 [battery] returned 0 after 2639 usecs
+Dec 26 01:07:43 archie kernel: ac ACPI0003:00: PM: calling acpi_ac_resume+0x0/0x80 [ac] @ 17759, parent: device:01
+ec 26 01:07:43 archie kernel: ac ACPI0003:00: PM: acpi_ac_resume+0x0/0x80 [ac] returned 0 after 45 usecs
+Dec 26 01:07:43 archie kernel: button PNP0C0D:00: PM: calling acpi_button_resume+0x0/0x100 @ 17759, parent: device:01
+Dec 26 01:07:43 archie kernel: button PNP0C0D:00: PM: acpi_button_resume+0x0/0x100 returned 0 after 42 usecs
+Dec 26 01:07:43 archie kernel: button PNP0C0C:00: PM: calling acpi_button_resume+0x0/0x100 @ 17759, parent: device:01
+Dec 26 01:07:43 archie kernel: button PNP0C0C:00: PM: acpi_button_resume+0x0/0x100 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: button PNP0C0E:00: PM: calling acpi_button_resume+0x0/0x100 @ 17759, parent: device:01
+Dec 26 01:07:43 archie kernel: button PNP0C0E:00: PM: acpi_button_resume+0x0/0x100 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform INT0800:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform INT0800:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform PNP0103:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform PNP0103:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform PNP0C09:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform PNP0C09:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform PNP0C0A:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform PNP0C0A:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform ACPI0003:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform ACPI0003:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform PNP0C0D:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform PNP0C0D:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform PNP0C0C:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform PNP0C0C:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform PNP0C0E:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform PNP0C0E:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:00: PM: calling acpi_subsys_resume+0x0/0x80 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:00: PM: acpi_subsys_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:01: PM: calling acpi_subsys_resume+0x0/0x80 @ 17759, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: acpi-wmi PNP0C14:01: PM: acpi_subsys_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: clk-lpss-atom clk-lpss-atom: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: clk-lpss-atom clk-lpss-atom: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ieee80211 phy0: PM: calling wiphy_resume+0x0/0x180 [cfg80211] @ 1021, parent: 0000:02:00.0
+Dec 26 01:07:43 archie kernel: platform ACPI000E:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: platform ACPI000E:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: button LNXPWRBN:00: PM: calling acpi_button_resume+0x0/0x100 @ 17759, parent: LNXSYSTM:00
+Dec 26 01:07:43 archie kernel: button LNXPWRBN:00: PM: acpi_button_resume+0x0/0x100 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform rtc-efi.0: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: platform rtc-efi.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform efivars.0: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: platform efivars.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: ieee80211 phy0: PM: wiphy_resume+0x0/0x180 [cfg80211] returned 0 after 3 usecs
+Dec 26 01:07:43 archie kernel: system 00:00: PM: calling pnp_bus_resume+0x0/0xc0 @ 17759, parent: pnp0
+Dec 26 01:07:43 archie kernel: system 00:00: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: rtc_cmos 00:01: PM: calling pnp_bus_resume+0x0/0xc0 @ 17759, parent: pnp0
+Dec 26 01:07:43 archie kernel: rtc_cmos 00:01: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 4 usecs
+Dec 26 01:07:43 archie kernel: system 00:02: PM: calling pnp_bus_resume+0x0/0xc0 @ 17759, parent: pnp0
+Dec 26 01:07:43 archie kernel: system 00:02: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i8042 kbd 00:03: PM: calling pnp_bus_resume+0x0/0xc0 @ 17759, parent: pnp0
+Dec 26 01:07:43 archie kernel: i8042 kbd 00:03: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: system 00:04: PM: calling pnp_bus_resume+0x0/0xc0 @ 17759, parent: pnp0
+Dec 26 01:07:43 archie kernel: system 00:04: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: system 00:05: PM: calling pnp_bus_resume+0x0/0xc0 @ 17759, parent: pnp0
+Dec 26 01:07:43 archie kernel: system 00:05: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: intel_rapl_msr intel_rapl_msr.0: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: intel_rapl_msr intel_rapl_msr.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input0: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: PNP0C0D:00
+Dec 26 01:07:43 archie kernel: input input0: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input1: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: PNP0C0C:00
+Dec 26 01:07:43 archie kernel: input input1: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input2: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: PNP0C0E:00
+Dec 26 01:07:43 archie kernel: input input2: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input3: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: LNXPWRBN:00
+Dec 26 01:07:43 archie kernel: input input3: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: serial8250 serial8250: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: serial8250 serial8250: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_resume+0x0/0x80 @ 17104, parent: i2c-0
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:1b.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 3872 usecs
+Dec 26 01:07:43 archie kernel: ahci 0000:00:1f.2: PM: pci_pm_resume+0x0/0x100 returned 0 after 10067 usecs
+Dec 26 01:07:43 archie kernel:  ata1: PM: calling ata_port_pm_resume+0x0/0x80 @ 17093, parent: 0000:00:1f.2
+Dec 26 01:07:43 archie kernel:  ata4: PM: calling ata_port_pm_resume+0x0/0x80 @ 17109, parent: 0000:00:1f.2
+Dec 26 01:07:43 archie kernel:  ata4: PM: ata_port_pm_resume+0x0/0x80 returned 0 after 4 usecs
+Dec 26 01:07:43 archie kernel:  ata1: PM: ata_port_pm_resume+0x0/0x80 returned 0 after 8 usecs
+Dec 26 01:07:43 archie kernel: scsi host3: PM: calling scsi_bus_resume+0x0/0x40 @ 17107, parent: ata4
+Dec 26 01:07:43 archie kernel: scsi host3: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: scsi host0: PM: calling scsi_bus_resume+0x0/0x40 @ 17108, parent: ata1
+Dec 26 01:07:43 archie kernel: scsi host0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel:  ata3: PM: calling ata_port_pm_resume+0x0/0x80 @ 17097, parent: 0000:00:1f.2
+Dec 26 01:07:43 archie kernel:  ata3: PM: ata_port_pm_resume+0x0/0x80 returned 0 after 3 usecs
+Dec 26 01:07:43 archie kernel: scsi target0:0:0: PM: calling scsi_bus_resume+0x0/0x40 @ 17091, parent: host0
+Dec 26 01:07:43 archie kernel: scsi target0:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: scsi host2: PM: calling scsi_bus_resume+0x0/0x40 @ 17105, parent: ata3
+Dec 26 01:07:43 archie kernel: scsi host2: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: sd 0:0:0:0: PM: calling scsi_bus_resume+0x0/0x40 @ 17082, parent: target0:0:0
+Dec 26 01:07:43 archie kernel:  ata2: PM: calling ata_port_pm_resume+0x0/0x80 @ 17099, parent: 0000:00:1f.2
+Dec 26 01:07:43 archie kernel: sd 0:0:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 3 usecs
+Dec 26 01:07:43 archie kernel:  ata2: PM: ata_port_pm_resume+0x0/0x80 returned 0 after 3 usecs
+Dec 26 01:07:43 archie kernel: sd 0:0:0:0: [sda] Starting disk
+Dec 26 01:07:43 archie kernel: scsi host1: PM: calling scsi_bus_resume+0x0/0x40 @ 17110, parent: ata2
+Dec 26 01:07:43 archie kernel: scsi host1: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: scsi target1:0:0: PM: calling scsi_bus_resume+0x0/0x40 @ 17089, parent: host1
+Dec 26 01:07:43 archie kernel: scsi target1:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: sd 1:0:0:0: PM: calling scsi_bus_resume+0x0/0x40 @ 17084, parent: target1:0:0
+Dec 26 01:07:43 archie kernel: sd 1:0:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 1 usecs
+Dec 26 01:07:43 archie kernel: sd 1:0:0:0: [sdb] Starting disk
+Dec 26 01:07:43 archie kernel: rtsx_pci 0000:01:00.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 10275 usecs
+Dec 26 01:07:43 archie kernel: rtsx_pci_sdmmc rtsx_pci_sdmmc.0: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:01:00.0
+Dec 26 01:07:43 archie kernel: rtsx_pci_sdmmc rtsx_pci_sdmmc.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: usb usb1: PM: usb_dev_resume+0x0/0x40 returned 0 after 52480 usecs
+Dec 26 01:07:43 archie kernel: usb 1-1: PM: calling usb_dev_resume+0x0/0x40 @ 17098, parent: usb1
+Dec 26 01:07:43 archie kernel: usb 1-1: PM: usb_dev_resume+0x0/0x40 returned 0 after 121930 usecs
+Dec 26 01:07:43 archie kernel: usb 1-1.7: PM: calling usb_dev_resume+0x0/0x40 @ 8527, parent: 1-1
+Dec 26 01:07:43 archie kernel: usb 1-1.5: PM: calling usb_dev_resume+0x0/0x40 @ 17113, parent: 1-1
+Dec 26 01:07:43 archie kernel: i915 0000:00:02.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 245114 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:03.0: PM: calling pci_pm_resume+0x0/0x100 @ 17083, parent: pci0000:00
+Dec 26 01:07:43 archie kernel: backlight intel_backlight: PM: calling backlight_resume+0x0/0x80 @ 17759, parent: card0-eDP-1
+Dec 26 01:07:43 archie kernel: backlight intel_backlight: PM: backlight_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input4: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: LNXVIDEO:00
+Dec 26 01:07:43 archie kernel: input input4: PM: input_dev_resume+0x0/0x40 returned 0 after 1 usecs
+Dec 26 01:07:43 archie kernel: alarmtimer alarmtimer.0.auto: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: rtc0
+Dec 26 01:07:43 archie kernel: alarmtimer alarmtimer.0.auto: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: coretemp coretemp.0: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: coretemp coretemp.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: simple-framebuffer simple-framebuffer.0: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: pla>
+Dec 26 01:07:43 archie kernel: simple-framebuffer simple-framebuffer.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform microcode: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: platform microcode: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: i8042 i8042: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: i8042 i8042: PM: platform_pm_resume+0x0/0x80 returned 0 after 670 usecs
+Dec 26 01:07:43 archie kernel: atkbd serio0: PM: calling serio_resume+0x0/0xc0 @ 17759, parent: i8042
+Dec 26 01:07:43 archie kernel: atkbd serio0: PM: serio_resume+0x0/0xc0 returned 0 after 4 usecs
+Dec 26 01:07:43 archie kernel: input input5: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: serio0
+Dec 26 01:07:43 archie kernel: input input5: PM: input_dev_resume+0x0/0x40 returned 0 after 2 usecs
+Dec 26 01:07:43 archie kernel: snd_hda_intel 0000:00:03.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 2371 usecs
+Dec 26 01:07:43 archie kernel: usb 1-1.5: reset full-speed USB device number 3 using ehci-pci
+Dec 26 01:07:43 archie kernel: i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_resume+0x0/0x80 returned 0 after 261525 usecs
+ec 26 01:07:43 archie kernel: input input9: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: 0018:06CB:2970.0001
+Dec 26 01:07:43 archie kernel: input input9: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input10: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: 0018:06CB:2970.0001
+Dec 26 01:07:43 archie kernel: input input10: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform iTCO_wdt.1.auto: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform iTCO_wdt.1.auto: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform intel-spi: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+Dec 26 01:07:43 archie kernel: platform intel-spi: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: platform regulatory.0: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+Dec 26 01:07:43 archie kernel: platform regulatory.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input12: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: input input12: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input13: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: input input13: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input14: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: input input14: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input15: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: input input15: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input16: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: card0
+Dec 26 01:07:43 archie kernel: input input16: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: rfkill rfkill0: PM: calling rfkill_resume+0x0/0xc0 [rfkill] @ 17759, parent: phy0
+Dec 26 01:07:43 archie kernel: rfkill rfkill0: PM: rfkill_resume+0x0/0xc0 [rfkill] returned 0 after 3 usecs
+Dec 26 01:07:43 archie kernel: leds ath9k-phy0: PM: calling led_resume+0x0/0x80 @ 17759, parent: 0000:02:00.0
+Dec 26 01:07:43 archie kernel: leds ath9k-phy0: PM: led_resume+0x0/0x80 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: usb 1-1.5: PM: usb_dev_resume+0x0/0x40 returned 0 after 156214 usecs
+Dec 26 01:07:43 archie kernel: usb 1-1.7: reset high-speed USB device number 4 using ehci-pci
+Dec 26 01:07:43 archie kernel: usb 1-1.7: PM: usb_dev_resume+0x0/0x40 returned 0 after 303917 usecs
+Dec 26 01:07:43 archie kernel: input input17: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: 1-1.7:1.0
+Dec 26 01:07:43 archie kernel: input input17: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: at24 9-0050: PM: calling pm_runtime_force_resume+0x0/0x100 @ 17759, parent: i2c-9
+Dec 26 01:07:43 archie kernel: at24 9-0050: PM: pm_runtime_force_resume+0x0/0x100 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: input input18: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: card1
+Dec 26 01:07:43 archie kernel: input input18: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+Dec 26 01:07:43 archie kernel: OOM killer enabled.
+Dec 26 01:07:43 archie kernel: Restarting tasks ... 
+Dec 26 01:07:43 archie kernel: pci_bus 0000:01: Allocating resources
+Dec 26 01:07:43 archie kernel: pci_bus 0000:02: Allocating resources
+Dec 26 01:07:43 archie kernel: pci_bus 0000:01: Allocating resources
+Dec 26 01:07:43 archie kernel: pci_bus 0000:02: Allocating resources
+Dec 26 01:07:43 archie kernel: done.
+Dec 26 01:07:43 archie kernel: PM: suspend exit
+Dec 26 01:07:43 archie kernel: ata2: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+Dec 26 01:07:43 archie kernel: audit: type=1130 audit(1640461063.764:320): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=syst>
+Dec 26 01:07:43 archie kernel: audit: type=1131 audit(1640461063.764:321): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=syst>
+Dec 26 01:07:43 archie kernel: ata2.00: configured for UDMA/133
+Dec 26 01:07:43 archie kernel: filter_write: 10 callbacks suppressed
+Dec 26 01:07:43 archie kernel: msr: Write to unrecognized MSR 0x150 by intel-undervolt (pid: 17785).
+Dec 26 01:07:43 archie kernel: msr: See https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/about for details.
+Dec 26 01:07:43 archie kernel: audit: type=1130 audit(1640461063.803:322): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=unde>
+Dec 26 01:07:43 archie kernel: audit: type=1131 audit(1640461063.803:323): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=unde>
+Dec 26 01:07:43 archie audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-suspend comm="systemd" e>
+Dec 26 01:07:43 archie audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-suspend comm="systemd" ex>
+Dec 26 01:07:43 archie audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=undervolt comm="systemd" exe="/u>
+Dec 26 01:07:43 archie audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=undervolt comm="systemd" exe="/us>
+Dec 26 01:07:43 archie systemd-resolved[19514]: Clock change detected. Flushing caches.
+Dec 26 01:07:43 archie dnsmasq-dhcp[2006]: DHCPREQUEST(waydroid0) 192.168.250.112 00:16:3e:f9:d3:03
+Dec 26 01:07:43 archie systemd-sleep[17759]: System returned from sleep state.
+Dec 26 01:07:43 archie dnsmasq-dhcp[2006]: DHCPACK(waydroid0) 192.168.250.112 00:16:3e:f9:d3:03
+Dec 26 01:07:43 archie intel-undervolt[17785]: CPU (0): -80.08 mV
+Dec 26 01:07:43 archie intel-undervolt[17785]: GPU (1): -59.57 mV
+Dec 26 01:07:43 archie intel-undervolt[17785]: CPU Cache (2): -80.08 mV
+Dec 26 01:07:43 archie intel-undervolt[17785]: System Agent (3): -0.00 mV
+Dec 26 01:07:43 archie intel-undervolt[17785]: Critical offset: -20°C
+Dec 26 01:07:43 archie systemd[1]: systemd-suspend.service: Deactivated successfully.
+Dec 26 01:07:43 archie missu[17786]: [psd-suspend-sync] re-taking inhibit lock...
+Dec 26 01:07:43 archie systemd[1]: Finished System Suspend.
+Dec 26 01:07:43 archie systemd[1]: Stopped target Sleep.
+Dec 26 01:07:43 archie systemd[1]: Reached target Suspend.
+Dec 26 01:07:43 archie systemd-logind[385]: Operation 'sleep' finished.
+Dec 26 01:07:43 archie systemd[1]: Starting undervolt...
+Dec 26 01:07:43 archie systemd[1]: Stopped target Suspend.
+Dec 26 01:07:43 archie NetworkManager[731]: <info>  [1640461063.7693] manager: sleep: wake requested (sleeping: yes  enabled: yes)
+Dec 26 01:07:43 archie NetworkManager[731]: <info>  [1640461063.7694] device (wlan0): state change: unmanaged -> unavailable (reason>
+Dec 26 01:07:43 archie systemd[1]: undervolt.service: Deactivated successfully.
+Dec 26 01:07:43 archie systemd[1]: Finished undervolt.
+Dec 26 01:07:43 archie NetworkManager[731]: <info>  [1640461063.8225] manager: NetworkManager state is now CONNECTED_LOCAL
+Dec 26 01:07:43 archie NetworkManager[731]: <info>  [1640461063.8292] device (wlan0): new IWD device state is disconnected
+Dec 26 01:07:43 archie NetworkManager[731]: <info>  [1640461063.8298] device (wlan0): state change: unavailable -> disconnected (rea>
+Dec 26 01:07:44 archie kernel: wlan0: authenticate with a0:47:d7:20:32:88
+Dec 26 01:07:44 archie NetworkManager[731]: <info>  [1640461064.2978] device (wlan0): new IWD device state is connecting
+Dec 26 01:07:44 archie NetworkManager[731]: <info>  [1640461064.2984] device (wlan0): Activation: starting connection 'FTTH' (627f80>
+Dec 26 01:07:44 archie NetworkManager[731]: <info>  [1640461064.2985] device (wlan0): state change: disconnected -> prepare (reason >
+Dec 26 01:07:44 archie NetworkManager[731]: <info>  [1640461064.2987] manager: NetworkManager state is now CONNECTING
+Dec 26 01:07:44 archie NetworkManager[731]: <info>  [1640461064.2989] device (wlan0): state change: prepare -> config (reason 'none'>
+Dec 26 01:07:44 archie kernel: wlan0: send auth to a0:47:d7:20:32:88 (try 1/3)
+Dec 26 01:07:44 archie kernel: wlan0: authenticated
+Dec 26 01:07:44 archie kernel: wlan0: associate with a0:47:d7:20:32:88 (try 1/3)
+Dec 26 01:07:44 archie kernel: wlan0: RX AssocResp from a0:47:d7:20:32:88 (capab=0x411 status=0 aid=6)
+Dec 26 01:07:44 archie kernel: wlan0: associated
+Dec 26 01:07:44 archie kernel: IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+Dec 26 01:07:45 archie kernel: ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+Dec 26 01:07:45 archie kernel: ata1.00: configured for UDMA/133
+Dec 26 01:07:46 archie NetworkManager[731]: <info>  [1640461066.4069] device (wlan0): new IWD device state is connected
+Dec 26 01:07:46 archie NetworkManager[731]: <info>  [1640461066.4073] device (wlan0): state change: config -> ip-config (reason 'non>
+Dec 26 01:07:46 archie systemd-resolved[19514]: wlan0: Bus client set DNS server list to: 1.1.1.1
+Dec 26 01:07:46 archie NetworkManager[731]: <info>  [1640461066.4094] dhcp4 (wlan0): activation: beginning transaction (timeout in 4>
+Dec 26 01:07:46 archie systemd-resolved[19514]: wlan0: Bus client set search domain list to: iball.wifi.net
+Dec 26 01:07:46 archie dnsmasq[2006]: reading /etc/resolv.conf
+Dec 26 01:07:46 archie dnsmasq[2006]: using nameserver 127.0.0.53#53
+Dec 26 01:07:46 archie dnsmasq[2006]: reading /etc/resolv.conf
+Dec 26 01:07:46 archie dnsmasq[2006]: using nameserver 127.0.0.53#53
+Dec 26 01:07:46 archie NetworkManager[731]: <info>  [1640461066.5056] dhcp4 (wlan0): state changed unknown -> bound, address=192.168>
+Dec 26 01:07:46 archie NetworkManager[731]: <info>  [1640461066.5086] device (wlan0): state change: ip-config -> ip-check (reason 'n>
+Dec 26 01:07:46 archie NetworkManager[731]: <info>  [1640461066.5144] device (wlan0): state change: ip-check -> secondaries (reason >
+Dec 26 01:07:46 archie NetworkManager[731]: <info>  [1640461066.5152] device (wlan0): state change: secondaries -> activated (reason>
+Dec 26 01:07:46 archie NetworkManager[731]: <info>  [1640461066.5167] manager: NetworkManager state is now CONNECTED_LOCAL
+Dec 26 01:07:46 archie NetworkManager[731]: <info>  [1640461066.5178] manager: NetworkManager state is now CONNECTED_SITE
+Dec 26 01:07:46 archie NetworkManager[731]: <info>  [1640461066.5179] policy: set 'FTTH' (wlan0) as default for IPv4 routing and DNS
+Dec 26 01:07:46 archie NetworkManager[731]: <info>  [1640461066.5196] device (wlan0): Activation: successful, device activated.
+Dec 26 01:07:46 archie systemd-resolved[19514]: wlan0: Bus client set default route setting: yes
+Dec 26 01:07:47 archie NetworkManager[731]: <info>  [1640461067.2403] manager: NetworkManager state is now CONNECTED_GLOBAL
+Dec 26 01:07:48 archie iwd[380]: netconfig: Failed to start DHCPv6 client for interface 3
+Dec 26 01:07:52 archie systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+Dec 26 01:07:52 archie kernel: audit: type=1131 audit(1640461072.191:324): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=Netw>
+Dec 26 01:07:52 archie audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="s>
+

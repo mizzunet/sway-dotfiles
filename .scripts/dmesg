@@ -1,0 +1,1411 @@
+[20747.899710] scsi host1: PM: calling scsi_bus_resume+0x0/0x40 @ 49808, parent: ata2
+[20747.899714] scsi target0:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[20747.899715] scsi host1: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[20747.899723]  ata4: PM: calling ata_port_pm_resume+0x0/0x80 @ 49811, parent: 0000:00:1f.2
+[20747.899727] sd 0:0:0:0: PM: calling scsi_bus_resume+0x0/0x40 @ 44676, parent: target0:0:0
+[20747.899731]  ata4: PM: ata_port_pm_resume+0x0/0x80 returned 0 after 3 usecs
+[20747.899735] sd 0:0:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 2 usecs
+[20747.899740] sd 0:0:0:0: [sda] Starting disk
+[20747.899748] scsi target1:0:0: PM: calling scsi_bus_resume+0x0/0x40 @ 49821, parent: host1
+[20747.899753] scsi target1:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[20747.899756] scsi host2: PM: calling scsi_bus_resume+0x0/0x40 @ 49807, parent: ata3
+[20747.899761] scsi host2: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[20747.899762] sd 1:0:0:0: PM: calling scsi_bus_resume+0x0/0x40 @ 49794, parent: target1:0:0
+[20747.899767] sd 1:0:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 1 usecs
+[20747.899773] sd 1:0:0:0: [sdb] Starting disk
+[20747.899777] scsi host3: PM: calling scsi_bus_resume+0x0/0x40 @ 49805, parent: ata4
+[20747.899782] scsi host3: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[20747.899985] rtsx_pci 0000:01:00.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 10249 usecs
+[20747.900000] rtsx_pci_sdmmc rtsx_pci_sdmmc.0: PM: calling platform_pm_resume+0x0/0x80 @ 49785, parent: 0000:01:00.0
+[20747.900005] rtsx_pci_sdmmc rtsx_pci_sdmmc.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[20747.900025] backlight intel_backlight: PM: calling backlight_resume+0x0/0x80 @ 49785, parent: card0-eDP-1
+[20747.900031] backlight intel_backlight: PM: backlight_resume+0x0/0x80 returned 0 after 0 usecs
+[20747.900038] input input4: PM: calling input_dev_resume+0x0/0x40 @ 49785, parent: LNXVIDEO:00
+[20747.900042] input input4: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[20747.900049] alarmtimer alarmtimer.0.auto: PM: calling platform_pm_resume+0x0/0x80 @ 49785, parent: rtc0
+[20747.900062] alarmtimer alarmtimer.0.auto: PM: platform_pm_resume+0x0/0x80 returned 0 after 8 usecs
+[20747.900066] coretemp coretemp.0: PM: calling platform_pm_resume+0x0/0x80 @ 49785, parent: platform
+[20747.900070] coretemp coretemp.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[20747.900075] simple-framebuffer simple-framebuffer.0: PM: calling platform_pm_resume+0x0/0x80 @ 49785, parent: platform
+[20747.900079] simple-framebuffer simple-framebuffer.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[20747.900094] platform microcode: PM: calling platform_pm_resume+0x0/0x80 @ 49785, parent: platform
+[20747.900098] platform microcode: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[20747.900110] i8042 i8042: PM: calling platform_pm_resume+0x0/0x80 @ 49785, parent: platform
+[20747.900882] i8042 i8042: PM: platform_pm_resume+0x0/0x80 returned 0 after 768 usecs
+[20747.900886] atkbd serio0: PM: calling serio_resume+0x0/0xc0 @ 49785, parent: i8042
+[20747.900892] atkbd serio0: PM: serio_resume+0x0/0xc0 returned 0 after 2 usecs
+[20747.900896] input input5: PM: calling input_dev_resume+0x0/0x40 @ 49785, parent: serio0
+[20747.900901] input input5: PM: input_dev_resume+0x0/0x40 returned 0 after 1 usecs
+[20747.942131] usb usb1: PM: usb_dev_resume+0x0/0x40 returned 0 after 52514 usecs
+[20747.942162] usb 1-1: PM: calling usb_dev_resume+0x0/0x40 @ 49801, parent: usb1
+[20748.058099] usb 1-1: PM: usb_dev_resume+0x0/0x40 returned 0 after 115928 usecs
+[20748.058126] usb 1-1.5: PM: calling usb_dev_resume+0x0/0x40 @ 49776, parent: 1-1
+[20748.058132] usb 1-1.7: PM: calling usb_dev_resume+0x0/0x40 @ 49810, parent: 1-1
+[20748.134199] usb 1-1.5: reset full-speed USB device number 3 using ehci-pci
+[20748.144377] i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_resume+0x0/0x80 returned 0 after 253017 usecs
+[20748.144427] input input9: PM: calling input_dev_resume+0x0/0x40 @ 49785, parent: 0018:06CB:2970.0001
+[20748.144437] input input9: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[20748.144443] input input10: PM: calling input_dev_resume+0x0/0x40 @ 49785, parent: 0018:06CB:2970.0001
+[20748.144447] input input10: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[20748.144458] platform iTCO_wdt.1.auto: PM: calling platform_pm_resume+0x0/0x80 @ 49785, parent: 0000:00:1f.0
+[20748.144464] platform iTCO_wdt.1.auto: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[20748.144468] platform intel-spi: PM: calling platform_pm_resume+0x0/0x80 @ 49785, parent: 0000:00:1f.0
+[20748.144472] platform intel-spi: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[20748.144476] platform regulatory.0: PM: calling platform_pm_resume+0x0/0x80 @ 49785, parent: platform
+[20748.144480] platform regulatory.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[20748.144488] input input12: PM: calling input_dev_resume+0x0/0x40 @ 49785, parent: card0
+[20748.144492] input input12: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[20748.144496] input input13: PM: calling input_dev_resume+0x0/0x40 @ 49785, parent: card0
+[20748.144499] input input13: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[20748.144503] input input14: PM: calling input_dev_resume+0x0/0x40 @ 49785, parent: card0
+[20748.144507] input input14: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[20748.144511] input input15: PM: calling input_dev_resume+0x0/0x40 @ 49785, parent: card0
+[20748.144514] input input15: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[20748.144518] input input16: PM: calling input_dev_resume+0x0/0x40 @ 49785, parent: card0
+[20748.144522] input input16: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[20748.144526] rfkill rfkill0: PM: calling rfkill_resume+0x0/0xc0 [rfkill] @ 49785, parent: phy0
+[20748.144539] rfkill rfkill0: PM: rfkill_resume+0x0/0xc0 [rfkill] returned 0 after 5 usecs
+[20748.144543] leds ath9k-phy0: PM: calling led_resume+0x0/0x80 @ 49785, parent: 0000:02:00.0
+[20748.144548] leds ath9k-phy0: PM: led_resume+0x0/0x80 returned 0 after 0 usecs
+[20748.214804] usb 1-1.5: PM: usb_dev_resume+0x0/0x40 returned 0 after 156672 usecs
+[20748.277125] usb 1-1.7: reset high-speed USB device number 4 using ehci-pci
+[20748.361976] usb 1-1.7: PM: usb_dev_resume+0x0/0x40 returned 0 after 303836 usecs
+[20748.362028] input input17: PM: calling input_dev_resume+0x0/0x40 @ 49785, parent: 1-1.7:1.0
+[20748.362037] input input17: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[20748.362043] at24 9-0050: PM: calling pm_runtime_force_resume+0x0/0x100 @ 49785, parent: i2c-9
+[20748.362049] at24 9-0050: PM: pm_runtime_force_resume+0x0/0x100 returned 0 after 0 usecs
+[20748.362055] input input18: PM: calling input_dev_resume+0x0/0x40 @ 49785, parent: card1
+[20748.362060] input input18: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[20748.362336] OOM killer enabled.
+[20748.362339] Restarting tasks ... 
+[20748.368540] pci_bus 0000:01: Allocating resources
+[20748.368558] pci_bus 0000:02: Allocating resources
+[20748.368939] pci_bus 0000:01: Allocating resources
+[20748.368952] pci_bus 0000:02: Allocating resources
+[20748.369122] done.
+[20748.384294] ata2: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+[20748.387167] PM: suspend exit
+[20748.388640] audit: type=1130 audit(1640453253.737:301): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-suspend comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[20748.388654] audit: type=1131 audit(1640453253.737:302): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-suspend comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[20748.407532] ata2.00: configured for UDMA/133
+[20748.484406] filter_write: 10 callbacks suppressed
+[20748.484412] msr: Write to unrecognized MSR 0x150 by intel-undervolt (pid: 49845).
+[20748.484416] msr: See https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/about for details.
+[20748.488820] audit: type=1130 audit(1640453253.837:303): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=undervolt comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[20748.488829] audit: type=1131 audit(1640453253.837:304): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=undervolt comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[20748.889025] wlan0: authenticate with a0:47:d7:20:32:88
+[20748.902638] wlan0: send auth to a0:47:d7:20:32:88 (try 1/3)
+[20748.904772] wlan0: authenticated
+[20748.908096] wlan0: associate with a0:47:d7:20:32:88 (try 1/3)
+[20748.924726] wlan0: RX AssocResp from a0:47:d7:20:32:88 (capab=0x411 status=0 aid=6)
+[20748.924849] wlan0: associated
+[20748.933120] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[20750.269097] ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+[20750.334578] ata1.00: configured for UDMA/133
+[20755.882773] audit: type=1131 audit(1640453261.231:305): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[24501.768717] audit: type=1130 audit(1640457007.296:306): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=shadow comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[24501.825511] audit: type=1131 audit(1640457007.354:307): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=shadow comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[25822.953702] audit: type=1130 audit(1640458328.506:308): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[25822.956152] wlan0: deauthenticating from a0:47:d7:20:32:88 by local choice (Reason: 3=DEAUTH_LEAVING)
+[25823.152531] PM: suspend entry (deep)
+[25823.220968] Filesystems sync: 0.068 seconds
+[25823.221074] Freezing user space processes ... (elapsed 0.002 seconds) done.
+[25823.223275] OOM killer disabled.
+[25823.223276] Freezing remaining freezable tasks ... (elapsed 0.001 seconds) done.
+[25823.224512] printk: Suspending console(s) (use no_console_suspend to debug)
+[25823.224728] input input18: PM: calling input_dev_suspend+0x0/0x40 @ 17078, parent: card1
+[25823.224738] input input18: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.224743] sound pcmC1D0c: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17078, parent: card1
+[25823.224756] sound pcmC1D0c: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+[25823.224764] sound pcmC1D0p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17078, parent: card1
+[25823.224770] sound pcmC1D0p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+[25823.224779] at24 9-0050: PM: calling pm_runtime_force_suspend+0x0/0x140 @ 17078, parent: i2c-9
+[25823.224784] at24 9-0050: PM: pm_runtime_force_suspend+0x0/0x140 returned 0 after 0 usecs
+[25823.224788] input input17: PM: calling input_dev_suspend+0x0/0x40 @ 17078, parent: 1-1.7:1.0
+[25823.224792] input input17: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.224798] leds ath9k-phy0: PM: calling led_suspend+0x0/0x80 @ 17078, parent: 0000:02:00.0
+[25823.224803] leds ath9k-phy0: PM: led_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.224807] rfkill rfkill0: PM: calling rfkill_suspend+0x0/0x40 [rfkill] @ 17078, parent: phy0
+[25823.224813] rfkill rfkill0: PM: rfkill_suspend+0x0/0x40 [rfkill] returned 0 after 0 usecs
+[25823.224820] input input16: PM: calling input_dev_suspend+0x0/0x40 @ 17078, parent: card0
+[25823.224824] input input16: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.224829] input input15: PM: calling input_dev_suspend+0x0/0x40 @ 17078, parent: card0
+[25823.224832] input input15: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.224838] input input14: PM: calling input_dev_suspend+0x0/0x40 @ 17078, parent: card0
+[25823.224841] input input14: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.224846] input input13: PM: calling input_dev_suspend+0x0/0x40 @ 17078, parent: card0
+[25823.224850] input input13: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.224855] input input12: PM: calling input_dev_suspend+0x0/0x40 @ 17078, parent: card0
+[25823.224824] ieee80211 phy0: PM: calling wiphy_suspend+0x0/0x1c0 [cfg80211] @ 3539, parent: 0000:02:00.0
+[25823.224860] input input12: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.224864] sound pcmC0D10p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17078, parent: card0
+[25823.224872] sound pcmC0D10p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+[25823.224880] sound pcmC0D9p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17078, parent: card0
+[25823.224886] sound pcmC0D9p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+[25823.224894] sound pcmC0D8p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17078, parent: card0
+[25823.224881] ieee80211 phy0: PM: wiphy_suspend+0x0/0x1c0 [cfg80211] returned 0 after 3 usecs
+[25823.224900] sound pcmC0D8p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+[25823.224907] sound pcmC0D7p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17078, parent: card0
+[25823.224914] sound pcmC0D7p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+[25823.224921] sound pcmC0D3p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17078, parent: card0
+[25823.224927] sound pcmC0D3p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+[25823.224941] platform regulatory.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: platform
+[25823.224943] snd_hda_intel 0000:00:03.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 3539, parent: pci0000:00
+[25823.224949] platform regulatory.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.224955] platform intel-spi: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25823.224960] platform intel-spi: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.224964] platform iTCO_wdt.1.auto: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25823.224968] platform iTCO_wdt.1.auto: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.224983] input input10: PM: calling input_dev_suspend+0x0/0x40 @ 17078, parent: 0018:06CB:2970.0001
+[25823.224987] input input10: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.224991] input input9: PM: calling input_dev_suspend+0x0/0x40 @ 17078, parent: 0018:06CB:2970.0001
+[25823.224995] input input9: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.225001] input input5: PM: calling input_dev_suspend+0x0/0x40 @ 17078, parent: serio0
+[25823.225009] input input5: PM: input_dev_suspend+0x0/0x40 returned 0 after 2 usecs
+[25823.225022] atkbd serio0: PM: calling serio_suspend+0x0/0x80 @ 17078, parent: i8042
+[25823.228993] atkbd serio0: PM: serio_suspend+0x0/0x80 returned 0 after 3967 usecs
+[25823.229012] i8042 i8042: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: platform
+[25823.229680] i8042 i8042: PM: platform_pm_suspend+0x0/0x80 returned 0 after 662 usecs
+[25823.229704] usb 1-1.7: PM: calling usb_dev_suspend+0x0/0x40 @ 62533, parent: 1-1
+[25823.229712] usb 1-1.7: PM: usb_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.229732] usb 1-1.5: PM: calling usb_dev_suspend+0x0/0x40 @ 3893, parent: 1-1
+[25823.229734] platform microcode: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: platform
+[25823.229737] sd 1:0:0:0: PM: calling scsi_bus_suspend+0x0/0x80 @ 62533, parent: target1:0:0
+[25823.229741] platform microcode: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.229743] usb 1-1.5: PM: usb_dev_suspend+0x0/0x40 returned 0 after 3 usecs
+[25823.229750] sd 0:0:0:0: PM: calling scsi_bus_suspend+0x0/0x80 @ 1021, parent: target0:0:0
+[25823.229766] simple-framebuffer simple-framebuffer.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: platform
+[25823.229770] usb 1-1: PM: calling usb_dev_suspend+0x0/0x40 @ 599, parent: usb1
+[25823.229773] simple-framebuffer simple-framebuffer.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.229782] coretemp coretemp.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: platform
+[25823.229787] coretemp coretemp.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.229791] alarmtimer alarmtimer.0.auto: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: rtc0
+[25823.229946] alarmtimer alarmtimer.0.auto: PM: platform_pm_suspend+0x0/0x80 returned 0 after 150 usecs
+[25823.229961] input input4: PM: calling input_dev_suspend+0x0/0x40 @ 17078, parent: LNXVIDEO:00
+[25823.229968] input input4: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.229977] backlight intel_backlight: PM: calling backlight_suspend+0x0/0x80 @ 17078, parent: card0-eDP-1
+[25823.229983] backlight intel_backlight: PM: backlight_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.229998] scsi host3: PM: calling scsi_bus_suspend+0x0/0x80 @ 60863, parent: ata4
+[25823.230002] scsi host3: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.230008] scsi host2: PM: calling scsi_bus_suspend+0x0/0x80 @ 60863, parent: ata3
+[25823.230012] scsi host2: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.230018] rtsx_pci_sdmmc rtsx_pci_sdmmc.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: 0000:01:00.0
+[25823.230023] rtsx_pci_sdmmc rtsx_pci_sdmmc.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.230040] serial8250 serial8250: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: platform
+[25823.230045] serial8250 serial8250: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.230055] input input3: PM: calling input_dev_suspend+0x0/0x40 @ 17078, parent: LNXPWRBN:00
+[25823.230059] input input3: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.230063] input input2: PM: calling input_dev_suspend+0x0/0x40 @ 17078, parent: PNP0C0E:00
+[25823.230067] input input2: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.230071] input input1: PM: calling input_dev_suspend+0x0/0x40 @ 17078, parent: PNP0C0C:00
+[25823.230072]  ata4: PM: calling ata_port_pm_suspend+0x0/0x80 @ 17082, parent: 0000:00:1f.2
+[25823.230075] input input1: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.230081] input input0: PM: calling input_dev_suspend+0x0/0x40 @ 17078, parent: PNP0C0D:00
+[25823.230086] input input0: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.230089]  ata4: PM: ata_port_pm_suspend+0x0/0x80 returned 0 after 10 usecs
+[25823.230094]  ata3: PM: calling ata_port_pm_suspend+0x0/0x80 @ 17082, parent: 0000:00:1f.2
+[25823.230106]  ata3: PM: ata_port_pm_suspend+0x0/0x80 returned 0 after 9 usecs
+[25823.230115] intel_rapl_msr intel_rapl_msr.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: platform
+[25823.230121] intel_rapl_msr intel_rapl_msr.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.230163] system 00:05: PM: calling pnp_bus_suspend+0x0/0x40 @ 17078, parent: pnp0
+[25823.230169] system 00:05: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.230173] system 00:04: PM: calling pnp_bus_suspend+0x0/0x40 @ 17078, parent: pnp0
+[25823.230176] system 00:04: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.230180] i8042 kbd 00:03: PM: calling pnp_bus_suspend+0x0/0x40 @ 17078, parent: pnp0
+[25823.230184] i8042 kbd 00:03: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.230188] system 00:02: PM: calling pnp_bus_suspend+0x0/0x40 @ 17078, parent: pnp0
+[25823.230191] system 00:02: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.230195] rtc_cmos 00:01: PM: calling pnp_bus_suspend+0x0/0x40 @ 17078, parent: pnp0
+[25823.230224] rtc_cmos 00:01: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 25 usecs
+[25823.230228] system 00:00: PM: calling pnp_bus_suspend+0x0/0x40 @ 17078, parent: pnp0
+[25823.230232] system 00:00: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.230237] platform efivars.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: platform
+[25823.230241] platform efivars.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.230245] platform rtc-efi.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: platform
+[25823.230248] platform rtc-efi.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.230256] i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_suspend+0x0/0x80 @ 17086, parent: i2c-0
+[25823.231375] usb 1-1: PM: usb_dev_suspend+0x0/0x40 returned 0 after 1600 usecs
+[25823.231387] usb usb1: PM: calling usb_dev_suspend+0x0/0x40 @ 13164, parent: 0000:00:1d.0
+[25823.232134] usb usb1: PM: usb_dev_suspend+0x0/0x40 returned 0 after 742 usecs
+[25823.238415] sd 0:0:0:0: [sda] Synchronizing SCSI cache
+[25823.238609] snd_hda_intel 0000:00:03.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 13659 usecs
+[25823.242017] sd 0:0:0:0: [sda] Stopping disk
+[25823.266406] sd 1:0:0:0: [sdb] Synchronizing SCSI cache
+[25823.266431] sd 1:0:0:0: [sdb] Stopping disk
+[25823.279247] sd 1:0:0:0: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 49503 usecs
+[25823.279260] scsi target1:0:0: PM: calling scsi_bus_suspend+0x0/0x80 @ 3538, parent: host1
+[25823.279267] scsi target1:0:0: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.279280] scsi host1: PM: calling scsi_bus_suspend+0x0/0x80 @ 60863, parent: ata2
+[25823.279285] scsi host1: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.279292]  ata2: PM: calling ata_port_pm_suspend+0x0/0x80 @ 17083, parent: 0000:00:1f.2
+[25823.402120]  ata2: PM: ata_port_pm_suspend+0x0/0x80 returned 0 after 122825 usecs
+[25823.416011] i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_suspend+0x0/0x80 returned 0 after 185750 usecs
+[25823.416051] button LNXPWRBN:00: PM: calling acpi_button_suspend+0x0/0x40 @ 17078, parent: LNXSYSTM:00
+[25823.416060] button LNXPWRBN:00: PM: acpi_button_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.416065] platform ACPI000E:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: platform
+[25823.416071] platform ACPI000E:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.416076] i2c_designware INT33C3:00: PM: calling acpi_subsys_suspend+0x0/0x80 @ 17078, parent: pci0000:00
+[25823.416081] i2c_designware INT33C3:00: PM: acpi_subsys_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.416086] clk-lpss-atom clk-lpss-atom: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: platform
+[25823.416090] clk-lpss-atom clk-lpss-atom: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.416095] acpi-wmi PNP0C14:01: PM: calling acpi_subsys_suspend+0x0/0x80 @ 17078, parent: pci0000:00
+[25823.416099] acpi-wmi PNP0C14:01: PM: acpi_subsys_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.416103] acpi-wmi PNP0C14:00: PM: calling acpi_subsys_suspend+0x0/0x80 @ 17078, parent: pci0000:00
+[25823.416106] acpi-wmi PNP0C14:00: PM: acpi_subsys_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.416110] platform PNP0C0E:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25823.416114] platform PNP0C0E:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.416118] platform PNP0C0C:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25823.416122] platform PNP0C0C:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.416126] platform PNP0C0D:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25823.416130] platform PNP0C0D:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.416134] platform ACPI0003:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25823.416138] platform ACPI0003:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.416142] platform PNP0C0A:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25823.416146] platform PNP0C0A:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.416150] platform PNP0C09:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25823.416154] platform PNP0C09:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.416158] platform PNP0103:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25823.416161] platform PNP0103:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.416165] platform INT0800:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25823.416169] platform INT0800:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.416186] ath9k 0000:02:00.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17086, parent: 0000:00:1c.3
+[25823.416192] pci 0000:01:00.1: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17083, parent: 0000:00:1c.0
+[25823.416199] pci 0000:01:00.1: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 0 usecs
+[25823.416203] rtsx_pci 0000:01:00.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 3538, parent: 0000:00:1c.0
+[25823.416206] i801_smbus 0000:00:1f.3: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17083, parent: pci0000:00
+[25823.416219] rtsx_pci 0000:01:00.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 7 usecs
+[25823.416233] i801_smbus 0000:00:1f.3: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 22 usecs
+[25823.416233] lpc_ich 0000:00:1f.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 60863, parent: pci0000:00
+[25823.416239] lpc_ich 0000:00:1f.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 0 usecs
+[25823.416240] ehci-pci 0000:00:1d.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17083, parent: pci0000:00
+[25823.416255] snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 3539, parent: pci0000:00
+[25823.416257] ehci-pci 0000:00:1d.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 11 usecs
+[25823.416266] mei_me 0000:00:16.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17083, parent: pci0000:00
+[25823.416273] i915 0000:00:02.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 13164, parent: pci0000:00
+[25823.416285] button PNP0C0E:00: PM: calling acpi_button_suspend+0x0/0x40 @ 17078, parent: device:01
+[25823.416290] button PNP0C0E:00: PM: acpi_button_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.416295] button PNP0C0C:00: PM: calling acpi_button_suspend+0x0/0x40 @ 17078, parent: device:01
+[25823.416299] button PNP0C0C:00: PM: acpi_button_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.416304] button PNP0C0D:00: PM: calling acpi_button_suspend+0x0/0x40 @ 17078, parent: device:01
+[25823.416309] button PNP0C0D:00: PM: acpi_button_suspend+0x0/0x40 returned 0 after 0 usecs
+[25823.416317] ec PNP0C09:00: PM: calling acpi_ec_suspend+0x0/0x80 @ 17078, parent: device:01
+[25823.416323] ec PNP0C09:00: PM: acpi_ec_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.416379] regulator regulator.0: PM: calling regulator_suspend+0x0/0x100 @ 17078, parent: reg-dummy
+[25823.416384] hsw_uncore 0000:00:00.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 599, parent: pci0000:00
+[25823.416386] regulator regulator.0: PM: regulator_suspend+0x0/0x100 returned 0 after 0 usecs
+[25823.416391] hsw_uncore 0000:00:00.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 0 usecs
+[25823.416392] reg-dummy reg-dummy: PM: calling platform_pm_suspend+0x0/0x80 @ 17078, parent: platform
+[25823.416398] reg-dummy reg-dummy: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.416403] pcieport 0000:00:1c.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 62533, parent: pci0000:00
+[25823.416410] pcieport 0000:00:1c.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 2 usecs
+[25823.420294] ath9k 0000:02:00.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 4099 usecs
+[25823.420327] pcieport 0000:00:1c.3: PM: calling pci_pm_suspend+0x0/0x1c0 @ 60863, parent: pci0000:00
+[25823.420342] pcieport 0000:00:1c.3: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 5 usecs
+[25823.420363] mei_me 0000:00:16.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 4092 usecs
+[25823.431406] snd_hda_intel 0000:00:1b.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 15144 usecs
+[25823.700575] i915 0000:00:02.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 284301 usecs
+[25823.814188] sd 0:0:0:0: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 584442 usecs
+[25823.814213] scsi target0:0:0: PM: calling scsi_bus_suspend+0x0/0x80 @ 3893, parent: host0
+[25823.814222] scsi target0:0:0: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.814240] scsi host0: PM: calling scsi_bus_suspend+0x0/0x80 @ 8527, parent: ata1
+[25823.814248] scsi host0: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+[25823.814256]  ata1: PM: calling ata_port_pm_suspend+0x0/0x80 @ 17082, parent: 0000:00:1f.2
+[25823.814284]  ata1: PM: ata_port_pm_suspend+0x0/0x80 returned 0 after 22 usecs
+[25823.814294] ahci 0000:00:1f.2: PM: calling pci_pm_suspend+0x0/0x1c0 @ 3538, parent: pci0000:00
+[25823.814303] ahci 0000:00:1f.2: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 1 usecs
+[25823.814336] at24 9-0050: PM: calling i2c_suspend_late+0x0/0x80 @ 17078, parent: i2c-9
+[25823.814342] at24 9-0050: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25823.814372] i2c i2c-9: PM: calling i2c_suspend_late+0x0/0x80 @ 17078, parent: 0000:00:1f.3
+[25823.814376] i2c i2c-9: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25823.814386] snd_hda_intel 0000:00:03.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 3538, parent: pci0000:00
+[25823.814393] snd_hda_intel 0000:00:03.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25823.814471] i2c i2c-8: PM: calling i2c_suspend_late+0x0/0x80 @ 17078, parent: card0-DP-1
+[25823.814476] i2c i2c-8: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25823.814480] i2c i2c-7: PM: calling i2c_suspend_late+0x0/0x80 @ 17078, parent: card0-eDP-1
+[25823.814482] i2c i2c-7: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25823.814488] i2c i2c-6: PM: calling i2c_suspend_late+0x0/0x80 @ 17078, parent: 0000:00:02.0
+[25823.814491] i2c i2c-6: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25823.814494] i2c i2c-5: PM: calling i2c_suspend_late+0x0/0x80 @ 17078, parent: 0000:00:02.0
+[25823.814496] i2c i2c-5: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25823.814499] i2c i2c-4: PM: calling i2c_suspend_late+0x0/0x80 @ 17078, parent: 0000:00:02.0
+[25823.814501] i2c i2c-4: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25823.814504] i2c i2c-3: PM: calling i2c_suspend_late+0x0/0x80 @ 17078, parent: 0000:00:02.0
+[25823.814506] i2c i2c-3: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25823.814509] i2c i2c-2: PM: calling i2c_suspend_late+0x0/0x80 @ 17078, parent: 0000:00:02.0
+[25823.814511] i2c i2c-2: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25823.814514] i2c i2c-1: PM: calling i2c_suspend_late+0x0/0x80 @ 17078, parent: 0000:00:02.0
+[25823.814516] i2c i2c-1: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25823.814605] i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_suspend_late+0x0/0x80 @ 3538, parent: i2c-0
+[25823.975562] i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_suspend_late+0x0/0x80 returned 0 after 160953 usecs
+[25823.975574] i2c i2c-0: PM: calling i2c_suspend_late+0x0/0x80 @ 17078, parent: INT33C3:00
+[25823.975578] i2c i2c-0: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25823.975582] i2c_designware INT33C3:00: PM: calling acpi_lpss_suspend_late+0x0/0x80 @ 17078, parent: pci0000:00
+[25824.144452] i2c_designware INT33C3:00: PM: acpi_lpss_suspend_late+0x0/0x80 returned 0 after 168867 usecs
+[25824.144458] acpi-wmi PNP0C14:01: PM: calling acpi_subsys_suspend_late+0x0/0x80 @ 17078, parent: pci0000:00
+[25824.144462] acpi-wmi PNP0C14:01: PM: acpi_subsys_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25824.144466] acpi-wmi PNP0C14:00: PM: calling acpi_subsys_suspend_late+0x0/0x80 @ 17078, parent: pci0000:00
+[25824.144470] acpi-wmi PNP0C14:00: PM: acpi_subsys_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25824.144485] ath9k 0000:02:00.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 3538, parent: 0000:00:1c.3
+[25824.144503] ath9k 0000:02:00.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25824.144510] rtsx_pci 0000:01:00.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 3538, parent: 0000:00:1c.0
+[25824.144511] pci 0000:01:00.1: PM: calling pci_pm_suspend_late+0x0/0x40 @ 599, parent: 0000:00:1c.0
+[25824.144515] rtsx_pci 0000:01:00.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25824.144519] i801_smbus 0000:00:1f.3: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17082, parent: pci0000:00
+[25824.144521] pci 0000:01:00.1: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25824.144522] ahci 0000:00:1f.2: PM: calling pci_pm_suspend_late+0x0/0x40 @ 3538, parent: pci0000:00
+[25824.144527] i801_smbus 0000:00:1f.3: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25824.144527] ahci 0000:00:1f.2: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25824.144531] lpc_ich 0000:00:1f.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 599, parent: pci0000:00
+[25824.144534] ehci-pci 0000:00:1d.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17082, parent: pci0000:00
+[25824.144535] pcieport 0000:00:1c.3: PM: calling pci_pm_suspend_late+0x0/0x40 @ 3538, parent: pci0000:00
+[25824.144536] lpc_ich 0000:00:1f.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25824.144540] ehci-pci 0000:00:1d.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25824.144540] pcieport 0000:00:1c.3: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25824.144544] pcieport 0000:00:1c.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 599, parent: pci0000:00
+[25824.144546] snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17082, parent: pci0000:00
+[25824.144547] mei_me 0000:00:16.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 3538, parent: pci0000:00
+[25824.144549] pcieport 0000:00:1c.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25824.144552] snd_hda_intel 0000:00:1b.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25824.144552] mei_me 0000:00:16.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25824.144557] i915 0000:00:02.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 599, parent: pci0000:00
+[25824.144558] hsw_uncore 0000:00:00.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17082, parent: pci0000:00
+[25824.144563] hsw_uncore 0000:00:00.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25824.156381] i915 0000:00:02.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 11818 usecs
+[25824.156496] snd_hda_intel 0000:00:03.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 3538, parent: pci0000:00
+[25824.156599] i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_suspend_noirq+0x0/0x80 @ 17082, parent: i2c-0
+[25824.156606] i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_suspend_noirq+0x0/0x80 returned 0 after 0 usecs
+[25824.156616] i2c_designware INT33C3:00: PM: calling acpi_lpss_suspend_noirq+0x0/0x80 @ 17078, parent: pci0000:00
+[25824.156622] i2c_designware INT33C3:00: PM: acpi_lpss_suspend_noirq+0x0/0x80 returned 0 after 0 usecs
+[25824.156626] acpi-wmi PNP0C14:01: PM: calling acpi_subsys_suspend_noirq+0x0/0x80 @ 17078, parent: pci0000:00
+[25824.156631] acpi-wmi PNP0C14:01: PM: acpi_subsys_suspend_noirq+0x0/0x80 returned 0 after 0 usecs
+[25824.156634] acpi-wmi PNP0C14:00: PM: calling acpi_subsys_suspend_noirq+0x0/0x80 @ 17078, parent: pci0000:00
+[25824.156638] acpi-wmi PNP0C14:00: PM: acpi_subsys_suspend_noirq+0x0/0x80 returned 0 after 0 usecs
+[25824.156647] ath9k 0000:02:00.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17082, parent: 0000:00:1c.3
+[25824.156649] pci 0000:01:00.1: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 8527, parent: 0000:00:1c.0
+[25824.156653] rtsx_pci 0000:01:00.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 599, parent: 0000:00:1c.0
+[25824.156695] ec PNP0C09:00: PM: calling acpi_ec_suspend_noirq+0x0/0xc0 @ 17078, parent: device:01
+[25824.156700] ACPI: EC: interrupt blocked
+[25824.156701] ec PNP0C09:00: PM: acpi_ec_suspend_noirq+0x0/0xc0 returned 0 after 1 usecs
+[25824.156739] i801_smbus 0000:00:1f.3: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 3893, parent: pci0000:00
+[25824.156843] i801_smbus 0000:00:1f.3: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 98 usecs
+[25824.156854] ahci 0000:00:1f.2: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 3893, parent: pci0000:00
+[25824.156882] pci 0000:01:00.1: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 226 usecs
+[25824.156886] lpc_ich 0000:00:1f.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 1021, parent: pci0000:00
+[25824.156889] ehci-pci 0000:00:1d.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 8527, parent: pci0000:00
+[25824.156951] lpc_ich 0000:00:1f.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 60 usecs
+[25824.156952] snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17083, parent: pci0000:00
+[25824.156961] hsw_uncore 0000:00:00.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 1021, parent: pci0000:00
+[25824.156963] mei_me 0000:00:16.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17086, parent: pci0000:00
+[25824.157000] hsw_uncore 0000:00:00.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 32 usecs
+[25824.168370] ath9k 0000:02:00.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11717 usecs
+[25824.168371] ahci 0000:00:1f.2: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11512 usecs
+[25824.168374] rtsx_pci 0000:01:00.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11715 usecs
+[25824.168375] ehci-pci 0000:00:1d.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11480 usecs
+[25824.168384] snd_hda_intel 0000:00:03.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11878 usecs
+[25824.168383] pcieport 0000:00:1c.3: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 13164, parent: pci0000:00
+[25824.168384] pcieport 0000:00:1c.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 3539, parent: pci0000:00
+[25824.168385] snd_hda_intel 0000:00:1b.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11427 usecs
+[25824.168400] i915 0000:00:02.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 60863, parent: pci0000:00
+[25824.168404] i915 0000:00:02.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 0 usecs
+[25824.168416] mei_me 0000:00:16.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11446 usecs
+[25824.180364] pcieport 0000:00:1c.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11973 usecs
+[25824.180363] pcieport 0000:00:1c.3: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11973 usecs
+[25824.180622] ACPI: PM: Preparing to enter system sleep state S3
+[25824.180864] ACPI: EC: event blocked
+[25824.180865] ACPI: EC: EC stopped
+[25824.180866] ACPI: PM: Saving platform NVS memory
+[25824.180876] Disabling non-boot CPUs ...
+[25824.182593] smpboot: CPU 1 is now offline
+[25824.184750] smpboot: CPU 2 is now offline
+[25824.186594] smpboot: CPU 3 is now offline
+[25824.188216] ACPI: PM: Low-level resume complete
+[25824.188247] ACPI: EC: EC started
+[25824.188248] ACPI: PM: Restoring platform NVS memory
+[25824.188634] Enabling non-boot CPUs ...
+[25824.188874] x86: Booting SMP configuration:
+[25824.188875] smpboot: Booting Node 0 Processor 1 APIC 0x1
+[25824.189947] CPU1 is up
+[25824.190162] smpboot: Booting Node 0 Processor 2 APIC 0x2
+[25824.191023] CPU2 is up
+[25824.191215] smpboot: Booting Node 0 Processor 3 APIC 0x3
+[25824.192293] CPU3 is up
+[25824.193721] ACPI: PM: Waking up from system sleep state S3
+[25824.194652] hsw_uncore 0000:00:00.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 13164, parent: pci0000:00
+[25824.194651] i915 0000:00:02.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 3539, parent: pci0000:00
+[25824.194666] ec PNP0C09:00: PM: calling acpi_ec_resume_noirq+0x0/0xc0 @ 17078, parent: device:01
+[25824.194675] ACPI: EC: interrupt unblocked
+[25824.194677] ec PNP0C09:00: PM: acpi_ec_resume_noirq+0x0/0xc0 returned 0 after 1 usecs
+[25824.194679] hsw_uncore 0000:00:00.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 14 usecs
+[25824.194688] mei_me 0000:00:16.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 13164, parent: pci0000:00
+[25824.194704] snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17086, parent: pci0000:00
+[25824.194709] pcieport 0000:00:1c.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 60863, parent: pci0000:00
+[25824.194718] pcieport 0000:00:1c.3: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 3538, parent: pci0000:00
+[25824.194724] ehci-pci 0000:00:1d.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17083, parent: pci0000:00
+[25824.194728] lpc_ich 0000:00:1f.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 599, parent: pci0000:00
+[25824.194734] ahci 0000:00:1f.2: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 8527, parent: pci0000:00
+[25824.194739] i801_smbus 0000:00:1f.3: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17082, parent: pci0000:00
+[25824.194778] lpc_ich 0000:00:1f.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 43 usecs
+[25824.194781] i801_smbus 0000:00:1f.3: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 35 usecs
+[25824.194791] acpi-wmi PNP0C14:00: PM: calling acpi_subsys_resume_noirq+0x0/0x40 @ 17078, parent: pci0000:00
+[25824.194800] acpi-wmi PNP0C14:00: PM: acpi_subsys_resume_noirq+0x0/0x40 returned 0 after 0 usecs
+[25824.194806] acpi-wmi PNP0C14:01: PM: calling acpi_subsys_resume_noirq+0x0/0x40 @ 17078, parent: pci0000:00
+[25824.194810] acpi-wmi PNP0C14:01: PM: acpi_subsys_resume_noirq+0x0/0x40 returned 0 after 0 usecs
+[25824.194815] i2c_designware INT33C3:00: PM: calling acpi_lpss_resume_noirq+0x0/0x80 @ 17078, parent: pci0000:00
+[25824.194821] i2c_designware INT33C3:00: PM: acpi_lpss_resume_noirq+0x0/0x80 returned 0 after 0 usecs
+[25824.194833] i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_resume_noirq+0x0/0x40 @ 1021, parent: i2c-0
+[25824.194842] i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_resume_noirq+0x0/0x40 returned 0 after 0 usecs
+[25824.206373] ehci-pci 0000:00:1d.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11640 usecs
+[25824.206396] ahci 0000:00:1f.2: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11652 usecs
+[25824.206420] pcieport 0000:00:1c.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11702 usecs
+[25824.206423] pcieport 0000:00:1c.3: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11697 usecs
+[25824.206433] rtsx_pci 0000:01:00.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 3893, parent: 0000:00:1c.0
+[25824.206443] ath9k 0000:02:00.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17082, parent: 0000:00:1c.3
+[25824.206456] pci 0000:01:00.1: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 599, parent: 0000:00:1c.0
+[25824.206496] mei_me 0000:00:16.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11801 usecs
+[25824.206499] i915 0000:00:02.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11835 usecs
+[25824.206512] snd_hda_intel 0000:00:03.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17115, parent: pci0000:00
+[25824.206545] snd_hda_intel 0000:00:1b.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11835 usecs
+[25824.206565] pci 0000:01:00.1: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 103 usecs
+[25824.218334] snd_hda_intel 0000:00:03.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11816 usecs
+[25824.218434] ath9k 0000:02:00.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11985 usecs
+[25824.218458] rtsx_pci 0000:01:00.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 12019 usecs
+[25824.218490] i8042 i8042: PM: calling i8042_pm_resume_noirq+0x0/0x40 [i8042] @ 17078, parent: platform
+[25824.218498] i8042 i8042: PM: i8042_pm_resume_noirq+0x0/0x40 [i8042] returned 0 after 0 usecs
+[25824.218576] hsw_uncore 0000:00:00.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17097, parent: pci0000:00
+[25824.218582] hsw_uncore 0000:00:00.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25824.218588] i915 0000:00:02.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17097, parent: pci0000:00
+[25824.218657] i915 0000:00:02.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 64 usecs
+[25824.218663] mei_me 0000:00:16.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17097, parent: pci0000:00
+[25824.218668] mei_me 0000:00:16.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25824.218673] snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17097, parent: pci0000:00
+[25824.218678] snd_hda_intel 0000:00:1b.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25824.218683] pcieport 0000:00:1c.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17097, parent: pci0000:00
+[25824.218687] pcieport 0000:00:1c.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25824.218693] pcieport 0000:00:1c.3: PM: calling pci_pm_resume_early+0x0/0x40 @ 17097, parent: pci0000:00
+[25824.218697] pcieport 0000:00:1c.3: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25824.218703] ehci-pci 0000:00:1d.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17097, parent: pci0000:00
+[25824.218708] ehci-pci 0000:00:1d.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25824.218713] lpc_ich 0000:00:1f.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17097, parent: pci0000:00
+[25824.218717] lpc_ich 0000:00:1f.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25824.218724] ahci 0000:00:1f.2: PM: calling pci_pm_resume_early+0x0/0x40 @ 17097, parent: pci0000:00
+[25824.218728] acpi-wmi PNP0C14:00: PM: calling acpi_subsys_resume_early+0x0/0xc0 @ 17078, parent: pci0000:00
+[25824.218729] ahci 0000:00:1f.2: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25824.218733] acpi-wmi PNP0C14:00: PM: acpi_subsys_resume_early+0x0/0xc0 returned 0 after 0 usecs
+[25824.218735] i801_smbus 0000:00:1f.3: PM: calling pci_pm_resume_early+0x0/0x40 @ 17097, parent: pci0000:00
+[25824.218737] acpi-wmi PNP0C14:01: PM: calling acpi_subsys_resume_early+0x0/0xc0 @ 17078, parent: pci0000:00
+[25824.218739] i801_smbus 0000:00:1f.3: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25824.218741] acpi-wmi PNP0C14:01: PM: acpi_subsys_resume_early+0x0/0xc0 returned 0 after 0 usecs
+[25824.218745] rtsx_pci 0000:01:00.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17097, parent: 0000:00:1c.0
+[25824.218746] i2c_designware INT33C3:00: PM: calling acpi_lpss_resume_early+0x0/0x80 @ 17078, parent: pci0000:00
+[25824.218750] rtsx_pci 0000:01:00.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25824.218755] pci 0000:01:00.1: PM: calling pci_pm_resume_early+0x0/0x40 @ 17097, parent: 0000:00:1c.0
+[25824.218760] pci 0000:01:00.1: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25824.218765] ath9k 0000:02:00.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17097, parent: 0000:00:1c.3
+[25824.218769] ath9k 0000:02:00.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25824.219573] hpet: Lost 1468 RTC interrupts
+[25824.219669] snd_hda_intel 0000:00:03.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 599, parent: pci0000:00
+[25824.219675] snd_hda_intel 0000:00:03.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25824.232311] i2c_designware INT33C3:00: PM: acpi_lpss_resume_early+0x0/0x80 returned 0 after 13560 usecs
+[25824.232320] i2c i2c-0: PM: calling i2c_resume_early+0x0/0x80 @ 17078, parent: INT33C3:00
+[25824.232325] i2c i2c-0: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25824.232349] i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_resume_early+0x0/0xc0 @ 17097, parent: i2c-0
+[25824.232357] i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_resume_early+0x0/0xc0 returned 0 after 0 usecs
+[25824.232369] i2c i2c-1: PM: calling i2c_resume_early+0x0/0x80 @ 17078, parent: 0000:00:02.0
+[25824.232374] i2c i2c-1: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25824.232378] i2c i2c-2: PM: calling i2c_resume_early+0x0/0x80 @ 17078, parent: 0000:00:02.0
+[25824.232380] i2c i2c-2: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25824.232383] i2c i2c-3: PM: calling i2c_resume_early+0x0/0x80 @ 17078, parent: 0000:00:02.0
+[25824.232386] i2c i2c-3: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25824.232388] i2c i2c-4: PM: calling i2c_resume_early+0x0/0x80 @ 17078, parent: 0000:00:02.0
+[25824.232391] i2c i2c-4: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25824.232394] i2c i2c-5: PM: calling i2c_resume_early+0x0/0x80 @ 17078, parent: 0000:00:02.0
+[25824.232396] i2c i2c-5: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25824.232399] i2c i2c-6: PM: calling i2c_resume_early+0x0/0x80 @ 17078, parent: 0000:00:02.0
+[25824.232401] i2c i2c-6: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25824.232405] i2c i2c-7: PM: calling i2c_resume_early+0x0/0x80 @ 17078, parent: card0-eDP-1
+[25824.232408] i2c i2c-7: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25824.232411] i2c i2c-8: PM: calling i2c_resume_early+0x0/0x80 @ 17078, parent: card0-DP-1
+[25824.232414] i2c i2c-8: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25824.232435] i2c i2c-9: PM: calling i2c_resume_early+0x0/0x80 @ 17078, parent: 0000:00:1f.3
+[25824.232437] i2c i2c-9: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25824.232446] at24 9-0050: PM: calling i2c_resume_early+0x0/0x80 @ 17078, parent: i2c-9
+[25824.232449] at24 9-0050: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25824.232499] i915 0000:00:02.0: PM: calling pci_pm_resume+0x0/0x100 @ 17097, parent: pci0000:00
+[25824.232499] hsw_uncore 0000:00:00.0: PM: calling pci_pm_resume+0x0/0x100 @ 3893, parent: pci0000:00
+[25824.232500] mei_me 0000:00:16.0: PM: calling pci_pm_resume+0x0/0x100 @ 17115, parent: pci0000:00
+[25824.232508] hsw_uncore 0000:00:00.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 0 usecs
+[25824.232506] reg-dummy reg-dummy: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: platform
+[25824.232514] reg-dummy reg-dummy: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.232514] snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_resume+0x0/0x100 @ 3893, parent: pci0000:00
+[25824.232519] regulator regulator.0: PM: calling regulator_resume+0x0/0x180 @ 17078, parent: reg-dummy
+[25824.232527] regulator regulator.0: PM: regulator_resume+0x0/0x180 returned 0 after 0 usecs
+[25824.232540] ec PNP0C09:00: PM: calling acpi_ec_resume+0x0/0x40 @ 17078, parent: device:01
+[25824.232545] ACPI: EC: event unblocked
+[25824.232552] ec PNP0C09:00: PM: acpi_ec_resume+0x0/0x40 returned 0 after 7 usecs
+[25824.232557] battery PNP0C0A:00: PM: calling acpi_battery_resume+0x0/0x40 [battery] @ 17078, parent: device:01
+[25824.232601] pcieport 0000:00:1c.0: PM: calling pci_pm_resume+0x0/0x100 @ 599, parent: pci0000:00
+[25824.232615] pcieport 0000:00:1c.3: PM: calling pci_pm_resume+0x0/0x100 @ 17116, parent: pci0000:00
+[25824.232627] pcieport 0000:00:1c.3: PM: pci_pm_resume+0x0/0x100 returned 0 after 5 usecs
+[25824.232634] ehci-pci 0000:00:1d.0: PM: calling pci_pm_resume+0x0/0x100 @ 17116, parent: pci0000:00
+[25824.232639] pcieport 0000:00:1c.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 32 usecs
+[25824.232647] lpc_ich 0000:00:1f.0: PM: calling pci_pm_resume+0x0/0x100 @ 599, parent: pci0000:00
+[25824.232653] lpc_ich 0000:00:1f.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 0 usecs
+[25824.232659] ahci 0000:00:1f.2: PM: calling pci_pm_resume+0x0/0x100 @ 599, parent: pci0000:00
+[25824.232659] ehci-pci 0000:00:1d.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 19 usecs
+[25824.232664] i801_smbus 0000:00:1f.3: PM: calling pci_pm_resume+0x0/0x100 @ 17086, parent: pci0000:00
+[25824.232666] rtsx_pci 0000:01:00.0: PM: calling pci_pm_resume+0x0/0x100 @ 17116, parent: 0000:00:1c.0
+[25824.232680] i801_smbus 0000:00:1f.3: PM: pci_pm_resume+0x0/0x100 returned 0 after 10 usecs
+[25824.232687] pci 0000:01:00.1: PM: calling pci_pm_resume+0x0/0x100 @ 17086, parent: 0000:00:1c.0
+[25824.232692] pci 0000:01:00.1: PM: pci_pm_resume+0x0/0x100 returned 0 after 0 usecs
+[25824.232697] ath9k 0000:02:00.0: PM: calling pci_pm_resume+0x0/0x100 @ 17086, parent: 0000:00:1c.3
+[25824.232709] ath: phy0: ASPM enabled: 0x42
+[25824.232711] ath9k 0000:02:00.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 8 usecs
+[25824.232756] usb usb1: PM: calling usb_dev_resume+0x0/0x40 @ 17083, parent: 0000:00:1d.0
+[25824.232845] ieee80211 phy0: PM: calling wiphy_resume+0x0/0x180 [cfg80211] @ 17098, parent: 0000:02:00.0
+[25824.232911] ieee80211 phy0: PM: wiphy_resume+0x0/0x180 [cfg80211] returned 0 after 3 usecs
+[25824.233955] mei_me 0000:00:16.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 1446 usecs
+[25824.234580] battery PNP0C0A:00: PM: acpi_battery_resume+0x0/0x40 [battery] returned 0 after 2014 usecs
+[25824.234592] ac ACPI0003:00: PM: calling acpi_ac_resume+0x0/0x80 [ac] @ 17078, parent: device:01
+[25824.234638] ac ACPI0003:00: PM: acpi_ac_resume+0x0/0x80 [ac] returned 0 after 40 usecs
+[25824.234643] button PNP0C0D:00: PM: calling acpi_button_resume+0x0/0x100 @ 17078, parent: device:01
+[25824.234699] button PNP0C0D:00: PM: acpi_button_resume+0x0/0x100 returned 0 after 49 usecs
+[25824.234704] button PNP0C0C:00: PM: calling acpi_button_resume+0x0/0x100 @ 17078, parent: device:01
+[25824.234708] button PNP0C0C:00: PM: acpi_button_resume+0x0/0x100 returned 0 after 0 usecs
+[25824.234713] button PNP0C0E:00: PM: calling acpi_button_resume+0x0/0x100 @ 17078, parent: device:01
+[25824.234717] button PNP0C0E:00: PM: acpi_button_resume+0x0/0x100 returned 0 after 0 usecs
+[25824.234778] platform INT0800:00: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25824.234785] platform INT0800:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.234790] platform PNP0103:00: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25824.234795] platform PNP0103:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.234800] platform PNP0C09:00: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25824.234805] platform PNP0C09:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.234810] platform PNP0C0A:00: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25824.234814] platform PNP0C0A:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.234820] platform ACPI0003:00: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25824.234824] platform ACPI0003:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.234830] platform PNP0C0D:00: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25824.234834] platform PNP0C0D:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.234839] platform PNP0C0C:00: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25824.234844] platform PNP0C0C:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.234849] platform PNP0C0E:00: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25824.234854] platform PNP0C0E:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.234859] acpi-wmi PNP0C14:00: PM: calling acpi_subsys_resume+0x0/0x80 @ 17078, parent: pci0000:00
+[25824.234865] acpi-wmi PNP0C14:00: PM: acpi_subsys_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.234870] acpi-wmi PNP0C14:01: PM: calling acpi_subsys_resume+0x0/0x80 @ 17078, parent: pci0000:00
+[25824.234875] acpi-wmi PNP0C14:01: PM: acpi_subsys_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.234880] clk-lpss-atom clk-lpss-atom: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: platform
+[25824.234885] clk-lpss-atom clk-lpss-atom: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.234891] platform ACPI000E:00: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: platform
+[25824.234896] platform ACPI000E:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.234901] button LNXPWRBN:00: PM: calling acpi_button_resume+0x0/0x100 @ 17078, parent: LNXSYSTM:00
+[25824.234906] button LNXPWRBN:00: PM: acpi_button_resume+0x0/0x100 returned 0 after 0 usecs
+[25824.234915] platform rtc-efi.0: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: platform
+[25824.234919] platform rtc-efi.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.234918] i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_resume+0x0/0x80 @ 17086, parent: i2c-0
+[25824.234925] platform efivars.0: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: platform
+[25824.234929] platform efivars.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.234936] system 00:00: PM: calling pnp_bus_resume+0x0/0xc0 @ 17078, parent: pnp0
+[25824.234943] system 00:00: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 0 usecs
+[25824.234948] rtc_cmos 00:01: PM: calling pnp_bus_resume+0x0/0xc0 @ 17078, parent: pnp0
+[25824.234957] rtc_cmos 00:01: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 4 usecs
+[25824.234963] system 00:02: PM: calling pnp_bus_resume+0x0/0xc0 @ 17078, parent: pnp0
+[25824.234967] system 00:02: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 0 usecs
+[25824.234973] i8042 kbd 00:03: PM: calling pnp_bus_resume+0x0/0xc0 @ 17078, parent: pnp0
+[25824.234977] i8042 kbd 00:03: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 0 usecs
+[25824.234983] system 00:04: PM: calling pnp_bus_resume+0x0/0xc0 @ 17078, parent: pnp0
+[25824.234987] system 00:04: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 0 usecs
+[25824.234992] system 00:05: PM: calling pnp_bus_resume+0x0/0xc0 @ 17078, parent: pnp0
+[25824.234996] system 00:05: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 0 usecs
+[25824.235027] intel_rapl_msr intel_rapl_msr.0: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: platform
+[25824.235032] intel_rapl_msr intel_rapl_msr.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.235048] input input0: PM: calling input_dev_resume+0x0/0x40 @ 17078, parent: PNP0C0D:00
+[25824.235055] input input0: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.235060] input input1: PM: calling input_dev_resume+0x0/0x40 @ 17078, parent: PNP0C0C:00
+[25824.235065] input input1: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.235070] input input2: PM: calling input_dev_resume+0x0/0x40 @ 17078, parent: PNP0C0E:00
+[25824.235074] input input2: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.235079] input input3: PM: calling input_dev_resume+0x0/0x40 @ 17078, parent: LNXPWRBN:00
+[25824.235084] input input3: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.235091] serial8250 serial8250: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: platform
+[25824.235096] serial8250 serial8250: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.236485] snd_hda_intel 0000:00:1b.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 3965 usecs
+[25824.242732] ahci 0000:00:1f.2: PM: pci_pm_resume+0x0/0x100 returned 0 after 10066 usecs
+[25824.242752]  ata1: PM: calling ata_port_pm_resume+0x0/0x80 @ 17109, parent: 0000:00:1f.2
+[25824.242755]  ata3: PM: calling ata_port_pm_resume+0x0/0x80 @ 17108, parent: 0000:00:1f.2
+[25824.242764]  ata1: PM: ata_port_pm_resume+0x0/0x80 returned 0 after 5 usecs
+[25824.242767]  ata3: PM: ata_port_pm_resume+0x0/0x80 returned 0 after 6 usecs
+[25824.242778] scsi host0: PM: calling scsi_bus_resume+0x0/0x40 @ 3539, parent: ata1
+[25824.242780] scsi host2: PM: calling scsi_bus_resume+0x0/0x40 @ 17114, parent: ata3
+[25824.242784] scsi host0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.242787] scsi host2: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.242794]  ata2: PM: calling ata_port_pm_resume+0x0/0x80 @ 17082, parent: 0000:00:1f.2
+[25824.242795] scsi target0:0:0: PM: calling scsi_bus_resume+0x0/0x40 @ 17101, parent: host0
+[25824.242801] scsi target0:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.242802]  ata2: PM: ata_port_pm_resume+0x0/0x80 returned 0 after 3 usecs
+[25824.242810]  ata4: PM: calling ata_port_pm_resume+0x0/0x80 @ 17091, parent: 0000:00:1f.2
+[25824.242811] sd 0:0:0:0: PM: calling scsi_bus_resume+0x0/0x40 @ 17100, parent: target0:0:0
+[25824.242819] sd 0:0:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 3 usecs
+[25824.242819]  ata4: PM: ata_port_pm_resume+0x0/0x80 returned 0 after 3 usecs
+[25824.242823] sd 0:0:0:0: [sda] Starting disk
+[25824.242826] scsi host1: PM: calling scsi_bus_resume+0x0/0x40 @ 13164, parent: ata2
+[25824.242830] scsi host1: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.242830] scsi host3: PM: calling scsi_bus_resume+0x0/0x40 @ 17089, parent: ata4
+[25824.242835] scsi host3: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.242838] scsi target1:0:0: PM: calling scsi_bus_resume+0x0/0x40 @ 17088, parent: host1
+[25824.242842] scsi target1:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.242851] sd 1:0:0:0: PM: calling scsi_bus_resume+0x0/0x40 @ 17113, parent: target1:0:0
+[25824.242858] sd 1:0:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 2 usecs
+[25824.242861] sd 1:0:0:0: [sdb] Starting disk
+[25824.242917] rtsx_pci 0000:01:00.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 10245 usecs
+[25824.242929] rtsx_pci_sdmmc rtsx_pci_sdmmc.0: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: 0000:01:00.0
+[25824.242934] rtsx_pci_sdmmc rtsx_pci_sdmmc.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.284887] usb usb1: PM: usb_dev_resume+0x0/0x40 returned 0 after 52126 usecs
+[25824.284905] usb 1-1: PM: calling usb_dev_resume+0x0/0x40 @ 17107, parent: usb1
+[25824.399277] usb 1-1: PM: usb_dev_resume+0x0/0x40 returned 0 after 114366 usecs
+[25824.399307] usb 1-1.5: PM: calling usb_dev_resume+0x0/0x40 @ 17084, parent: 1-1
+[25824.399307] usb 1-1.7: PM: calling usb_dev_resume+0x0/0x40 @ 17099, parent: 1-1
+[25824.475294] usb 1-1.7: reset high-speed USB device number 4 using ehci-pci
+[25824.477279] i915 0000:00:02.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 244775 usecs
+[25824.477326] snd_hda_intel 0000:00:03.0: PM: calling pci_pm_resume+0x0/0x100 @ 8527, parent: pci0000:00
+[25824.477343] backlight intel_backlight: PM: calling backlight_resume+0x0/0x80 @ 17078, parent: card0-eDP-1
+[25824.477361] backlight intel_backlight: PM: backlight_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.477375] input input4: PM: calling input_dev_resume+0x0/0x40 @ 17078, parent: LNXVIDEO:00
+[25824.477389] input input4: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.477404] alarmtimer alarmtimer.0.auto: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: rtc0
+[25824.477417] alarmtimer alarmtimer.0.auto: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.477424] coretemp coretemp.0: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: platform
+[25824.477429] coretemp coretemp.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.477436] simple-framebuffer simple-framebuffer.0: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: platform
+[25824.477442] simple-framebuffer simple-framebuffer.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.477452] platform microcode: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: platform
+[25824.477457] platform microcode: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.477474] i8042 i8042: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: platform
+[25824.478140] i8042 i8042: PM: platform_pm_resume+0x0/0x80 returned 0 after 661 usecs
+[25824.478144] atkbd serio0: PM: calling serio_resume+0x0/0xc0 @ 17078, parent: i8042
+[25824.478152] atkbd serio0: PM: serio_resume+0x0/0xc0 returned 0 after 3 usecs
+[25824.478271] input input5: PM: calling input_dev_resume+0x0/0x40 @ 17078, parent: serio0
+[25824.478280] input input5: PM: input_dev_resume+0x0/0x40 returned 0 after 2 usecs
+[25824.479469] snd_hda_intel 0000:00:03.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 2128 usecs
+[25824.497359] i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_resume+0x0/0x80 returned 0 after 262435 usecs
+[25824.497385] input input9: PM: calling input_dev_resume+0x0/0x40 @ 17078, parent: 0018:06CB:2970.0001
+[25824.497393] input input9: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.497399] input input10: PM: calling input_dev_resume+0x0/0x40 @ 17078, parent: 0018:06CB:2970.0001
+[25824.497403] input input10: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.497413] platform iTCO_wdt.1.auto: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25824.497419] platform iTCO_wdt.1.auto: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.497423] platform intel-spi: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: 0000:00:1f.0
+[25824.497427] platform intel-spi: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.497431] platform regulatory.0: PM: calling platform_pm_resume+0x0/0x80 @ 17078, parent: platform
+[25824.497435] platform regulatory.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.497443] input input12: PM: calling input_dev_resume+0x0/0x40 @ 17078, parent: card0
+[25824.497446] input input12: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.497451] input input13: PM: calling input_dev_resume+0x0/0x40 @ 17078, parent: card0
+[25824.497454] input input13: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.497458] input input14: PM: calling input_dev_resume+0x0/0x40 @ 17078, parent: card0
+[25824.497461] input input14: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.497465] input input15: PM: calling input_dev_resume+0x0/0x40 @ 17078, parent: card0
+[25824.497469] input input15: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.497473] input input16: PM: calling input_dev_resume+0x0/0x40 @ 17078, parent: card0
+[25824.497476] input input16: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.497481] rfkill rfkill0: PM: calling rfkill_resume+0x0/0xc0 [rfkill] @ 17078, parent: phy0
+[25824.497491] rfkill rfkill0: PM: rfkill_resume+0x0/0xc0 [rfkill] returned 0 after 3 usecs
+[25824.498290] leds ath9k-phy0: PM: calling led_resume+0x0/0x80 @ 17078, parent: 0000:02:00.0
+[25824.498299] leds ath9k-phy0: PM: led_resume+0x0/0x80 returned 0 after 0 usecs
+[25824.561926] usb 1-1.7: PM: usb_dev_resume+0x0/0x40 returned 0 after 162613 usecs
+[25824.561962] input input17: PM: calling input_dev_resume+0x0/0x40 @ 17078, parent: 1-1.7:1.0
+[25824.561972] input input17: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.561978] at24 9-0050: PM: calling pm_runtime_force_resume+0x0/0x100 @ 17078, parent: i2c-9
+[25824.561984] at24 9-0050: PM: pm_runtime_force_resume+0x0/0x100 returned 0 after 0 usecs
+[25824.561990] input input18: PM: calling input_dev_resume+0x0/0x40 @ 17078, parent: card1
+[25824.561994] input input18: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25824.620311] usb 1-1.5: reset full-speed USB device number 3 using ehci-pci
+[25824.700043] usb 1-1.5: PM: usb_dev_resume+0x0/0x40 returned 0 after 300732 usecs
+[25824.700347] OOM killer enabled.
+[25824.700350] Restarting tasks ... 
+[25824.701042] pci_bus 0000:01: Allocating resources
+[25824.701059] pci_bus 0000:02: Allocating resources
+[25824.701446] pci_bus 0000:01: Allocating resources
+[25824.701459] pci_bus 0000:02: Allocating resources
+[25824.706276] done.
+[25824.729385] PM: suspend exit
+[25824.745271] audit: type=1130 audit(1640459262.553:309): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-suspend comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[25824.745280] audit: type=1131 audit(1640459262.553:310): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-suspend comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[25824.745286] ata2: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+[25824.771439] ata2.00: configured for UDMA/133
+[25824.801240] filter_write: 10 callbacks suppressed
+[25824.801246] msr: Write to unrecognized MSR 0x150 by intel-undervolt (pid: 17171).
+[25824.801256] msr: See https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/about for details.
+[25824.803280] audit: type=1130 audit(1640459262.613:311): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=undervolt comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[25824.803288] audit: type=1131 audit(1640459262.613:312): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=undervolt comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[25825.241858] wlan0: authenticate with a0:47:d7:20:32:88
+[25825.258034] wlan0: send auth to a0:47:d7:20:32:88 (try 1/3)
+[25825.260130] wlan0: authenticated
+[25825.260252] wlan0: associate with a0:47:d7:20:32:88 (try 1/3)
+[25825.276886] wlan0: RX AssocResp from a0:47:d7:20:32:88 (capab=0x411 status=0 aid=6)
+[25825.277001] wlan0: associated
+[25825.284715] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[25826.825317] ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+[25826.891396] ata1.00: configured for UDMA/133
+[25833.682363] audit: type=1131 audit(1640459271.493:313): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[25854.115674] audit: type=1101 audit(1640459291.927:314): pid=17569 uid=1000 auid=1000 ses=1 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="missu" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[25854.116383] audit: type=1110 audit(1640459291.927:315): pid=17569 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[25854.119061] audit: type=1105 audit(1640459291.930:316): pid=17569 uid=1000 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[25855.477861] audit: type=1106 audit(1640459293.288:317): pid=17569 uid=1000 auid=1000 ses=1 msg='op=PAM:session_close grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[25855.477925] audit: type=1104 audit(1640459293.288:318): pid=17569 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[25880.084025] audit: type=1130 audit(1640459317.895:319): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[25880.086332] wlan0: deauthenticating from a0:47:d7:20:32:88 by local choice (Reason: 3=DEAUTH_LEAVING)
+[25880.254027] PM: suspend entry (deep)
+[25880.333304] Filesystems sync: 0.079 seconds
+[25880.333447] Freezing user space processes ... (elapsed 0.002 seconds) done.
+[25880.335626] OOM killer disabled.
+[25880.335627] Freezing remaining freezable tasks ... (elapsed 0.001 seconds) done.
+[25880.336929] printk: Suspending console(s) (use no_console_suspend to debug)
+[25880.337187] input input18: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: card1
+[25880.337198] input input18: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.337203] sound pcmC1D0c: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card1
+[25880.337218] sound pcmC1D0c: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 1 usecs
+[25880.337226] sound pcmC1D0p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card1
+[25880.337233] sound pcmC1D0p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+[25880.337242] at24 9-0050: PM: calling pm_runtime_force_suspend+0x0/0x140 @ 17759, parent: i2c-9
+[25880.337247] at24 9-0050: PM: pm_runtime_force_suspend+0x0/0x140 returned 0 after 0 usecs
+[25880.337251] input input17: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: 1-1.7:1.0
+[25880.337255] input input17: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.337260] leds ath9k-phy0: PM: calling led_suspend+0x0/0x80 @ 17759, parent: 0000:02:00.0
+[25880.337266] leds ath9k-phy0: PM: led_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.337271] rfkill rfkill0: PM: calling rfkill_suspend+0x0/0x40 [rfkill] @ 17759, parent: phy0
+[25880.337276] rfkill rfkill0: PM: rfkill_suspend+0x0/0x40 [rfkill] returned 0 after 0 usecs
+[25880.337284] input input16: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: card0
+[25880.337288] input input16: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.337293] input input15: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: card0
+[25880.337297] input input15: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.337302] input input14: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: card0
+[25880.337306] input input14: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.337311] input input13: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: card0
+[25880.337314] input input13: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.337321] input input12: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: card0
+[25880.337325] input input12: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.337288] ieee80211 phy0: PM: calling wiphy_suspend+0x0/0x1c0 [cfg80211] @ 17086, parent: 0000:02:00.0
+[25880.337331] sound pcmC0D10p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card0
+[25880.337339] sound pcmC0D10p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+[25880.337346] sound pcmC0D9p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card0
+[25880.337352] sound pcmC0D9p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+[25880.337360] sound pcmC0D8p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card0
+[25880.337366] sound pcmC0D8p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+[25880.337373] sound pcmC0D7p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card0
+[25880.337357] ieee80211 phy0: PM: wiphy_suspend+0x0/0x1c0 [cfg80211] returned 0 after 3 usecs
+[25880.337380] sound pcmC0D7p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+[25880.337387] sound pcmC0D3p: PM: calling do_pcm_suspend+0x0/0x40 [snd_pcm] @ 17759, parent: card0
+[25880.337393] sound pcmC0D3p: PM: do_pcm_suspend+0x0/0x40 [snd_pcm] returned 0 after 0 usecs
+[25880.337404] platform regulatory.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+[25880.337410] platform regulatory.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.337409] snd_hda_intel 0000:00:03.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17086, parent: pci0000:00
+[25880.337418] platform intel-spi: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25880.337424] platform intel-spi: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.337428] platform iTCO_wdt.1.auto: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25880.337432] platform iTCO_wdt.1.auto: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.337447] input input10: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: 0018:06CB:2970.0001
+[25880.337452] input input10: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.337457] input input9: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: 0018:06CB:2970.0001
+[25880.337461] input input9: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.337467] input input5: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: serio0
+[25880.337483] input input5: PM: input_dev_suspend+0x0/0x40 returned 0 after 10 usecs
+[25880.337499] atkbd serio0: PM: calling serio_suspend+0x0/0x80 @ 17759, parent: i8042
+[25880.341538] atkbd serio0: PM: serio_suspend+0x0/0x80 returned 0 after 4033 usecs
+[25880.341557] i8042 i8042: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+[25880.342171] i8042 i8042: PM: platform_pm_suspend+0x0/0x80 returned 0 after 609 usecs
+[25880.342194] usb 1-1.7: PM: calling usb_dev_suspend+0x0/0x40 @ 17101, parent: 1-1
+[25880.342202] usb 1-1.7: PM: usb_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.342205] platform microcode: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+[25880.342211] platform microcode: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.342224] usb 1-1.5: PM: calling usb_dev_suspend+0x0/0x40 @ 17101, parent: 1-1
+[25880.342223] simple-framebuffer simple-framebuffer.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+[25880.342222] sd 1:0:0:0: PM: calling scsi_bus_suspend+0x0/0x80 @ 17088, parent: target1:0:0
+[25880.342228] sd 0:0:0:0: PM: calling scsi_bus_suspend+0x0/0x80 @ 17112, parent: target0:0:0
+[25880.342229] simple-framebuffer simple-framebuffer.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.342231] usb 1-1.5: PM: usb_dev_suspend+0x0/0x40 returned 0 after 2 usecs
+[25880.342238] coretemp coretemp.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+[25880.342244] coretemp coretemp.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.342250] alarmtimer alarmtimer.0.auto: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: rtc0
+[25880.342256] usb 1-1: PM: calling usb_dev_suspend+0x0/0x40 @ 17085, parent: usb1
+[25880.342407] alarmtimer alarmtimer.0.auto: PM: platform_pm_suspend+0x0/0x80 returned 0 after 150 usecs
+[25880.342418] input input4: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: LNXVIDEO:00
+[25880.342422] input input4: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.342429] backlight intel_backlight: PM: calling backlight_suspend+0x0/0x80 @ 17759, parent: card0-eDP-1
+[25880.342435] backlight intel_backlight: PM: backlight_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.342453] scsi host3: PM: calling scsi_bus_suspend+0x0/0x80 @ 17096, parent: ata4
+[25880.342454] scsi host2: PM: calling scsi_bus_suspend+0x0/0x80 @ 17099, parent: ata3
+[25880.342459] scsi host3: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.342459] scsi host2: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.342468]  ata3: PM: calling ata_port_pm_suspend+0x0/0x80 @ 17096, parent: 0000:00:1f.2
+[25880.342468]  ata4: PM: calling ata_port_pm_suspend+0x0/0x80 @ 17105, parent: 0000:00:1f.2
+[25880.342477] rtsx_pci_sdmmc rtsx_pci_sdmmc.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:01:00.0
+[25880.342483] rtsx_pci_sdmmc rtsx_pci_sdmmc.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.342490]  ata4: PM: ata_port_pm_suspend+0x0/0x80 returned 0 after 15 usecs
+[25880.342490]  ata3: PM: ata_port_pm_suspend+0x0/0x80 returned 0 after 16 usecs
+[25880.342501] serial8250 serial8250: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+[25880.342506] serial8250 serial8250: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.342511] input input3: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: LNXPWRBN:00
+[25880.342515] input input3: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.342519] input input2: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: PNP0C0E:00
+[25880.342523] input input2: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.342527] input input1: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: PNP0C0C:00
+[25880.342531] input input1: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.342535] input input0: PM: calling input_dev_suspend+0x0/0x40 @ 17759, parent: PNP0C0D:00
+[25880.342538] input input0: PM: input_dev_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.342557] intel_rapl_msr intel_rapl_msr.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+[25880.342562] intel_rapl_msr intel_rapl_msr.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.342591] system 00:05: PM: calling pnp_bus_suspend+0x0/0x40 @ 17759, parent: pnp0
+[25880.342596] system 00:05: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.342600] system 00:04: PM: calling pnp_bus_suspend+0x0/0x40 @ 17759, parent: pnp0
+[25880.342604] system 00:04: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.342607] i8042 kbd 00:03: PM: calling pnp_bus_suspend+0x0/0x40 @ 17759, parent: pnp0
+[25880.342611] i8042 kbd 00:03: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.342615] system 00:02: PM: calling pnp_bus_suspend+0x0/0x40 @ 17759, parent: pnp0
+[25880.342618] system 00:02: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.342622] rtc_cmos 00:01: PM: calling pnp_bus_suspend+0x0/0x40 @ 17759, parent: pnp0
+[25880.342650] rtc_cmos 00:01: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 24 usecs
+[25880.342654] system 00:00: PM: calling pnp_bus_suspend+0x0/0x40 @ 17759, parent: pnp0
+[25880.342658] system 00:00: PM: pnp_bus_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.342663] platform efivars.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+[25880.342667] platform efivars.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.342671] platform rtc-efi.0: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+[25880.342674] platform rtc-efi.0: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.342681] i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_suspend+0x0/0x80 @ 17102, parent: i2c-0
+[25880.343967] usb 1-1: PM: usb_dev_suspend+0x0/0x40 returned 0 after 1707 usecs
+[25880.343979] usb usb1: PM: calling usb_dev_suspend+0x0/0x40 @ 8527, parent: 0000:00:1d.0
+[25880.344608] usb usb1: PM: usb_dev_suspend+0x0/0x40 returned 0 after 622 usecs
+[25880.351200] snd_hda_intel 0000:00:03.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 13782 usecs
+[25880.479989] sd 0:0:0:0: [sda] Synchronizing SCSI cache
+[25880.481981] sd 1:0:0:0: [sdb] Synchronizing SCSI cache
+[25880.482024] sd 1:0:0:0: [sdb] Stopping disk
+[25880.483591] sd 0:0:0:0: [sda] Stopping disk
+[25880.494849] sd 1:0:0:0: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 152622 usecs
+[25880.494883] scsi target1:0:0: PM: calling scsi_bus_suspend+0x0/0x80 @ 17084, parent: host1
+[25880.494889] scsi target1:0:0: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.494898] scsi host1: PM: calling scsi_bus_suspend+0x0/0x80 @ 17097, parent: ata2
+[25880.494904] scsi host1: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.494914]  ata2: PM: calling ata_port_pm_suspend+0x0/0x80 @ 17090, parent: 0000:00:1f.2
+[25880.522050]  ata2: PM: ata_port_pm_suspend+0x0/0x80 returned 0 after 27131 usecs
+[25880.537604] i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_suspend+0x0/0x80 returned 0 after 194920 usecs
+[25880.537649] button LNXPWRBN:00: PM: calling acpi_button_suspend+0x0/0x40 @ 17759, parent: LNXSYSTM:00
+[25880.537660] button LNXPWRBN:00: PM: acpi_button_suspend+0x0/0x40 returned 0 after 1 usecs
+[25880.537665] platform ACPI000E:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+[25880.537672] platform ACPI000E:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.537676] i2c_designware INT33C3:00: PM: calling acpi_subsys_suspend+0x0/0x80 @ 17759, parent: pci0000:00
+[25880.537682] i2c_designware INT33C3:00: PM: acpi_subsys_suspend+0x0/0x80 returned 0 after 1 usecs
+[25880.537687] clk-lpss-atom clk-lpss-atom: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+[25880.537691] clk-lpss-atom clk-lpss-atom: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.537696] acpi-wmi PNP0C14:01: PM: calling acpi_subsys_suspend+0x0/0x80 @ 17759, parent: pci0000:00
+[25880.537700] acpi-wmi PNP0C14:01: PM: acpi_subsys_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.537704] acpi-wmi PNP0C14:00: PM: calling acpi_subsys_suspend+0x0/0x80 @ 17759, parent: pci0000:00
+[25880.537707] acpi-wmi PNP0C14:00: PM: acpi_subsys_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.537711] platform PNP0C0E:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25880.537715] platform PNP0C0E:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.537719] platform PNP0C0C:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25880.537723] platform PNP0C0C:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.537727] platform PNP0C0D:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25880.537732] platform PNP0C0D:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.537736] platform ACPI0003:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25880.537740] platform ACPI0003:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.537744] platform PNP0C0A:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25880.537748] platform PNP0C0A:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.537752] platform PNP0C09:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25880.537756] platform PNP0C09:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.537760] platform PNP0103:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25880.537764] platform PNP0103:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.537768] platform INT0800:00: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25880.537771] platform INT0800:00: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.537786] ath9k 0000:02:00.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17102, parent: 0000:00:1c.3
+[25880.537795] pci 0000:01:00.1: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17090, parent: 0000:00:1c.0
+[25880.537802] pci 0000:01:00.1: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 0 usecs
+[25880.537807] rtsx_pci 0000:01:00.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17097, parent: 0000:00:1c.0
+[25880.537810] i801_smbus 0000:00:1f.3: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17090, parent: pci0000:00
+[25880.537823] rtsx_pci 0000:01:00.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 9 usecs
+[25880.537839] lpc_ich 0000:00:1f.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17084, parent: pci0000:00
+[25880.537839] i801_smbus 0000:00:1f.3: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 23 usecs
+[25880.537844] lpc_ich 0000:00:1f.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 0 usecs
+[25880.537847] ehci-pci 0000:00:1d.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17090, parent: pci0000:00
+[25880.537855] pcieport 0000:00:1c.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17088, parent: pci0000:00
+[25880.537862] pcieport 0000:00:1c.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 2 usecs
+[25880.537863] ehci-pci 0000:00:1d.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 11 usecs
+[25880.537869] snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17088, parent: pci0000:00
+[25880.537874] mei_me 0000:00:16.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17090, parent: pci0000:00
+[25880.537889] i915 0000:00:02.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 8527, parent: pci0000:00
+[25880.537895] hsw_uncore 0000:00:00.0: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17086, parent: pci0000:00
+[25880.537901] hsw_uncore 0000:00:00.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 0 usecs
+[25880.537932] button PNP0C0E:00: PM: calling acpi_button_suspend+0x0/0x40 @ 17759, parent: device:01
+[25880.537937] button PNP0C0E:00: PM: acpi_button_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.537943] button PNP0C0C:00: PM: calling acpi_button_suspend+0x0/0x40 @ 17759, parent: device:01
+[25880.537947] button PNP0C0C:00: PM: acpi_button_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.537971] button PNP0C0D:00: PM: calling acpi_button_suspend+0x0/0x40 @ 17759, parent: device:01
+[25880.537976] button PNP0C0D:00: PM: acpi_button_suspend+0x0/0x40 returned 0 after 0 usecs
+[25880.537985] ec PNP0C09:00: PM: calling acpi_ec_suspend+0x0/0x80 @ 17759, parent: device:01
+[25880.537991] ec PNP0C09:00: PM: acpi_ec_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.538037] regulator regulator.0: PM: calling regulator_suspend+0x0/0x100 @ 17759, parent: reg-dummy
+[25880.538045] regulator regulator.0: PM: regulator_suspend+0x0/0x100 returned 0 after 0 usecs
+[25880.538051] reg-dummy reg-dummy: PM: calling platform_pm_suspend+0x0/0x80 @ 17759, parent: platform
+[25880.538057] reg-dummy reg-dummy: PM: platform_pm_suspend+0x0/0x80 returned 0 after 0 usecs
+[25880.541896] ath9k 0000:02:00.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 4102 usecs
+[25880.541907] pcieport 0000:00:1c.3: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17084, parent: pci0000:00
+[25880.541918] pcieport 0000:00:1c.3: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 5 usecs
+[25880.541965] mei_me 0000:00:16.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 4084 usecs
+[25880.553002] snd_hda_intel 0000:00:1b.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 15127 usecs
+[25880.825415] i915 0000:00:02.0: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 287526 usecs
+[25881.065779] sd 0:0:0:0: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 723560 usecs
+[25881.065803] scsi target0:0:0: PM: calling scsi_bus_suspend+0x0/0x80 @ 17101, parent: host0
+[25881.065810] scsi target0:0:0: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+[25881.065828] scsi host0: PM: calling scsi_bus_suspend+0x0/0x80 @ 17099, parent: ata1
+[25881.065836] scsi host0: PM: scsi_bus_suspend+0x0/0x80 returned 0 after 0 usecs
+[25881.065845]  ata1: PM: calling ata_port_pm_suspend+0x0/0x80 @ 17104, parent: 0000:00:1f.2
+[25881.065876]  ata1: PM: ata_port_pm_suspend+0x0/0x80 returned 0 after 25 usecs
+[25881.065885] ahci 0000:00:1f.2: PM: calling pci_pm_suspend+0x0/0x1c0 @ 17097, parent: pci0000:00
+[25881.065895] ahci 0000:00:1f.2: PM: pci_pm_suspend+0x0/0x1c0 returned 0 after 1 usecs
+[25881.065931] at24 9-0050: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: i2c-9
+[25881.065944] at24 9-0050: PM: i2c_suspend_late+0x0/0x80 returned 0 after 8 usecs
+[25881.065964] i2c i2c-9: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: 0000:00:1f.3
+[25881.065968] i2c i2c-9: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25881.065987] snd_hda_intel 0000:00:03.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17086, parent: pci0000:00
+[25881.065994] snd_hda_intel 0000:00:03.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25881.066061] i2c i2c-8: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: card0-DP-1
+[25881.066065] i2c i2c-8: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25881.066069] i2c i2c-7: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: card0-eDP-1
+[25881.066072] i2c i2c-7: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25881.066078] i2c i2c-6: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: 0000:00:02.0
+[25881.066080] i2c i2c-6: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25881.066083] i2c i2c-5: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: 0000:00:02.0
+[25881.066085] i2c i2c-5: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25881.066088] i2c i2c-4: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: 0000:00:02.0
+[25881.066091] i2c i2c-4: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25881.066093] i2c i2c-3: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: 0000:00:02.0
+[25881.066096] i2c i2c-3: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25881.066098] i2c i2c-2: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: 0000:00:02.0
+[25881.066101] i2c i2c-2: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25881.066103] i2c i2c-1: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: 0000:00:02.0
+[25881.066106] i2c i2c-1: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25881.066200] i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_suspend_late+0x0/0x80 @ 17104, parent: i2c-0
+[25881.254586] i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_suspend_late+0x0/0x80 returned 0 after 188384 usecs
+[25881.254614] i2c i2c-0: PM: calling i2c_suspend_late+0x0/0x80 @ 17759, parent: INT33C3:00
+[25881.254620] i2c i2c-0: PM: i2c_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25881.254626] i2c_designware INT33C3:00: PM: calling acpi_lpss_suspend_late+0x0/0x80 @ 17759, parent: pci0000:00
+[25881.443791] i2c_designware INT33C3:00: PM: acpi_lpss_suspend_late+0x0/0x80 returned 0 after 189163 usecs
+[25881.443799] acpi-wmi PNP0C14:01: PM: calling acpi_subsys_suspend_late+0x0/0x80 @ 17759, parent: pci0000:00
+[25881.443804] acpi-wmi PNP0C14:01: PM: acpi_subsys_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25881.443809] acpi-wmi PNP0C14:00: PM: calling acpi_subsys_suspend_late+0x0/0x80 @ 17759, parent: pci0000:00
+[25881.443812] acpi-wmi PNP0C14:00: PM: acpi_subsys_suspend_late+0x0/0x80 returned 0 after 0 usecs
+[25881.443845] ath9k 0000:02:00.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17104, parent: 0000:00:1c.3
+[25881.443851] pci 0000:01:00.1: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17086, parent: 0000:00:1c.0
+[25881.443854] ath9k 0000:02:00.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25881.443859] pci 0000:01:00.1: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25881.443859] rtsx_pci 0000:01:00.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17097, parent: 0000:00:1c.0
+[25881.443863] i801_smbus 0000:00:1f.3: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17104, parent: pci0000:00
+[25881.443866] ahci 0000:00:1f.2: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17086, parent: pci0000:00
+[25881.443866] rtsx_pci 0000:01:00.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25881.443869] i801_smbus 0000:00:1f.3: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25881.443871] ahci 0000:00:1f.2: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25881.443875] ehci-pci 0000:00:1d.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17104, parent: pci0000:00
+[25881.443875] lpc_ich 0000:00:1f.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17097, parent: pci0000:00
+[25881.443878] pcieport 0000:00:1c.3: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17086, parent: pci0000:00
+[25881.443880] ehci-pci 0000:00:1d.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25881.443881] lpc_ich 0000:00:1f.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25881.443883] pcieport 0000:00:1c.3: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25881.443888] snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17097, parent: pci0000:00
+[25881.443888] pcieport 0000:00:1c.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17104, parent: pci0000:00
+[25881.443890] mei_me 0000:00:16.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17086, parent: pci0000:00
+[25881.443893] snd_hda_intel 0000:00:1b.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25881.443894] pcieport 0000:00:1c.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25881.443896] mei_me 0000:00:16.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25881.443901] hsw_uncore 0000:00:00.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17097, parent: pci0000:00
+[25881.443902] i915 0000:00:02.0: PM: calling pci_pm_suspend_late+0x0/0x40 @ 17104, parent: pci0000:00
+[25881.443906] hsw_uncore 0000:00:00.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 0 usecs
+[25881.455969] i915 0000:00:02.0: PM: pci_pm_suspend_late+0x0/0x40 returned 0 after 12062 usecs
+[25881.456087] snd_hda_intel 0000:00:03.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17086, parent: pci0000:00
+[25881.456208] i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_suspend_noirq+0x0/0x80 @ 17101, parent: i2c-0
+[25881.456215] i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_suspend_noirq+0x0/0x80 returned 0 after 0 usecs
+[25881.456224] i2c_designware INT33C3:00: PM: calling acpi_lpss_suspend_noirq+0x0/0x80 @ 17759, parent: pci0000:00
+[25881.456230] i2c_designware INT33C3:00: PM: acpi_lpss_suspend_noirq+0x0/0x80 returned 0 after 0 usecs
+[25881.456234] acpi-wmi PNP0C14:01: PM: calling acpi_subsys_suspend_noirq+0x0/0x80 @ 17759, parent: pci0000:00
+[25881.456237] acpi-wmi PNP0C14:01: PM: acpi_subsys_suspend_noirq+0x0/0x80 returned 0 after 0 usecs
+[25881.456241] acpi-wmi PNP0C14:00: PM: calling acpi_subsys_suspend_noirq+0x0/0x80 @ 17759, parent: pci0000:00
+[25881.456244] acpi-wmi PNP0C14:00: PM: acpi_subsys_suspend_noirq+0x0/0x80 returned 0 after 0 usecs
+[25881.456254] ath9k 0000:02:00.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17101, parent: 0000:00:1c.3
+[25881.456256] pci 0000:01:00.1: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17099, parent: 0000:00:1c.0
+[25881.456258] rtsx_pci 0000:01:00.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17104, parent: 0000:00:1c.0
+[25881.456300] ec PNP0C09:00: PM: calling acpi_ec_suspend_noirq+0x0/0xc0 @ 17759, parent: device:01
+[25881.456305] ACPI: EC: interrupt blocked
+[25881.456306] ec PNP0C09:00: PM: acpi_ec_suspend_noirq+0x0/0xc0 returned 0 after 1 usecs
+[25881.456481] pci 0000:01:00.1: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 217 usecs
+[25881.456490] i801_smbus 0000:00:1f.3: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17099, parent: pci0000:00
+[25881.456507] i801_smbus 0000:00:1f.3: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 12 usecs
+[25881.456513] ahci 0000:00:1f.2: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17099, parent: pci0000:00
+[25881.456535] lpc_ich 0000:00:1f.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17097, parent: pci0000:00
+[25881.456539] ehci-pci 0000:00:1d.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17112, parent: pci0000:00
+[25881.456550] snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17090, parent: pci0000:00
+[25881.456555] mei_me 0000:00:16.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17102, parent: pci0000:00
+[25881.456595] lpc_ich 0000:00:1f.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 55 usecs
+[25881.456637] hsw_uncore 0000:00:00.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17084, parent: pci0000:00
+[25881.456648] hsw_uncore 0000:00:00.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 6 usecs
+[25881.467955] rtsx_pci 0000:01:00.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11690 usecs
+[25881.467955] ahci 0000:00:1f.2: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11438 usecs
+[25881.467956] ehci-pci 0000:00:1d.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11411 usecs
+[25881.467957] snd_hda_intel 0000:00:1b.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11401 usecs
+[25881.467967] pcieport 0000:00:1c.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17088, parent: pci0000:00
+[25881.467977] ath9k 0000:02:00.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11717 usecs
+[25881.467977] mei_me 0000:00:16.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11417 usecs
+[25881.467981] snd_hda_intel 0000:00:03.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11884 usecs
+[25881.467988] pcieport 0000:00:1c.3: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 8527, parent: pci0000:00
+[25881.467991] i915 0000:00:02.0: PM: calling pci_pm_suspend_noirq+0x0/0x300 @ 17097, parent: pci0000:00
+[25881.467996] i915 0000:00:02.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 0 usecs
+[25881.479950] pcieport 0000:00:1c.3: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11956 usecs
+[25881.479951] pcieport 0000:00:1c.0: PM: pci_pm_suspend_noirq+0x0/0x300 returned 0 after 11979 usecs
+[25881.480212] ACPI: PM: Preparing to enter system sleep state S3
+[25881.480456] ACPI: EC: event blocked
+[25881.480458] ACPI: EC: EC stopped
+[25881.480458] ACPI: PM: Saving platform NVS memory
+[25881.480468] Disabling non-boot CPUs ...
+[25881.481915] smpboot: CPU 1 is now offline
+[25881.484149] smpboot: CPU 2 is now offline
+[25881.486197] smpboot: CPU 3 is now offline
+[25881.487429] ACPI: PM: Low-level resume complete
+[25881.487459] ACPI: EC: EC started
+[25881.487460] ACPI: PM: Restoring platform NVS memory
+[25881.487846] Enabling non-boot CPUs ...
+[25881.488164] x86: Booting SMP configuration:
+[25881.488165] smpboot: Booting Node 0 Processor 1 APIC 0x1
+[25881.489248] CPU1 is up
+[25881.489464] smpboot: Booting Node 0 Processor 2 APIC 0x2
+[25881.490353] CPU2 is up
+[25881.490581] smpboot: Booting Node 0 Processor 3 APIC 0x3
+[25881.491600] CPU3 is up
+[25881.493055] ACPI: PM: Waking up from system sleep state S3
+[25881.493964] mei_me 0000:00:16.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17088, parent: pci0000:00
+[25881.493963] i915 0000:00:02.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17097, parent: pci0000:00
+[25881.493974] ec PNP0C09:00: PM: calling acpi_ec_resume_noirq+0x0/0xc0 @ 17759, parent: device:01
+[25881.493983] ACPI: EC: interrupt unblocked
+[25881.493985] ec PNP0C09:00: PM: acpi_ec_resume_noirq+0x0/0xc0 returned 0 after 1 usecs
+[25881.493988] snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17086, parent: pci0000:00
+[25881.493997] pcieport 0000:00:1c.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17104, parent: pci0000:00
+[25881.494003] pcieport 0000:00:1c.3: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17101, parent: pci0000:00
+[25881.494014] hsw_uncore 0000:00:00.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 8527, parent: pci0000:00
+[25881.494022] lpc_ich 0000:00:1f.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17112, parent: pci0000:00
+[25881.494038] ehci-pci 0000:00:1d.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17102, parent: pci0000:00
+[25881.494044] hsw_uncore 0000:00:00.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 23 usecs
+[25881.494051] ahci 0000:00:1f.2: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 8527, parent: pci0000:00
+[25881.494063] i801_smbus 0000:00:1f.3: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17090, parent: pci0000:00
+[25881.494067] lpc_ich 0000:00:1f.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 38 usecs
+[25881.494085] i801_smbus 0000:00:1f.3: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 15 usecs
+[25881.494095] acpi-wmi PNP0C14:00: PM: calling acpi_subsys_resume_noirq+0x0/0x40 @ 17759, parent: pci0000:00
+[25881.494104] acpi-wmi PNP0C14:00: PM: acpi_subsys_resume_noirq+0x0/0x40 returned 0 after 0 usecs
+[25881.494110] acpi-wmi PNP0C14:01: PM: calling acpi_subsys_resume_noirq+0x0/0x40 @ 17759, parent: pci0000:00
+[25881.494114] acpi-wmi PNP0C14:01: PM: acpi_subsys_resume_noirq+0x0/0x40 returned 0 after 0 usecs
+[25881.494119] i2c_designware INT33C3:00: PM: calling acpi_lpss_resume_noirq+0x0/0x80 @ 17759, parent: pci0000:00
+[25881.494126] i2c_designware INT33C3:00: PM: acpi_lpss_resume_noirq+0x0/0x80 returned 0 after 0 usecs
+[25881.494138] i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_resume_noirq+0x0/0x40 @ 17112, parent: i2c-0
+[25881.494147] i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_resume_noirq+0x0/0x40 returned 0 after 0 usecs
+[25881.505992] ehci-pci 0000:00:1d.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11946 usecs
+[25881.505994] mei_me 0000:00:16.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 12017 usecs
+[25881.506005] snd_hda_intel 0000:00:1b.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 12009 usecs
+[25881.506011] ahci 0000:00:1f.2: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11954 usecs
+[25881.506097] pcieport 0000:00:1c.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 12092 usecs
+[25881.506097] i915 0000:00:02.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 12120 usecs
+[25881.506106] rtsx_pci 0000:01:00.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17099, parent: 0000:00:1c.0
+[25881.506108] pci 0000:01:00.1: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17084, parent: 0000:00:1c.0
+[25881.506109] pcieport 0000:00:1c.3: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 12099 usecs
+[25881.506110] snd_hda_intel 0000:00:03.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17094, parent: pci0000:00
+[25881.506120] ath9k 0000:02:00.0: PM: calling pci_pm_resume_noirq+0x0/0x140 @ 17096, parent: 0000:00:1c.3
+[25881.506194] pci 0000:01:00.1: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 80 usecs
+[25881.517941] snd_hda_intel 0000:00:03.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11825 usecs
+[25881.518006] ath9k 0000:02:00.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11881 usecs
+[25881.518080] rtsx_pci 0000:01:00.0: PM: pci_pm_resume_noirq+0x0/0x140 returned 0 after 11968 usecs
+[25881.518111] i8042 i8042: PM: calling i8042_pm_resume_noirq+0x0/0x40 [i8042] @ 17759, parent: platform
+[25881.518119] i8042 i8042: PM: i8042_pm_resume_noirq+0x0/0x40 [i8042] returned 0 after 0 usecs
+[25881.518246] i915 0000:00:02.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17099, parent: pci0000:00
+[25881.518245] hsw_uncore 0000:00:00.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 60863, parent: pci0000:00
+[25881.518251] mei_me 0000:00:16.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17093, parent: pci0000:00
+[25881.518253] hsw_uncore 0000:00:00.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25881.518257] mei_me 0000:00:16.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25881.518257] snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17096, parent: pci0000:00
+[25881.518259] pcieport 0000:00:1c.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 60863, parent: pci0000:00
+[25881.518263] snd_hda_intel 0000:00:1b.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25881.518264] pcieport 0000:00:1c.3: PM: calling pci_pm_resume_early+0x0/0x40 @ 17093, parent: pci0000:00
+[25881.518265] pcieport 0000:00:1c.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25881.518269] pcieport 0000:00:1c.3: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25881.518270] ehci-pci 0000:00:1d.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17096, parent: pci0000:00
+[25881.518271] lpc_ich 0000:00:1f.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 60863, parent: pci0000:00
+[25881.518275] ehci-pci 0000:00:1d.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25881.518275] ahci 0000:00:1f.2: PM: calling pci_pm_resume_early+0x0/0x40 @ 17093, parent: pci0000:00
+[25881.518276] lpc_ich 0000:00:1f.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25881.518281] i801_smbus 0000:00:1f.3: PM: calling pci_pm_resume_early+0x0/0x40 @ 17096, parent: pci0000:00
+[25881.518280] ahci 0000:00:1f.2: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25881.518284] rtsx_pci 0000:01:00.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 60863, parent: 0000:00:1c.0
+[25881.518286] i801_smbus 0000:00:1f.3: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25881.518287] pci 0000:01:00.1: PM: calling pci_pm_resume_early+0x0/0x40 @ 17093, parent: 0000:00:1c.0
+[25881.518290] rtsx_pci 0000:01:00.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25881.518292] ath9k 0000:02:00.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17096, parent: 0000:00:1c.3
+[25881.518293] pci 0000:01:00.1: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25881.518295] i915 0000:00:02.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 44 usecs
+[25881.518297] ath9k 0000:02:00.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25881.518332] snd_hda_intel 0000:00:03.0: PM: calling pci_pm_resume_early+0x0/0x40 @ 17093, parent: pci0000:00
+[25881.518337] snd_hda_intel 0000:00:03.0: PM: pci_pm_resume_early+0x0/0x40 returned 0 after 0 usecs
+[25881.518347] acpi-wmi PNP0C14:00: PM: calling acpi_subsys_resume_early+0x0/0xc0 @ 17759, parent: pci0000:00
+[25881.518351] acpi-wmi PNP0C14:00: PM: acpi_subsys_resume_early+0x0/0xc0 returned 0 after 0 usecs
+[25881.518355] acpi-wmi PNP0C14:01: PM: calling acpi_subsys_resume_early+0x0/0xc0 @ 17759, parent: pci0000:00
+[25881.518359] acpi-wmi PNP0C14:01: PM: acpi_subsys_resume_early+0x0/0xc0 returned 0 after 0 usecs
+[25881.518363] i2c_designware INT33C3:00: PM: calling acpi_lpss_resume_early+0x0/0x80 @ 17759, parent: pci0000:00
+[25881.735945] i2c_designware INT33C3:00: PM: acpi_lpss_resume_early+0x0/0x80 returned 0 after 217581 usecs
+[25881.735960] i2c i2c-0: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: INT33C3:00
+[25881.735966] i2c i2c-0: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25881.735982] i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_resume_early+0x0/0xc0 @ 60863, parent: i2c-0
+[25881.735991] i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_resume_early+0x0/0xc0 returned 0 after 0 usecs
+[25881.736038] i2c i2c-1: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: 0000:00:02.0
+[25881.736043] i2c i2c-1: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25881.736046] i2c i2c-2: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: 0000:00:02.0
+[25881.736048] i2c i2c-2: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25881.736051] i2c i2c-3: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: 0000:00:02.0
+[25881.736054] i2c i2c-3: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25881.736056] i2c i2c-4: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: 0000:00:02.0
+[25881.736059] i2c i2c-4: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25881.736062] i2c i2c-5: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: 0000:00:02.0
+[25881.736064] i2c i2c-5: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25881.736067] i2c i2c-6: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: 0000:00:02.0
+[25881.736069] i2c i2c-6: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25881.736074] i2c i2c-7: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: card0-eDP-1
+[25881.736077] i2c i2c-7: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25881.736080] i2c i2c-8: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: card0-DP-1
+[25881.736083] i2c i2c-8: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25881.736113] i2c i2c-9: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: 0000:00:1f.3
+[25881.736116] i2c i2c-9: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25881.736128] at24 9-0050: PM: calling i2c_resume_early+0x0/0x80 @ 17759, parent: i2c-9
+[25881.736131] at24 9-0050: PM: i2c_resume_early+0x0/0x80 returned 0 after 0 usecs
+[25881.736206] mei_me 0000:00:16.0: PM: calling pci_pm_resume+0x0/0x100 @ 17084, parent: pci0000:00
+[25881.736206] i915 0000:00:02.0: PM: calling pci_pm_resume+0x0/0x100 @ 60863, parent: pci0000:00
+[25881.736206] hsw_uncore 0000:00:00.0: PM: calling pci_pm_resume+0x0/0x100 @ 17101, parent: pci0000:00
+[25881.736216] reg-dummy reg-dummy: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+[25881.736217] hsw_uncore 0000:00:00.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 0 usecs
+[25881.736222] reg-dummy reg-dummy: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.736224] snd_hda_intel 0000:00:1b.0: PM: calling pci_pm_resume+0x0/0x100 @ 17101, parent: pci0000:00
+[25881.736228] regulator regulator.0: PM: calling regulator_resume+0x0/0x180 @ 17759, parent: reg-dummy
+[25881.736234] regulator regulator.0: PM: regulator_resume+0x0/0x180 returned 0 after 0 usecs
+[25881.736252] ec PNP0C09:00: PM: calling acpi_ec_resume+0x0/0x40 @ 17759, parent: device:01
+[25881.736258] ACPI: EC: event unblocked
+[25881.736265] ec PNP0C09:00: PM: acpi_ec_resume+0x0/0x40 returned 0 after 7 usecs
+[25881.736271] battery PNP0C0A:00: PM: calling acpi_battery_resume+0x0/0x40 [battery] @ 17759, parent: device:01
+[25881.736317] pcieport 0000:00:1c.0: PM: calling pci_pm_resume+0x0/0x100 @ 17093, parent: pci0000:00
+[25881.736336] pcieport 0000:00:1c.3: PM: calling pci_pm_resume+0x0/0x100 @ 17096, parent: pci0000:00
+[25881.736347] pcieport 0000:00:1c.3: PM: pci_pm_resume+0x0/0x100 returned 0 after 5 usecs
+[25881.736355] lpc_ich 0000:00:1f.0: PM: calling pci_pm_resume+0x0/0x100 @ 17096, parent: pci0000:00
+[25881.736354] ehci-pci 0000:00:1d.0: PM: calling pci_pm_resume+0x0/0x100 @ 17094, parent: pci0000:00
+[25881.736361] lpc_ich 0000:00:1f.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 0 usecs
+[25881.736368] ahci 0000:00:1f.2: PM: calling pci_pm_resume+0x0/0x100 @ 17096, parent: pci0000:00
+[25881.736383] ehci-pci 0000:00:1d.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 20 usecs
+[25881.736387] i801_smbus 0000:00:1f.3: PM: calling pci_pm_resume+0x0/0x100 @ 17104, parent: pci0000:00
+[25881.736402] i801_smbus 0000:00:1f.3: PM: pci_pm_resume+0x0/0x100 returned 0 after 8 usecs
+[25881.736403] ath9k 0000:02:00.0: PM: calling pci_pm_resume+0x0/0x100 @ 17099, parent: 0000:00:1c.3
+[25881.736409] pcieport 0000:00:1c.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 85 usecs
+[25881.736416] ath: phy0: ASPM enabled: 0x42
+[25881.736419] ath9k 0000:02:00.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 9 usecs
+[25881.736424] pci 0000:01:00.1: PM: calling pci_pm_resume+0x0/0x100 @ 17109, parent: 0000:00:1c.0
+[25881.736431] pci 0000:01:00.1: PM: pci_pm_resume+0x0/0x100 returned 0 after 0 usecs
+[25881.736440] rtsx_pci 0000:01:00.0: PM: calling pci_pm_resume+0x0/0x100 @ 17094, parent: 0000:00:1c.0
+[25881.736466] usb usb1: PM: calling usb_dev_resume+0x0/0x40 @ 17090, parent: 0000:00:1d.0
+[25881.736965] mei_me 0000:00:16.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 751 usecs
+[25881.738920] battery PNP0C0A:00: PM: acpi_battery_resume+0x0/0x40 [battery] returned 0 after 2639 usecs
+[25881.738933] ac ACPI0003:00: PM: calling acpi_ac_resume+0x0/0x80 [ac] @ 17759, parent: device:01
+[25881.738984] ac ACPI0003:00: PM: acpi_ac_resume+0x0/0x80 [ac] returned 0 after 45 usecs
+[25881.738991] button PNP0C0D:00: PM: calling acpi_button_resume+0x0/0x100 @ 17759, parent: device:01
+[25881.739042] button PNP0C0D:00: PM: acpi_button_resume+0x0/0x100 returned 0 after 42 usecs
+[25881.739046] button PNP0C0C:00: PM: calling acpi_button_resume+0x0/0x100 @ 17759, parent: device:01
+[25881.739049] button PNP0C0C:00: PM: acpi_button_resume+0x0/0x100 returned 0 after 0 usecs
+[25881.739053] button PNP0C0E:00: PM: calling acpi_button_resume+0x0/0x100 @ 17759, parent: device:01
+[25881.739056] button PNP0C0E:00: PM: acpi_button_resume+0x0/0x100 returned 0 after 0 usecs
+[25881.739098] platform INT0800:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25881.739103] platform INT0800:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739107] platform PNP0103:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25881.739111] platform PNP0103:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739115] platform PNP0C09:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25881.739118] platform PNP0C09:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739122] platform PNP0C0A:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25881.739126] platform PNP0C0A:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739129] platform ACPI0003:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25881.739134] platform ACPI0003:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739139] platform PNP0C0D:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25881.739144] platform PNP0C0D:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739150] platform PNP0C0C:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25881.739155] platform PNP0C0C:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739161] platform PNP0C0E:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25881.739166] platform PNP0C0E:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739171] acpi-wmi PNP0C14:00: PM: calling acpi_subsys_resume+0x0/0x80 @ 17759, parent: pci0000:00
+[25881.739178] acpi-wmi PNP0C14:00: PM: acpi_subsys_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739183] acpi-wmi PNP0C14:01: PM: calling acpi_subsys_resume+0x0/0x80 @ 17759, parent: pci0000:00
+[25881.739187] acpi-wmi PNP0C14:01: PM: acpi_subsys_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739192] clk-lpss-atom clk-lpss-atom: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+[25881.739197] clk-lpss-atom clk-lpss-atom: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739173] ieee80211 phy0: PM: calling wiphy_resume+0x0/0x180 [cfg80211] @ 1021, parent: 0000:02:00.0
+[25881.739204] platform ACPI000E:00: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+[25881.739209] platform ACPI000E:00: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739214] button LNXPWRBN:00: PM: calling acpi_button_resume+0x0/0x100 @ 17759, parent: LNXSYSTM:00
+[25881.739219] button LNXPWRBN:00: PM: acpi_button_resume+0x0/0x100 returned 0 after 0 usecs
+[25881.739229] platform rtc-efi.0: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+[25881.739234] platform rtc-efi.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739240] platform efivars.0: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+[25881.739244] platform efivars.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739232] ieee80211 phy0: PM: wiphy_resume+0x0/0x180 [cfg80211] returned 0 after 3 usecs
+[25881.739251] system 00:00: PM: calling pnp_bus_resume+0x0/0xc0 @ 17759, parent: pnp0
+[25881.739258] system 00:00: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 0 usecs
+[25881.739264] rtc_cmos 00:01: PM: calling pnp_bus_resume+0x0/0xc0 @ 17759, parent: pnp0
+[25881.739273] rtc_cmos 00:01: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 4 usecs
+[25881.739279] system 00:02: PM: calling pnp_bus_resume+0x0/0xc0 @ 17759, parent: pnp0
+[25881.739284] system 00:02: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 0 usecs
+[25881.739290] i8042 kbd 00:03: PM: calling pnp_bus_resume+0x0/0xc0 @ 17759, parent: pnp0
+[25881.739295] i8042 kbd 00:03: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 0 usecs
+[25881.739300] system 00:04: PM: calling pnp_bus_resume+0x0/0xc0 @ 17759, parent: pnp0
+[25881.739305] system 00:04: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 0 usecs
+[25881.739310] system 00:05: PM: calling pnp_bus_resume+0x0/0xc0 @ 17759, parent: pnp0
+[25881.739315] system 00:05: PM: pnp_bus_resume+0x0/0xc0 returned 0 after 0 usecs
+[25881.739349] intel_rapl_msr intel_rapl_msr.0: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+[25881.739355] intel_rapl_msr intel_rapl_msr.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739373] input input0: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: PNP0C0D:00
+[25881.739381] input input0: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25881.739385] input input1: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: PNP0C0C:00
+[25881.739388] input input1: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25881.739392] input input2: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: PNP0C0E:00
+[25881.739395] input input2: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25881.739399] input input3: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: LNXPWRBN:00
+[25881.739402] input input3: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25881.739407] serial8250 serial8250: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+[25881.739412] serial8250 serial8250: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.739424] i2c_hid_acpi i2c-SYN1B7E:01: PM: calling acpi_subsys_resume+0x0/0x80 @ 17104, parent: i2c-0
+[25881.740104] snd_hda_intel 0000:00:1b.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 3872 usecs
+[25881.746441] ahci 0000:00:1f.2: PM: pci_pm_resume+0x0/0x100 returned 0 after 10067 usecs
+[25881.746459]  ata1: PM: calling ata_port_pm_resume+0x0/0x80 @ 17093, parent: 0000:00:1f.2
+[25881.746461]  ata4: PM: calling ata_port_pm_resume+0x0/0x80 @ 17109, parent: 0000:00:1f.2
+[25881.746471]  ata4: PM: ata_port_pm_resume+0x0/0x80 returned 0 after 4 usecs
+[25881.746475]  ata1: PM: ata_port_pm_resume+0x0/0x80 returned 0 after 8 usecs
+[25881.746485] scsi host3: PM: calling scsi_bus_resume+0x0/0x40 @ 17107, parent: ata4
+[25881.746491] scsi host3: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[25881.746490] scsi host0: PM: calling scsi_bus_resume+0x0/0x40 @ 17108, parent: ata1
+[25881.746496] scsi host0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[25881.746496]  ata3: PM: calling ata_port_pm_resume+0x0/0x80 @ 17097, parent: 0000:00:1f.2
+[25881.746504]  ata3: PM: ata_port_pm_resume+0x0/0x80 returned 0 after 3 usecs
+[25881.746505] scsi target0:0:0: PM: calling scsi_bus_resume+0x0/0x40 @ 17091, parent: host0
+[25881.746510] scsi target0:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[25881.746514] scsi host2: PM: calling scsi_bus_resume+0x0/0x40 @ 17105, parent: ata3
+[25881.746518] scsi host2: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[25881.746520] sd 0:0:0:0: PM: calling scsi_bus_resume+0x0/0x40 @ 17082, parent: target0:0:0
+[25881.746523]  ata2: PM: calling ata_port_pm_resume+0x0/0x80 @ 17099, parent: 0000:00:1f.2
+[25881.746528] sd 0:0:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 3 usecs
+[25881.746531]  ata2: PM: ata_port_pm_resume+0x0/0x80 returned 0 after 3 usecs
+[25881.746536] sd 0:0:0:0: [sda] Starting disk
+[25881.746540] scsi host1: PM: calling scsi_bus_resume+0x0/0x40 @ 17110, parent: ata2
+[25881.746544] scsi host1: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[25881.746552] scsi target1:0:0: PM: calling scsi_bus_resume+0x0/0x40 @ 17089, parent: host1
+[25881.746556] scsi target1:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 0 usecs
+[25881.746565] sd 1:0:0:0: PM: calling scsi_bus_resume+0x0/0x40 @ 17084, parent: target1:0:0
+[25881.746571] sd 1:0:0:0: PM: scsi_bus_resume+0x0/0x40 returned 0 after 1 usecs
+[25881.746574] sd 1:0:0:0: [sdb] Starting disk
+[25881.746720] rtsx_pci 0000:01:00.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 10275 usecs
+[25881.746733] rtsx_pci_sdmmc rtsx_pci_sdmmc.0: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:01:00.0
+[25881.746740] rtsx_pci_sdmmc rtsx_pci_sdmmc.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.788953] usb usb1: PM: usb_dev_resume+0x0/0x40 returned 0 after 52480 usecs
+[25881.788971] usb 1-1: PM: calling usb_dev_resume+0x0/0x40 @ 17098, parent: usb1
+[25881.910906] usb 1-1: PM: usb_dev_resume+0x0/0x40 returned 0 after 121930 usecs
+[25881.910921] usb 1-1.7: PM: calling usb_dev_resume+0x0/0x40 @ 8527, parent: 1-1
+[25881.910921] usb 1-1.5: PM: calling usb_dev_resume+0x0/0x40 @ 17113, parent: 1-1
+[25881.981325] i915 0000:00:02.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 245114 usecs
+[25881.981347] snd_hda_intel 0000:00:03.0: PM: calling pci_pm_resume+0x0/0x100 @ 17083, parent: pci0000:00
+[25881.981365] backlight intel_backlight: PM: calling backlight_resume+0x0/0x80 @ 17759, parent: card0-eDP-1
+[25881.981387] backlight intel_backlight: PM: backlight_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.981404] input input4: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: LNXVIDEO:00
+[25881.981421] input input4: PM: input_dev_resume+0x0/0x40 returned 0 after 1 usecs
+[25881.981441] alarmtimer alarmtimer.0.auto: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: rtc0
+[25881.981458] alarmtimer alarmtimer.0.auto: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.981466] coretemp coretemp.0: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+[25881.981472] coretemp coretemp.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.981483] simple-framebuffer simple-framebuffer.0: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+[25881.981490] simple-framebuffer simple-framebuffer.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.981509] platform microcode: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+[25881.981514] platform microcode: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25881.981552] i8042 i8042: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+[25881.982229] i8042 i8042: PM: platform_pm_resume+0x0/0x80 returned 0 after 670 usecs
+[25881.982234] atkbd serio0: PM: calling serio_resume+0x0/0xc0 @ 17759, parent: i8042
+[25881.982242] atkbd serio0: PM: serio_resume+0x0/0xc0 returned 0 after 4 usecs
+[25881.982361] input input5: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: serio0
+[25881.982368] input input5: PM: input_dev_resume+0x0/0x40 returned 0 after 2 usecs
+[25881.983735] snd_hda_intel 0000:00:03.0: PM: pci_pm_resume+0x0/0x100 returned 0 after 2371 usecs
+[25881.986924] usb 1-1.5: reset full-speed USB device number 3 using ehci-pci
+[25882.000949] i2c_hid_acpi i2c-SYN1B7E:01: PM: acpi_subsys_resume+0x0/0x80 returned 0 after 261525 usecs
+[25882.000980] input input9: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: 0018:06CB:2970.0001
+[25882.000988] input input9: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25882.000993] input input10: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: 0018:06CB:2970.0001
+[25882.000997] input input10: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25882.001007] platform iTCO_wdt.1.auto: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25882.001013] platform iTCO_wdt.1.auto: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25882.001017] platform intel-spi: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: 0000:00:1f.0
+[25882.001021] platform intel-spi: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25882.001025] platform regulatory.0: PM: calling platform_pm_resume+0x0/0x80 @ 17759, parent: platform
+[25882.001029] platform regulatory.0: PM: platform_pm_resume+0x0/0x80 returned 0 after 0 usecs
+[25882.001037] input input12: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: card0
+[25882.001040] input input12: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25882.001045] input input13: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: card0
+[25882.001048] input input13: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25882.001052] input input14: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: card0
+[25882.001056] input input14: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25882.001060] input input15: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: card0
+[25882.001063] input input15: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25882.001067] input input16: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: card0
+[25882.001071] input input16: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25882.001075] rfkill rfkill0: PM: calling rfkill_resume+0x0/0xc0 [rfkill] @ 17759, parent: phy0
+[25882.001086] rfkill rfkill0: PM: rfkill_resume+0x0/0xc0 [rfkill] returned 0 after 3 usecs
+[25882.001886] leds ath9k-phy0: PM: calling led_resume+0x0/0x80 @ 17759, parent: 0000:02:00.0
+[25882.001895] leds ath9k-phy0: PM: led_resume+0x0/0x80 returned 0 after 0 usecs
+[25882.067138] usb 1-1.5: PM: usb_dev_resume+0x0/0x40 returned 0 after 156214 usecs
+[25882.129887] usb 1-1.7: reset high-speed USB device number 4 using ehci-pci
+[25882.214851] usb 1-1.7: PM: usb_dev_resume+0x0/0x40 returned 0 after 303917 usecs
+[25882.214899] input input17: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: 1-1.7:1.0
+[25882.214907] input input17: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25882.214914] at24 9-0050: PM: calling pm_runtime_force_resume+0x0/0x100 @ 17759, parent: i2c-9
+[25882.214920] at24 9-0050: PM: pm_runtime_force_resume+0x0/0x100 returned 0 after 0 usecs
+[25882.214927] input input18: PM: calling input_dev_resume+0x0/0x40 @ 17759, parent: card1
+[25882.214931] input input18: PM: input_dev_resume+0x0/0x40 returned 0 after 0 usecs
+[25882.215236] OOM killer enabled.
+[25882.215237] Restarting tasks ... 
+[25882.215956] pci_bus 0000:01: Allocating resources
+[25882.215972] pci_bus 0000:02: Allocating resources
+[25882.216345] pci_bus 0000:01: Allocating resources
+[25882.216358] pci_bus 0000:02: Allocating resources
+[25882.217485] done.
+[25882.231962] PM: suspend exit
+[25882.247190] ata2: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+[25882.253832] audit: type=1130 audit(1640461063.764:320): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-suspend comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[25882.253838] audit: type=1131 audit(1640461063.764:321): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-suspend comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[25882.272915] ata2.00: configured for UDMA/133
+[25882.288446] filter_write: 10 callbacks suppressed
+[25882.288450] msr: Write to unrecognized MSR 0x150 by intel-undervolt (pid: 17785).
+[25882.288454] msr: See https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/about for details.
+[25882.292126] audit: type=1130 audit(1640461063.803:322): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=undervolt comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[25882.292136] audit: type=1131 audit(1640461063.803:323): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=undervolt comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[25882.783259] wlan0: authenticate with a0:47:d7:20:32:88
+[25882.800475] wlan0: send auth to a0:47:d7:20:32:88 (try 1/3)
+[25882.802641] wlan0: authenticated
+[25882.802960] wlan0: associate with a0:47:d7:20:32:88 (try 1/3)
+[25882.819693] wlan0: RX AssocResp from a0:47:d7:20:32:88 (capab=0x411 status=0 aid=6)
+[25882.819818] wlan0: associated
+[25882.828154] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[25884.118926] ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+[25884.184974] ata1.00: configured for UDMA/133
+[25890.680620] audit: type=1131 audit(1640461072.191:324): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[26395.777727] audit: type=1101 audit(1640461577.867:325): pid=20815 uid=1000 auid=1000 ses=1 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="missu" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[26395.778635] audit: type=1110 audit(1640461577.868:326): pid=20815 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[26395.781780] audit: type=1105 audit(1640461577.871:327): pid=20815 uid=1000 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[26395.806928] audit: type=1106 audit(1640461577.896:328): pid=20815 uid=1000 auid=1000 ses=1 msg='op=PAM:session_close grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[26395.806994] audit: type=1104 audit(1640461577.896:329): pid=20815 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[26417.841400] audit: type=1101 audit(1640461599.931:330): pid=20936 uid=1000 auid=1000 ses=1 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="missu" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[26417.842122] audit: type=1110 audit(1640461599.931:331): pid=20936 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[26417.844605] audit: type=1105 audit(1640461599.934:332): pid=20936 uid=1000 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[26417.848985] audit: type=1106 audit(1640461599.938:333): pid=20936 uid=1000 auid=1000 ses=1 msg='op=PAM:session_close grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[26417.849042] audit: type=1104 audit(1640461599.938:334): pid=20936 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[26429.032745] audit: type=1101 audit(1640461611.122:335): pid=21014 uid=1000 auid=1000 ses=1 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="missu" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[26429.033493] audit: type=1110 audit(1640461611.123:336): pid=21014 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[26429.036389] audit: type=1105 audit(1640461611.126:337): pid=21014 uid=1000 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[26429.748139] audit: type=1101 audit(1640461611.837:338): pid=21143 uid=0 auid=1000 ses=1 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[26429.748993] audit: type=1110 audit(1640461611.838:339): pid=21143 uid=0 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+[26429.752239] audit: type=1105 audit(1640461611.842:340): pid=21143 uid=0 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
