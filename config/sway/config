@@ -253,13 +253,14 @@ bar {
     gsettings set org.gtk.Settings.FileChooser window-size '(1000, 500)'
     gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
     gsettings set org.gnome.desktop.interface icon-theme 'elementary'
-    gsettings set org.gnome.desktop.interface cursor-theme 'elementary'
+    gsettings set org.gnome.desktop.interface cursor-theme 'mcmojave-cursors'
     gsettings set org.gnome.desktop.interface font-name 'Roboto Slab 10'
     }
 
   # Power
 #  exec sudo powertop --auto-tune
   exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl sleep" -I /usr/share/icons/elementary/status/48/battery-caution.svg
+  exec sleep 20&& sudo systemctl start hdd.service
 
   exec ~/.scripts/swayidle
   exec ~/.scripts/transparent-unfocused # transparent unfocused
