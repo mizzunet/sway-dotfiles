@@ -16,7 +16,6 @@ set textwidth=0
 set hidden
 set number
 set title
-set clipboard=unnamedplus
 
 call plug#begin()
 Plug 'https://github.com/vim-airline/vim-airline'
@@ -26,3 +25,5 @@ call plug#end()
 
 autocmd BufReadPost * if @% !~# '\.git[\/\\]COMMIT_EDITMSG$' && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 syntax on
+
+:noremap y "+y

@@ -1,16 +1,15 @@
-border-size=2
+border-size=1
 text-alignment=center
-progress-color=#333332
-width=280
-padding=11
+width=270
+height=90
 format=%s\n%b
 layer=overlay
-border-radius=4
+border-radius=7
 font=Roboto Mono 10
 default-timeout=10000
 icon-path=/usr/share/icons/Adwaita:/usr/share/icons/elementary
-anchor=bottom-right
-margin=0,40,30
+max-icon-size=36
+anchor=top-center
 group-by=summary
 on-notify=exec mpv ~/.sounds/notify.wav
 
@@ -63,3 +62,6 @@ default-timeout=900
 background-color=#222322
 text-color=#b4b5b6
 border-color=#181919
+on-notify=none
+
+

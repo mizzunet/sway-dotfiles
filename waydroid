@@ -1,12 +1,15 @@
  sudo waydroid init -f -i /usr/share/waydroid-extra/images
  sudo systemctl enable waydroid-container.service
-psi=1
+ psi=1
 
-qemu.hw.mainkeys=1
-debug.sf.nobootanimation=1
+echo qemu.hw.mainkeys=1 | sudo tee -a /var/lib/waydroid/waydroid_base.prop
+echo debug.sf.nobootanimation=1  | sudo tee -a /var/lib/waydroid/waydroid_base.prop
 
 sudo bash -c "sed -i 's/aidl2/aidl3/' /etc/gbinder.d/anbox.conf"
 sudo bash -c "sed -i '/ApiLevel/s/29/30/' /etc/gbinder.conf"
+sudo bash -c "sed -i 's/aidl3/aidl2/' /etc/gbinder.d/anbox.conf"
+sudo bash -c "sed -i '/ApiLevel/s/30/29/' /etc/gbinder.conf"
+
 
 sudo sysctl -w kernel/unprivileged_bpf_disabled=0
 
@@ -18,6 +21,9 @@ settings put global transition_animation_scale 0
 settings put global animator_duration_scale 0
 
 wm density 140  
+cmd uimode night yes
+settings put secure location_mode 0
+rm .local/share/applications/waydroid.*
 
 pm disable com.android.onetimeinitializer
 pm disable com.android.phone
@@ -55,5 +61,6 @@ pm disable com.google.android.gms
 pm disable com.simplemobiletools.gallery.pro
 pm disable com.android.camera2
 pm disable com.android.development
-rm .local/share/applications/waydroid.*
+
+
 

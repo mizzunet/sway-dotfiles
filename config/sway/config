@@ -6,7 +6,7 @@ set $down j
 set $up k
 set $right l
 
-set $term kitty
+set $term alacritty
 set $menu sirula
 set $files thunar
 set $browser chromium
@@ -32,7 +32,7 @@ default_border pixel 1
 default_floating_border pixel 1
 smart_borders on
 
-font pango:Roboto Mono 11
+font pango:Clear Mono 10
 #smart_gaps on
 
 #border_images.focused $image
@@ -186,6 +186,8 @@ assign [title="Habits"] $ws4
 assign [title="Getting Things GNOME!"] $ws3
 for_window [app_id="[Ww]aydroid.*"] move right
 for_window [app_id="[Ww]aydroid.*"] resize set width 400px
+for_window [app_id="qalculate-gtk"] floating enable
+for_window [title="File Operation Progress"] floating enable
 
 ### Status Bar:
 bar {
@@ -226,7 +228,7 @@ bar {
  bindsym XF86WLAN exec ~/.scripts/wifi
 
  # wlsunset toggle
- bindsym $mod+Shift+n exec wlsunset
+ bindsym $mod+Shift+n exec ~/.scripts/wlsunset
 
  # ctrl+alt+delete to reboot
  bindsym control+mod1+Delete exec systemctl reboot
@@ -250,18 +252,18 @@ bar {
 
   # GTK
   exec {
-    gsettings set org.gtk.Settings.FileChooser window-size '(1000, 500)'
-    gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
-    gsettings set org.gnome.desktop.interface icon-theme 'elementary'
-    gsettings set org.gnome.desktop.interface cursor-theme 'mcmojave-cursors'
-    gsettings set org.gnome.desktop.interface font-name 'Roboto Slab 10'
+    gsettings set org.gtk.Settings.FileChooser window-size '(1000, 450)'
+    gsettings set org.gnome.desktop.interface gtk-theme 'Skeuos-White-Dark'
+    gsettings set org.gnome.desktop.interface icon-theme 'kora'
+    gsettings set org.gnome.desktop.interface cursor-theme 'elementary'
+    gsettings set org.gnome.desktop.interface font-name 'Clear Sans 10'
     }
 
   # Power
-#  exec sudo powertop --auto-tune
   exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl sleep" -I /usr/share/icons/elementary/status/48/battery-caution.svg
-  exec sleep 20&& sudo systemctl start hdd.service
+  exec sudo powertop --auto-tune
 
+  bindsym XF86PowerOff exec nwg-bar
   exec ~/.scripts/swayidle
   exec ~/.scripts/transparent-unfocused # transparent unfocused
   exec wl-paste -t text --watch clipman store # Clipboard manager
@@ -273,12 +275,14 @@ bar {
   exec sway-audio-idle-inhibit # Don't turn display when video playing
   exec waydroid session start # Start Waydroid session
 #  exec mconnect -d # notifications from waydroid
-  exec $menu # Show menu
+#  exec $menu # Show menu
   exec autotiling
   exec profile-cleaner c
 
-  exec sleep 20&& /usr/bin/signal-desktop-beta --enable-features=UseOzonePlatform  --no-sandbox
+  exec stretchly
+#  exec sleep 20&& /usr/bin/signal-desktop-beta --enable-features=UseOzonePlatform  --no-sandbox
 #  exec sleep 20&& $browser --app-id=gakplicejlpogogkmhcohnidacakppdg
   exec sleep 30&&ferdi --enable-features=UseOzonePlatform --ozone-platform=wayland --process-per-site 
   exec sleep 30&&gtg
+
 

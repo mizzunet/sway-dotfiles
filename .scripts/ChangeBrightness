@@ -12,6 +12,5 @@ case $action in
 		;;		
 
 	esac
-
-	notify-send -u low  -h int:value:$brightness "Brightness" -t 1000 -i /usr/share/icons/elementary/status/48/brightness-display-symbolic.svg
+	notify-send -u low  -h int:value:$(brightnessctl | grep Current | awk '{print $4}' |  sed 's/[^0-9]*//g') "Brightness" -t 1000 -i /usr/share/icons/elementary/status/48/brightness-display-symbolic.svg
 

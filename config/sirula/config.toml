@@ -3,4 +3,4 @@ icon_size = 28  # icon size in pixels
 extra_field = []
 recent_first = true 
 command_prefix = ":"
-term_command = "kitty -e {}"
+term_command = "alacritty -e {}"
