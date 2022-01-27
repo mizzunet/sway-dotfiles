@@ -1,4 +1,5 @@
 function fish_command_not_found
-      __fish_default_command_not_found_handler $argv[1]
+      echo $argv[1]: command not found
+      yay -Fq $argv[1]
   
 end

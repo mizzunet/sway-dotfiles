@@ -1,26 +1,27 @@
+margin=8,0,2,0
 border-size=1
 text-alignment=center
-width=270
-height=90
+width=275
+height=95
 format=%s\n%b
 layer=overlay
-border-radius=7
-font=Roboto Mono 10
+border-radius=8
+font=Clear Sans 10.5
 default-timeout=10000
 icon-path=/usr/share/icons/Adwaita:/usr/share/icons/elementary
 max-icon-size=36
 anchor=top-center
 group-by=summary
-on-notify=exec mpv ~/.sounds/notify.wav
+on-notify=exec paplay ~/.sounds/Windows\ Notify\ Email.wav
 
 [urgency=normal]
-background-color=#23C552
+background-color=#26a269e3
 text-color=#212326
 border-color=#232525
 
 [urgency=critical]
-background-color=#F84F31
-text-color=#00010D
+background-color=#e01b24e3
+text-color=#dedddae3
 border-color=#fb1444
 default-timeout=0
 format=<b>%s</b>\n%b

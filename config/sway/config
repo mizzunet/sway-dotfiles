@@ -8,7 +8,7 @@ set $right l
 
 set $term alacritty
 set $menu sirula
-set $files thunar
+set $files nemo
 set $browser chromium
 
 set $ws1 "1"
@@ -23,6 +23,7 @@ set $ws9 "9"
 set $ws10 "10"
 
 set $image ~/.config/sway/border-images/shadows.png
+set $bg "/home/missu/Pictures/pexels-lisa-fotios-1083822.jpg"
 
 ### Window configs
 gaps inner 5
@@ -47,8 +48,7 @@ client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.focused          #121212 #27578f #ffffff #292d2e   #222222
 
 ### Output configuration
-output * bg /home/missu/Pictures/Wallpaper/wall25.jpg fill
-
+output * bg $bg fill
 ### Input configuration
    input  type:touchpad {
        tap enabled
@@ -92,25 +92,12 @@ input * xkb_numlock enable
     bindsym $mod+$down focus down
     bindsym $mod+$up focus up
     bindsym $mod+$right focus right
-
-    bindsym $mod+Left focus left
-    bindsym $mod+Down focus down
-    bindsym $mod+Up focus up
-    bindsym $mod+Right focus right
-
     # Move the focused window with the same, but add Shift
     bindsym $mod+Shift+$left move left
     bindsym $mod+Shift+$down move down
     bindsym $mod+Shift+$up move up
     bindsym $mod+Shift+$right move right
-    
-    # Ditto, with arrow keys
-    bindsym $mod+Shift+Left move left
-    bindsym $mod+Shift+Down move down
-    bindsym $mod+Shift+Up move up
-    bindsym $mod+Shift+Right move right
-
-# Workspaces:
+    # Workspaces:
 
     # Switch to workspace
     bindsym $mod+1 workspace number $ws1
@@ -178,17 +165,6 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-assign [title="ProtonMail"] $ws2
-assign [title="Ferdi"] $ws2
-assign [title="Signal"] $ws2
-for_window [class="Spotify"] move window to workspace $ws4
-assign [title="Habits"] $ws4
-assign [title="Getting Things GNOME!"] $ws3
-for_window [app_id="[Ww]aydroid.*"] move right
-for_window [app_id="[Ww]aydroid.*"] resize set width 400px
-for_window [app_id="qalculate-gtk"] floating enable
-for_window [title="File Operation Progress"] floating enable
-
 ### Status Bar:
 bar {
     swaybar_command waybar
@@ -244,13 +220,24 @@ bar {
  # caffine mode
  bindsym $mod+Shift+c exec ~/.scripts/swayidle 
 
+ bindsym XF86PowerOff exec nwg-bar
+
+assign [title="ProtonMail"] $ws2
+assign [title="Ferdi"] $ws2
+assign [title="Signal"] $ws2
+for_window [class="Spotify"] move window to workspace $ws4
+assign [title="Habits"] $ws4
+assign [title="Getting Things GNOME!"] $ws3
+for_window [app_id="[Ww]aydroid.*"] move right
+for_window [app_id="[Ww]aydroid.*"] resize set width 400px
+for_window [app_id="qalculate-gtk"] floating enable
+for_window [title="File Operation Progress"] floating enable
+for_window [title="xdg-desktop-portal-gtk"] floating enable 
+
 
 ### Executions
-  exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
-  exec hash dbus-update-activation-environment 2>/dev/null && \
-     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
-  # GTK
+    # GTK
   exec {
     gsettings set org.gtk.Settings.FileChooser window-size '(1000, 450)'
     gsettings set org.gnome.desktop.interface gtk-theme 'Skeuos-White-Dark'
@@ -258,31 +245,33 @@ bar {
     gsettings set org.gnome.desktop.interface cursor-theme 'elementary'
     gsettings set org.gnome.desktop.interface font-name 'Clear Sans 10'
     }
+  exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+  exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
   # Power
   exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl sleep" -I /usr/share/icons/elementary/status/48/battery-caution.svg
   exec sudo powertop --auto-tune
 
-  bindsym XF86PowerOff exec nwg-bar
+  # daemons
   exec ~/.scripts/swayidle
-  exec ~/.scripts/transparent-unfocused # transparent unfocused
+  exec ~/.scripts/transparent-unfocused -o 0.65 # transparent unfocused
   exec wl-paste -t text --watch clipman store # Clipboard manager
   exec mako # Notification utility
   exec wlsunset # nightlight
-  exec paplay /home/missu/.startup.wav # Play music
   exec udiskie -N # Automount USB
   exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 # polkitagent
   exec sway-audio-idle-inhibit # Don't turn display when video playing
-  exec waydroid session start # Start Waydroid session
-#  exec mconnect -d # notifications from waydroid
-#  exec $menu # Show menu
+# exec mconnect -d # notifications from waydroid
   exec autotiling
   exec profile-cleaner c
 
+  exec paplay /home/missu/.sounds/Windows\ Logon.wav # Play music
+
+  # Programs
+# exec $menu # Show menu
   exec stretchly
-#  exec sleep 20&& /usr/bin/signal-desktop-beta --enable-features=UseOzonePlatform  --no-sandbox
-#  exec sleep 20&& $browser --app-id=gakplicejlpogogkmhcohnidacakppdg
+# exec sleep 20&& /usr/bin/signal-desktop-beta --enable-features=UseOzonePlatform  --no-sandbox
+# exec sleep 20&& $browser --app-id=gakplicejlpogogkmhcohnidacakppdg
   exec sleep 30&&ferdi --enable-features=UseOzonePlatform --ozone-platform=wayland --process-per-site 
   exec sleep 30&&gtg
-
-
