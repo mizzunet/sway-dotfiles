@@ -23,7 +23,8 @@ set $ws9 "9"
 set $ws10 "10"
 
 set $image ~/.config/sway/border-images/shadows.png
-set $bg "/home/missu/Pictures/pexels-lisa-fotios-1083822.jpg"
+set $bg_dir "/home/missu/Pictures/"
+set $bg "pexels-lisa-fotios-1083822.jpg"
 
 ### Window configs
 gaps inner 5
@@ -48,7 +49,7 @@ client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.focused          #121212 #27578f #ffffff #292d2e   #222222
 
 ### Output configuration
-output * bg $bg fill
+output * bg $bg_dir$bg fill
 ### Input configuration
    input  type:touchpad {
        tap enabled
@@ -222,7 +223,7 @@ bar {
 
  bindsym XF86PowerOff exec nwg-bar
 
-assign [title="ProtonMail"] $ws2
+#for_window [title="ProtonMail"] move window to workspace $ws2
 assign [title="Ferdi"] $ws2
 assign [title="Signal"] $ws2
 for_window [class="Spotify"] move window to workspace $ws4
@@ -230,9 +231,12 @@ assign [title="Habits"] $ws4
 assign [title="Getting Things GNOME!"] $ws3
 for_window [app_id="[Ww]aydroid.*"] move right
 for_window [app_id="[Ww]aydroid.*"] resize set width 400px
-for_window [app_id="qalculate-gtk"] floating enable
+#for_window [app_id="qalculate-gtk"] floating enable
 for_window [title="File Operation Progress"] floating enable
 for_window [title="xdg-desktop-portal-gtk"] floating enable 
+for_window [title="iwgtk"] floating enable
+for_window [title="iwgtk"] resize set width 500px height 300px
+
 
 
 ### Executions
@@ -244,6 +248,8 @@ for_window [title="xdg-desktop-portal-gtk"] floating enable
     gsettings set org.gnome.desktop.interface icon-theme 'kora'
     gsettings set org.gnome.desktop.interface cursor-theme 'elementary'
     gsettings set org.gnome.desktop.interface font-name 'Clear Sans 10'
+    gsettings set org.gnome.desktop.default-applications.terminal exec 'alacritty'
+    gsettings set org.gnome.desktop.default-applications.terminal exec-arg '-e'
     }
   exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
   exec hash dbus-update-activation-environment 2>/dev/null && \
@@ -272,6 +278,6 @@ for_window [title="xdg-desktop-portal-gtk"] floating enable
 # exec $menu # Show menu
   exec stretchly
 # exec sleep 20&& /usr/bin/signal-desktop-beta --enable-features=UseOzonePlatform  --no-sandbox
-# exec sleep 20&& $browser --app-id=gakplicejlpogogkmhcohnidacakppdg
-  exec sleep 30&&ferdi --enable-features=UseOzonePlatform --ozone-platform=wayland --process-per-site 
-  exec sleep 30&&gtg
+  exec sleep 20&&ferdi 
+  #exec sleep 30&&chromium --profile-directory=Default  --app=https://mail.protonmail.com/u/0/all-mail#filter=unread
+  exec sleep 20&&superproductivity

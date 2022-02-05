@@ -46,7 +46,7 @@
 	"interval": 5,
         "format-wifi": "<span size='large' rise='-1000'></span> {essid}",
         "format-disconnected": "",
-        "on-click": "~/.scripts/wifi toggle",
+        "on-click": "iwgtk",
 	"tooltip-format-wifi": "{essid}:{signalStrength}\nSpeed:{bandwidthDownBits} \n{ipaddr}"
 
     },
