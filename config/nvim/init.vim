@@ -28,5 +28,5 @@ call plug#end()
 autocmd BufReadPost * if @% !~# '\.git[\/\\]COMMIT_EDITMSG$' && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 syntax on
 
-:noremap y "+y
+map ` :set invnumber<CR>
 

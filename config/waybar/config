@@ -24,7 +24,7 @@
         "spacing": 8
     },
     "clock": {
-        "format": "{:<span rise='-1000'> </span> %I:%M    <span rise='-700'></span><span rise='1200'> %A %B</span> %d}",
+        "format": "{:<span rise='-500'> </span> %I:%M   <span rise='890'></span><span rise='1200'> %A %B</span> %d}",
     },
     "battery": {
         "interval": 30,

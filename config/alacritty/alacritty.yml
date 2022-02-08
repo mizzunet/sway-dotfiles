@@ -5,7 +5,7 @@ font:
 
   bold:
     family: Roboto Mono
-    style: Bold
+    style: Regular
 
   italic:
     family: Roboto Mono
@@ -16,32 +16,18 @@ font:
     style: Bold Italic
 
   size: 10.7
-
-# Colors (Ayu Dark)
+# XTerm's default colors
 colors:
-  # Default colors
-  primary:
-    background: '#0A0E14'
-    foreground: '#B3B1AD'
+   # Default colors
+   primary:
+    background: '#000000'
 
-  # Normal colors
-  normal:
-    black: '#01060E'
-    red: '#EA6C73'
-    green: '#91B362'
-    yellow: '#F9AF4F'
-    blue: '#53BDFA'
-    magenta: '#FAE994'
-    cyan: '#90E1C6'
-    white: '#C7C7C7'
+window:
+  padding:
+    x: 10
+    y: 10
 
-  # Bright colors
-  bright:
-    black: '#686868'
-    red: '#F07178'
-    green: '#C2D94C'
-    yellow: '#FFB454'
-    blue: '#59C2FF'
-    magenta: '#FFEE99'
-    cyan: '#95E6CB'
-    white: '#FFFFFF'
+
+      
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>"

@@ -15,8 +15,7 @@ export MESA_GLSL_CACHE_DISABLE=true
 export GST_VAAPI_ALL_DRIVERS=1
 
 ## time
-export LC_TIME=en_GB.UTF-8
 
 ## path
-export PATH=/home/missu/.local/bin:$PATH
+export PATH=/usr/local/bin:/home/missu/.local/bin:$PATH
 

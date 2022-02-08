@@ -1,8 +1,8 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "Clear Mono",Manjari;
-    font-size: 16px;
+    font-family: "Clear Mono";
+    font-size: 15px;
     min-height: 0;
 }
 
@@ -15,11 +15,10 @@ window#waybar {
     color: #bebebe;
     background: transparent;
     padding: 0px 5px 0 5px;
-    margin: 5px 10px 0 10px;
+    margin: 5px 7px 0 7px;
 }
 #workspaces button.focused {
     color: white;
-    margin: 5px 10px 0 10px;
  }
 #workspaces button.urgent{
     animation-duration: 0.5s;
@@ -29,7 +28,6 @@ window#waybar {
     animation-direction: alternate;
 }
 #mode {
-    font-family: "Roboto Slab";
     margin: 0px 15px 0px 15px;
     padding: 0px 12px 0px 12px;
     color: black;
@@ -70,8 +68,6 @@ window#waybar {
 
 #clock {
     margin:7px 0 0 13px;
-    font-family: Manjari;
-    font-size: 16.5px;
     border-radius: 6px;
     padding: 4px 6px 0px 0px;
 }
