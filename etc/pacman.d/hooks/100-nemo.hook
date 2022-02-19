@@ -1,0 +1,9 @@
+[Trigger]
+Type = Package
+Operation = Upgrade
+Target = nemo
+
+[Action]
+Description = echo-ing NoDisplay for .desktops
+When = PostTransaction
+Exec =  echo NoDisplay=true | sudo tee -a /usr/share/applications/nemo.desktop

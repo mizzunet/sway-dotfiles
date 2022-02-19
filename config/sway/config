@@ -7,9 +7,9 @@ set $up k
 set $right l
 
 set $term alacritty
-set $menu sirula
+set $menu nwggrid -client
 set $files nemo
-set $browser chromium
+set $browser librewolf
 
 set $ws1 "1"
 set $ws2 "2"
@@ -224,17 +224,14 @@ bar {
  bindsym XF86PowerOff exec nwg-bar
 
 #for_window [title="ProtonMail"] move window to workspace $ws2
-assign [title="Ferdi"] $ws2
-assign [title="Signal"] $ws2
+assign [title="Signal|Ferdi"] $ws2
 for_window [class="Spotify"] move window to workspace $ws4
 assign [title="Habits"] $ws4
 assign [title="Getting Things GNOME!"] $ws3
 for_window [app_id="[Ww]aydroid.*"] move right
 for_window [app_id="[Ww]aydroid.*"] resize set width 400px
 #for_window [app_id="qalculate-gtk"] floating enable
-for_window [title="File Operation Progress"] floating enable
-for_window [title="xdg-desktop-portal-gtk"] floating enable 
-for_window [title="iwgtk"] floating enable
+for_window [title="File Operation Progress|xdg-desktop-portal-gtk|iwgtk|Library"] floating enable
 for_window [title="iwgtk"] resize set width 500px height 300px
 
 
@@ -260,6 +257,7 @@ for_window [title="iwgtk"] resize set width 500px height 300px
   exec sudo powertop --auto-tune
 
   # daemons
+  exec nwggrid-server
   exec ~/.scripts/swayidle
   exec ~/.scripts/transparent-unfocused -o 0.65 # transparent unfocused
   exec wl-paste -t text --watch clipman store # Clipboard manager

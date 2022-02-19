@@ -21,15 +21,16 @@ const {
 
 // ---- Settings ----
 
-Hints.characters = 'asdfgyuiopqwertnmzxcvb';
+///settings.scrollStepSize = 10;
+///Hints.characters = 'asdfgyuiopqwertnmzxcvb';
 
-settings.defaultSearchEngine = 'p';
+settings.defaultSearchEngine = 's';
 settings.hintAlign = 'left';
-// settings.omnibarPosition = 'bottom';
-settings.focusFirstCandidate = false;
-settings.focusAfterClosed = 'last';
+settings.smoothScroll = true;
 settings.scrollStepSize = 150;
-settings.tabsThreshold = 7;
+///settings.tabsThreshold = 7;
+settings.focusAfterClosed = "right"
+settings.focusFirstCandidate = false;
 settings.modeAfterYank = 'Normal';
 
 // Search Engines
@@ -40,7 +41,7 @@ removeSearchAlias('h', 's');
 removeSearchAlias('w', 's');
 removeSearchAlias('y', 's');
 removeSearchAlias('s', 's');
-addSearchAlias('b', 'Brave', 'https://search.brave.com/search?q=', 's', 'https://search.brave.com/search?q=');
+addSearchAlias('b', 'Brave', 'https://search.brave.com/search?q=');
 addSearchAlias('a', 'Amazon', 'https://www.amazon.in/s?k=');
 addSearchAlias('f', 'Flipkart', 'https://www.flipkart.com/search?q=');
 addSearchAlias('i', 'Invidious', 'https://invidio.xamh.de/search?q=', 'i');
@@ -51,7 +52,10 @@ addSearchAlias('bk','Z-Library','http://book4you.org/s/','r')
 addSearchAlias('d','Dictionary','https://www.oxfordlearnersdictionaries.com/definition/english/')
 addSearchAlias('gd','Goodreads','https://www.goodreads.com/search?q=')
 addSearchAlias('p','Paulgo','http://paulgo.io/search?q=','p')
+addSearchAlias('s','Searx','http://searx.be/search?q=','s')
+addSearchAlias('t','1337x','https://1337x.to/search/','t')
 
+unmap ('W')
 unmap (',')
 unmap ('.')
 unmap (';fs')
@@ -305,3 +309,4 @@ input {
   font-weight: var(--font-weight);
 }
 `;
+

@@ -1,0 +1,9 @@
+[Unit]
+Description=Wait some second before run foo
+
+[Timer]
+OnActiveSec=60sec
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

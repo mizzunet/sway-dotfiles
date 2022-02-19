@@ -1,0 +1,9 @@
+[Unit]
+Description=Undervolt CPU
+
+[Service]
+ExecStart=/usr/bin/intel-undervolt apply
+Type=idle
+
+[Install]
+WantedBy=multi-user.target

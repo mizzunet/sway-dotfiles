@@ -1,2 +1,2 @@
 #!/bin/bash
-clipman pick -t wofi --tool-args="--insensitive"
+clipman pick -t bemenu --tool-args='-n -b -i'

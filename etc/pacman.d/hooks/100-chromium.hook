@@ -1,0 +1,9 @@
+[Trigger]
+Type = Package
+Operation = Upgrade
+Target = chromium
+
+[Action]
+Description = echo-ing NoDisplay for chromium.desktop
+When = PostTransaction
+Exec =  sudo sed -i '3 i NoDisplay=true' /usr/share/applications/chromium.desktop

@@ -1,0 +1,9 @@
+[Unit]
+Description=Suspend HDD
+
+[Service]
+ExecStart=/usr/bin/hdparm -q -S 120 -y /dev/sda
+Type=idle
+
+[Install]
+WantedBy=multi-user.target

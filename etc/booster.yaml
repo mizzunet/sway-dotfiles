@@ -1,0 +1,2 @@
+modules_force_load: i915
+compression: lz4

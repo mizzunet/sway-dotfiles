@@ -21,7 +21,13 @@ window#waybar {
 #workspaces button.focused {
     color: white;
  }
-
+#workspaces button.urgent{
+    animation-duration: 0.5s;
+    animation-name: urgent;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 #mode {
     margin: 0px 15px 0px 15px;
     padding: 0px 12px 0px 12px;
@@ -45,7 +51,12 @@ window#waybar {
     color: rgba(187,56,0, 1);
     }
 }
-
+@keyframes urgent {
+    to {
+    background: rgba(212,140,0, 1);
+    color: black;
+    }
+}
 
 #battery.critical:not(.charging) {
     padding: 0px 6px 0px 6px;

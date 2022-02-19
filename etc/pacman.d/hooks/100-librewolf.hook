@@ -1,0 +1,9 @@
+[Trigger]
+Type = Package
+Operation = Upgrade
+Target = librewolf
+
+[Action]
+Description = echo-ing NoDisplay for librewolf.desktop
+When = PostTransaction
+Exec =  sudo sed -i '3 i NoDisplay=true' /usr/share/applications/librewolf.desktop
