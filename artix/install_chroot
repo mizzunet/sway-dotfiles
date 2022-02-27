@@ -1,0 +1,52 @@
+echo archie > /etc/hostname
+#echo " hostname='archie'" >> /etc/conf.d/hostname
+echo archie as hostname
+echo "en_GB.UTF-8 UTF-8" | tee -a /etc/locale.gen
+locale-gen
+echo locales generaed
+echo "LANG=en_GB.UTF-8" > /etc/locale.conf
+echo set language
+ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+hwclock --systohc
+echo set localtime
+echo enter root password
+passwd
+useradd -mG audio,network,video,wheel missu
+enter user password
+passwd missu
+
+echo installing necessarry packages
+pacman -Syu
+
+echo Installing Chaotic AUR
+pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
+pacman-key --lsign-key FBA220DFC880C036
+pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+echo -e "[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
+
+echo Adding Arch repos
+pacman -Syu
+pacman -Syu artix-archlinux-support 
+echo -e "[extra]\nInclude = /etc/pacman.d/mirrorlist-arch" >> /etc/pacman.conf
+echo -e "[community]\nInclude = /etc/pacman.d/mirrorlist-arch" >> /etc/pacman.conf
+pacman -Syu
+
+echo Installing additional packages
+pacman -S yay
+yay -S fish neovim booster iwd iwd-s6 opendoas-sudo 
+yay -S alacritty sway autotiling brightnessctl clipman pamixer playerctl swayidle waybar sway-audio-idle-inhibit-git clipman  bemenu-wayland nwg-launchers xorg-xwayland --noconfirm
+
+pacman -Rsc mkinitcpio 
+
+echo services
+#rc-update add elogind boot
+#rc-update add iwd boot
+s6-rc-bundle-update -c /etc/s6/rc/compiled add default iwd
+s6-rc-bundle-update -c /etc/s6/rc/compiled add default elogind
+
+echo Configuration
+mkdir /etc/iwd
+echo -e "permit nopass keepenv root\npermit nopass keepenv :wheel\npermit nopass :missu as root cmd /usr/bin/psd-overlay-helper" >> /etc/doas.conf
+
+echo -e "[General]\nEnableNetworkConfiguration=true\n[Network]\nEnableIPv6=false" >> /etc/iwd/main.conf
+echo -e "nameserver 1.1.1.1" >> /etc/resolv.conf

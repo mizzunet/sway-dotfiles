@@ -47,6 +47,7 @@
         "format-wifi": "<span size='large' rise='-1000'></span> {essid}",
         "format-disconnected": "",
         "on-click": "iwgtk",
+        "interface": "wlan0",
 	"tooltip-format-wifi": "{essid}:{signalStrength}\nSpeed:{bandwidthDownBits} \n{ipaddr}"
 
     },

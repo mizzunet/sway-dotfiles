@@ -208,7 +208,7 @@ bar {
  bindsym $mod+Shift+n exec ~/.scripts/wlsunset
 
  # ctrl+alt+delete to reboot
- bindsym control+mod1+Delete exec systemctl reboot
+ bindsym control+mod1+Delete exec doas reboot
 
  # emoji typing
  bindsym control+mod1+e exec rofimoji
@@ -231,16 +231,14 @@ assign [title="Getting Things GNOME!"] $ws3
 for_window [app_id="[Ww]aydroid.*"] move right
 for_window [app_id="[Ww]aydroid.*"] resize set width 400px
 #for_window [app_id="qalculate-gtk"] floating enable
-for_window [title="File Operation Progress|xdg-desktop-portal-gtk|iwgtk|Library"] floating enable
+for_window [title="File Operation Progress|Choose a folder|Select books|xdg-desktop-portal-gtk|iwgtk|Library"] floating enable
 for_window [title="iwgtk"] resize set width 500px height 300px
 
-
-
 ### Executions
-
+exec dbus-daemon --session --address=unix:path=$XDG_RUNTIME_DIR/bus 
     # GTK
   exec {
-    gsettings set org.gtk.Settings.FileChooser window-size '(1000, 450)'
+     gsettings set org.gtk.Settings.FileChooser window-size \(740,\ 371\)
     gsettings set org.gnome.desktop.interface gtk-theme 'Skeuos-White-Dark'
     gsettings set org.gnome.desktop.interface icon-theme 'kora'
     gsettings set org.gnome.desktop.interface cursor-theme 'elementary'
@@ -255,7 +253,7 @@ for_window [title="iwgtk"] resize set width 500px height 300px
   # Power
   exec batsignal -b -w 20 -c 15 -d 5 -m 30 -D "systemctl sleep" -I /usr/share/icons/elementary/status/48/battery-caution.svg
   exec sudo powertop --auto-tune
-
+  exec doas brightnessctl set 50
   # daemons
   exec nwggrid-server
   exec ~/.scripts/swayidle

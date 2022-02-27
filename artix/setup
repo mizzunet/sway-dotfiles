@@ -13,38 +13,21 @@ ln -s ~/.dotfiles/.scripts ~/
 sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 
 ## Systemctl
-systemctl set-default multi-user.target
+#systemctl set-default multi-user.target
 systemctl enable fstrim.timer
-systemctl enable undervolt.service
+#systemctl enable undervolt.service
 systemctl enable iwd
 systemctl enable thermald.service
 systemctl enable auto-cpufreq
 systemctl enable systemd-resolved
 systemctl enable nohang-desktop.service
-systemctl enable irqbalance.service
+#systemctl enable irqbalance.service
 systemctl enable disable-usb-wakeup.service
-systemctl enable preload.service
-systemctl enable --user psd
-systemctl enable ananicy.service
+#systemctl enable preload.service
+systemctl enable asd
+#systemctl enable ananicy.service
 
-## Installs
-### Install yay
-pacman -S yay
-
-cd /opt
-sudo git clone https://aur.archlinux.org/yay-git.git
-sudo chown -R $USER:$USER /opt/yay-git/
-cd yay-git&&makepkg -si
-
-#### Programs
-alacritty anki bleachbit calibre eog evince ferdi-bin gnome-disk-utility gucharmap iwgtk lxappearance nemo nwg-bar nwg-launchers polkit-gnome qalculate-gtk rhythmbox scrcpy signal-desktop spotify stretchly-bin superproductivity-bin sway unarchiver ungoogled-chromium ventoy-bin waydroid xarchiver gcompris-qt  mpv  ferdi-bin
-#### CLI
-apparmor auto-cpufreq autotiling bandwhich bat brightnessctl cage  clipman ddi duf efibootmgr exa extramaus fd  hdparm htop-vim  imv intel-undervolt iw kiwix-tools-bin lostfiles megatools-bin miniserve ncdu  pacman-contrib pacutils pamixer pfetch-git pipe-viewer-git powerpill playerctl python-spotdl smartmontools smenu spicetify-cli strongswan subdl tmpmail trash-cli typiskt usbutils vi vim wev wf-recorder-git wireless_tools xplr zoxide fish aria2 bemenu-wayland extramaus grim lostfiles  opendoas pipewire pipewire-pulse swayidle unrar unzip wf-recorder-git xdg-desktop-portal-wlr xplr cfs-zen-tweaks
-#### Other
-ananicy archlinux-keyring appimagelauncher gstreamer-vaapi intel-ucode intel-ucode-clear irqbalance kora-icon-theme libva-utils linux-xanmod-anbox man-db mesa-utils mtpfs nohang otf-manjari profile-sync-daemon-librewolf preload preloader-signed qgnomeplatform skeuos-gtk starship sway-audio-idle-inhibit-git thermald ttf-clear-sans ttf-nerd-fonts-symbols ttf-roboto-mono ttf-twemoji udiskie wlsunset-git zram-generator booster btrfs-progs cage clipman gst-plugin-pipewire gst-plugins-bad gst-plugins-good hunspell intel-ucode intel-hybrid-codec-driver intel-ucode-clear opendoas-sudo  sway-audio-idle-inhibit-git thermald mako cfs-zen-tweaks
-
-### Setup
-#### Chaotic AUR
+## Chaotic AUR
 pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
 pacman-key --lsign-key FBA220DFC880C036
  pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
@@ -52,6 +35,57 @@ pacman-key --lsign-key FBA220DFC880C036
  /etc/pacman.conf
 [chaotic-aur]
 Include = /etc/pacman.d/chaotic-mirrorlist 
+##Enabling Arch repos
+artix-archlinux-support
+[extra]
+Include = /etc/pacman.d/mirrorlist-arch
+[community]
+Include = /etc/pacman.d/mirrorlist-arch
+[extra]
+Include = /etc/pacman.d/mirrorlist-arch
+## Disabling signature verification
+
+## Installs
+#yay
+pacman -S yay
+#GUI programs
+alacritty anki calibre eog  evince ferdi-bin nemo qalculate-gtk rhythmbox signal-desktop spotify stretchly-bin superproductivity-bin waydroid gcompris-qt  mpv  
+#Utilities
+bleachbit  gnome-disk-utility  iwgtk imv gucharmap polkit-gnome scrcpy unarchiver ventoy-bin xarchiver 
+##fish
+fish starship zoxide
+funced __fish_prepend_sudo
+funcsave __fish_prepend_sudo
+##Theme
+lxappearance  kora-icon-theme skeuos-gtk 
+##WM
+sway autotiling brightnessctl clipman pamixer playerctl swayidle waybar bemenu-wayland nwg-launchers 
+wlsunset-git mako sway-audio-idle-inhibit-git
+#CLI
+##Utilities
+bat ddi duf exa extramaus fd  htop-vim  lostfiles kiwix-tools-bin megatools-bin miniserve ncdu  pfetch-git pipe-viewer-git python-spotdl smenu spicetify-cli subdl tmpmail trash-cli xplr aria2 extramaus grim lostfiles  unrar unzip slurp rmlint 
+##System
+iw efibootmgr hdparm powerpill pacman-contrib pacutils smartmontools strongswan usbutils wireless_tools opendoas-sudo cronie nohang mtpfs thermald udiskie 
+##Kernel
+intel-ucode intel-ucode-clear linux-xanmod-anbox booster btrfs-progs preloader-signed 
+##Audio
+pipewire pipewire-pulse pipewire-jack gst-plugin-pipewire gst-plugins-bad gst-plugins-good wireplumber
+#Performance
+ananicy cfs-zen-tweaks irqbalance anything-sync-daemon gstreamer-vaapi libva-utils mesa-utils zram-generator libva-intel-driver ktweaks
+#Power-saving
+auto-cpufreq intel-undervolt powertop 
+#Security
+apparmor 
+#Fonts
+ttf-clear-sans ttf-nerd-fonts-symbols ttf-roboto-mono ttf-twemoji otf-manjari 
+##Others
+archlinux-keyring appimagelauncher man-db fuse2 bash-completion
+#Librewolf
+librewolf hunspell hunspell-en_gb librewolf-extension-bitwarden librewolf-extension-dark-reader
+
+
+
+
 
 ### tmpdisk
 echo 'tmpfs /tmp tmpfs defaults,noatime,nosuid,nodev,mode=1777,size=512M 0 0' | sudo tee -a /etc/fstab
@@ -79,7 +113,6 @@ env LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify
 #### LibreWolf
 
 ##### Packages
-hunspell-en_gb librewolf-extension-bitwarden librewolf-extension-dark-reader
 
 ## Uninstalls
 mkinitcpio sudo networkmanager
@@ -96,3 +129,6 @@ lostfiles
  rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
 #### Fetching live mirror
 curl -s "https://archlinux.org/mirrorlist/?country=FR&country=GB&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 5 -
+### Fastest 8 mirrors
+pacman -S reflector
+reflector -l 8 -r -o /etc/pacman.d/mirrorlist

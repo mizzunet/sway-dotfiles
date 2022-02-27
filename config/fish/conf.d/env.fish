@@ -13,9 +13,12 @@ export LIBVA_DRIVER_NAME=i965
 export LIBVA_DRIVERS_PATH=/usr/lib/dri
 export MESA_GLSL_CACHE_DISABLE=true
 export GST_VAAPI_ALL_DRIVERS=1
-#export MOZ_ENABLE_WAYLAND=1
+export MOZ_ENABLE_WAYLAND=1
 
 ## time
 
 ## path
 export PATH=/usr/local/bin:/home/missu/.local/bin:$PATH
+
+## theme
+export QT_QPA_PLATFORMTHEME=gnome

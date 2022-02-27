@@ -1,10 +1,10 @@
 font:
   normal:
-    family: DejaVu Sans Mono
-    style: Regular
+    family: Roboto Mono
+    style: Light
 
   bold:
-    family: DejaVu Sans Mono
+    family: Roboto Mono
     style: Regular
 
   italic:
